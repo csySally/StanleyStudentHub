@@ -1,1 +1,1 @@
-# StanleyStudentHub
+# Stanley College - Student Hub
