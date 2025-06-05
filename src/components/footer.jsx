@@ -23,19 +23,41 @@ function Footer() {
         <h4>Useful Links</h4>
         <ul className="footer-useful-links-list">
           <li>
-            <a href="/">About Stanley College</a>
+            <a
+              href="https://www.stanleycollege.edu.au/about-stanley/about-stanley-college/"
+              target="_blank"
+            >
+              About Stanley College
+            </a>
           </li>
           <li>
-            <a href="/">Blog</a>
+            <a href="https://www.stanleycollege.edu.au/blog/" target="_blank">
+              Blog
+            </a>
           </li>
           <li>
-            <a href="/">Contact Us</a>
+            <a
+              href="https://www.stanleycollege.edu.au/contact-us/"
+              target="_blank"
+            >
+              Contact Us
+            </a>
           </li>
           <li>
-            <a href="/">Agent Portal</a>
+            <a
+              href="https://www.stanleycollege.edu.au/agent-portal/"
+              target="_blank"
+            >
+              Agent Portal
+            </a>
           </li>
           <li>
-            <a href="/">Domestic Student Portal</a>
+            <a
+              href="https://www.stanleycollege.edu.au/domestic-student-portal/"
+              target="_blank"
+            >
+              Domestic Student Portal
+            </a>
           </li>
         </ul>
       </div>
@@ -43,17 +65,23 @@ function Footer() {
         <h4>Stay Connected</h4>
         <p>Follow us on social media to stay updated.</p>
         <div>
-          <a href="/">
+          <a
+            href="https://www.facebook.com/StanleyInternationalCollege"
+            target="_blank"
+          >
             <img src={Facebook} alt="Facebook" />
           </a>
-          <a href="/">
+          <a href="https://www.instagram.com/stanley_college/" target="_blank">
             <img src={Instagram} alt="Instagram" />
           </a>
 
-          <a href="/">
+          <a
+            href="https://www.linkedin.com/school/stanley-college/posts/?feedView=all"
+            target="_blank"
+          >
             <img src={Linkedin} alt="Linkedin" />
           </a>
-          <a href="/">
+          <a href="https://www.youtube.com/@Stanley_College" target="_blank">
             <img src={YouTube} alt="YouTube" />
           </a>
         </div>

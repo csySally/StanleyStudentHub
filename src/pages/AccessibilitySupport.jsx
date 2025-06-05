@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import Welcome from "../components/welcome";
+import Footer from "../components/footer";
 import backgroundPic from "../assets/images/accessibility-background.jpeg";
 
 function AccessibilitySupport() {
@@ -12,6 +13,7 @@ function AccessibilitySupport() {
         welcomeText="Accessibility Support"
       />
       <h1>Accessibility Support</h1>
+      <Footer />
     </div>
   );
 }
