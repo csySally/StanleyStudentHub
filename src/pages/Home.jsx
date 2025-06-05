@@ -30,7 +30,7 @@ function Home() {
             <Link to="/accessibility-support">Accessibility Support</Link>
           </li>
           <li>
-            <Link to="/events-and-calendar">Events and Calendar</Link>
+            <Link to="/events-and-activities">Events and Activities</Link>
           </li>
           <li>
             <Link to="/important-contacts">Important Contacts</Link>
