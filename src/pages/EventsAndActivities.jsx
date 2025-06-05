@@ -1,19 +1,19 @@
 import React from "react";
 import Header from "../components/header";
 import Welcome from "../components/welcome";
-import backgroundPic from "../assets/images/accessibility-background.jpeg";
+import backgroundPic from "../assets/images/events-background.jpeg";
 
-function AccessibilitySupport() {
+function EventsAndActivities() {
   return (
     <div>
       <Header />
       <Welcome
         backgroundPic={backgroundPic}
-        welcomeText="Accessibility Support"
+        welcomeText="Events and Activities"
       />
-      <h1>Accessibility Support</h1>
+      <h1>Events and Calendar</h1>
     </div>
   );
 }
 
-export default AccessibilitySupport;
+export default EventsAndActivities;

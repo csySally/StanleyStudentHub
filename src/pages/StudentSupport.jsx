@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/header";
+import Welcome from "../components/welcome";
+import backgroundPic from "../assets/images/support-background.jpeg";
 
 function StudentSupport() {
-    return(
-        <div>
-            <h1>Student Support</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <Welcome backgroundPic={backgroundPic} welcomeText="Student Support" />
+
+      <h1>Student Support</h1>
+    </div>
+  );
 }
 
 export default StudentSupport;

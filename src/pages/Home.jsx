@@ -1,10 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BowingIcon from "../assets/icons/Bowing.svg";
+import Header from "../components/header";
+import Welcome from "../components/welcome";
+import backgroundPic from "../assets/images/home-background.jpeg";
 
 function Home() {
   return (
     <div>
+      <Header />
+      <Welcome
+        backgroundPic={backgroundPic}
+        welcomeText="Welcome to the Student Hub"
+      />
       <h1>Home</h1>
       <img src={BowingIcon} alt="Bowing Icon" />
       <div>
@@ -22,7 +30,7 @@ function Home() {
             <Link to="/accessibility-support">Accessibility Support</Link>
           </li>
           <li>
-            <Link to="/events-and-calendar">Events and Calendar</Link>
+            <Link to="/events-and-activities">Events and Activities</Link>
           </li>
           <li>
             <Link to="/important-contacts">Important Contacts</Link>

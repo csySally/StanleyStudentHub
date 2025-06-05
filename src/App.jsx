@@ -1,14 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
 import Home from "./pages/Home";
 import StudentSupport from "./pages/StudentSupport";
 import WBTSupport from "./pages/WBTSupport";
 import AccessibilitySupport from "./pages/AccessibilitySupport";
 import ITSupport from "./pages/ITSupport";
-import EventsAndCalendar from "./pages/EventsAndCalendar";
 import ImportantContacts from "./pages/ImportantContacts";
 import RequestsAndFeedbacks from "./pages/RequestsAndFeedbacks";
+import EventsAndActivities from "./pages/EventsAndActivities";
 
 function App() {
   return (
@@ -23,7 +22,10 @@ function App() {
             element={<AccessibilitySupport />}
           />
           <Route path="/it-support" element={<ITSupport />} />
-          <Route path="/events-and-calendar" element={<EventsAndCalendar />} />
+          <Route
+            path="/events-and-activities"
+            element={<EventsAndActivities />}
+          />
           <Route path="/important-contacts" element={<ImportantContacts />} />
           <Route
             path="/requests-and-feedbacks"
