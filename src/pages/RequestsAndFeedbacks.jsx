@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/header";
 
 function RequestsAndFeedbacks() {
-    return(
-        <div>
-            <h1>Requests and Feedbacks</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <h1>Requests and Feedbacks</h1>
+    </div>
+  );
 }
 
 export default RequestsAndFeedbacks;

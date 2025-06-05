@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/header";
 
 function EventsAndCalendar() {
-    return(
-        <div>
-            <h1>Events and Calendar</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <h1>Events and Calendar</h1>
+    </div>
+  );
 }
 
 export default EventsAndCalendar;

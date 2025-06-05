@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BowingIcon from "../assets/icons/Bowing.svg";
+import Header from "../components/header";
 
 function Home() {
   return (
     <div>
+      <Header />
       <h1>Home</h1>
       <img src={BowingIcon} alt="Bowing Icon" />
       <div>
