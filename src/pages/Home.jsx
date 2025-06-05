@@ -2,11 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BowingIcon from "../assets/icons/Bowing.svg";
 import Header from "../components/header";
+import Welcome from "../components/welcome";
+import backgroundPic from "../assets/images/home-background.jpeg";
 
 function Home() {
   return (
     <div>
       <Header />
+      <Welcome
+        backgroundPic={backgroundPic}
+        welcomeText="Welcome to the Student Hub"
+      />
       <h1>Home</h1>
       <img src={BowingIcon} alt="Bowing Icon" />
       <div>
