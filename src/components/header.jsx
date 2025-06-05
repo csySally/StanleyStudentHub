@@ -15,7 +15,9 @@ function Header() {
       </div>
       <div className="nav-container">
         <div className="nav-text-container">
-          <p className="nav-text">Home</p>
+          <p className="nav-text">
+            <a href="/">Home</a>
+          </p>
           <img src={Show} alt="" className="nav-show-arrow" />
         </div>
         <img src={Search} alt="" className="nav-search-icon" />

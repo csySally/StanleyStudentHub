@@ -30,7 +30,7 @@
   margin-left: -10%;
 }
 
-.hub-text {
+.hub-text{
   font-weight: 700;
   font-size: 22px;
   color: #ffffff;   
@@ -54,7 +54,7 @@
   margin-right: 20%;
 }
 
-.nav-text {
+.nav-text > a{
   display: flex;
   align-items: center;
   gap: 24px;
@@ -62,6 +62,11 @@
   font-weight: 600;
   font-size: 20px;
   font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+.nav-text > a:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
 }
 
 .nav-show-arrow {
