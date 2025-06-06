@@ -20,6 +20,8 @@ function Home() {
         title="What's Happening"
         backgroundColor="#00007B"
         textColor="#fff"
+        toMore={true}
+        toLink="/events-and-activities"
       />
       <div>
         <ul>
