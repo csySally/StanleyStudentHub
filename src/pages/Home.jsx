@@ -20,6 +20,13 @@ function Home() {
         title="What's Happening"
         backgroundColor="#00007B"
         textColor="#fff"
+        toMore={false}
+      />
+      <SwiperCom slides={homeSlides} />
+      <Heading
+        title="Coming Events"
+        backgroundColor="#00007B"
+        textColor="#fff"
         toMore={true}
         toLink="/events-and-activities"
       />
@@ -48,7 +55,7 @@ function Home() {
           </li>
         </ul>
       </div>
-      <SwiperCom slides={homeSlides} />
+
       <Footer />
     </div>
   );
