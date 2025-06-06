@@ -6,38 +6,9 @@ import Welcome from "../components/Welcome";
 import Footer from "../components/Footer";
 import SwiperCom from "../components/SwiperCom";
 import backgroundPic from "../assets/images/home-background.jpeg";
-import home1 from "../assets/images/home1.jpeg";
-import home2 from "../assets/images/home2.jpeg";
-import home3 from "../assets/images/home3.jpeg";
-import home4 from "../assets/images/home4.jpeg";
+import { homeSlides } from "../config/homeConfig";
 
 function Home() {
-  const slides = [
-    {
-      title: "Welcome to the Student Hub",
-      description:
-        "The Student Hub is a platform for students to connect with each other and share their experiences.",
-      image: home1,
-    },
-    {
-      title: "Welcome to the Student Hub",
-      description:
-        "The Student Hub is a platform for students to connect with each other and share their experiences.",
-      image: home2,
-    },
-    {
-      title: "Welcome to the Student Hub",
-      description:
-        "The Student Hub is a platform for students to connect with each other and share their experiences.",
-      image: home3,
-    },
-    {
-      title: "Welcome to the Student Hub",
-      description:
-        "The Student Hub is a platform for students to connect with each other and share their experiences.",
-      image: home4,
-    },
-  ];
   return (
     <div>
       <Header />
@@ -72,7 +43,7 @@ function Home() {
           </li>
         </ul>
       </div>
-      <SwiperCom slides={slides} />
+      <SwiperCom slides={homeSlides} />
       <Footer />
     </div>
   );
