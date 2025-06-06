@@ -1,0 +1,7 @@
+.event-cards-container {
+  width: 100%;
+  height: 400px;
+  background-color: #00007B;
+  display: flex;
+  justify-content: center;
+}

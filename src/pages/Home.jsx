@@ -5,8 +5,12 @@ import Welcome from "../components/Welcome";
 import Footer from "../components/Footer";
 import SwiperCom from "../components/SwiperCom";
 import Heading from "../components/Heading";
+import EventCard from "../components/EventCard";
 import backgroundPic from "../assets/images/home-background.jpeg";
 import { homeSlides } from "../config/homeConfig";
+import { EventCards } from "../config/eventCardConfig";
+
+import "../styles/home.css";
 
 function Home() {
   return (
@@ -30,6 +34,9 @@ function Home() {
         toMore={true}
         toLink="/events-and-activities"
       />
+      <div className="event-cards-container">
+        <EventCard cards={EventCards} />
+      </div>
       <div>
         <ul>
           <li>
