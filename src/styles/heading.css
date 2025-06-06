@@ -1,0 +1,10 @@
+h1{
+    height: 80px;
+    width: 100%;
+    font-family: "Bowlby One", sans-serif;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    margin: 0;
+}
