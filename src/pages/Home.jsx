@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import BowingIcon from "../assets/icons/Bowing.svg";
 import Header from "../components/header";
 import Welcome from "../components/welcome";
+import Footer from "../components/footer";
 import backgroundPic from "../assets/images/home-background.jpeg";
 
 function Home() {
@@ -40,6 +41,7 @@ function Home() {
           </li>
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }

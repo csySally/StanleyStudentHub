@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import Welcome from "../components/welcome";
+import Footer from "../components/footer";
 import backgroundPic from "../assets/images/events-background.jpeg";
 
 function EventsAndActivities() {
@@ -12,6 +13,7 @@ function EventsAndActivities() {
         welcomeText="Events and Activities"
       />
       <h1>Events and Calendar</h1>
+      <Footer />
     </div>
   );
 }
