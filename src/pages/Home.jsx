@@ -6,9 +6,11 @@ import Footer from "../components/Footer";
 import SwiperCom from "../components/SwiperCom";
 import Heading from "../components/Heading";
 import EventCard from "../components/EventCard";
+import Discover from "../components/Discover";
 import backgroundPic from "../assets/images/home-background.jpeg";
 import { homeSlides } from "../config/homeConfig";
 import { EventCards } from "../config/eventCardConfig";
+import { DiscoverCards } from "../config/discoverConfig";
 
 import "../styles/home.css";
 
@@ -36,6 +38,15 @@ function Home() {
       />
       <div className="event-cards-container">
         <EventCard cards={EventCards} />
+      </div>
+      <Heading
+        title="Discover"
+        backgroundColor="#fff"
+        textColor="#00007B"
+        toMore={false}
+      />
+      <div className="discover-cards-container">
+        <Discover cards={DiscoverCards} />
       </div>
       <div>
         <ul>
