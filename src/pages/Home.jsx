@@ -61,7 +61,9 @@ function Home() {
         textColor="#00007B"
       />
       <InfoCard homeCardData={homeCardData} />
-      <Outerlink outerLink={homeOuterLink} />
+      <div className="home-outerlink-container">
+        <Outerlink outerLink={homeOuterLink} />
+      </div>
       <div>
         <ul>
           <li>

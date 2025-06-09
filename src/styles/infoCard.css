@@ -1,7 +1,7 @@
 .info-card {
   display: flex;
   width: auto;
-  height: 240px;
+  height: 250px;
   padding: 2% 10% 0 10%;
   justify-content: space-between;
 }

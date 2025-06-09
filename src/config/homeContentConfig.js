@@ -130,10 +130,12 @@ export const homeOuterLink = [
     logo: outerLink1,
     title: "Canvas",
     description: "Access your course materials and assessments",
+    link: "https://stanleycollege.instructure.com/login/canvas",
   },
   {
     logo: outerLink2,
     title: "Student Portal",
     description: "View your class schedule, results and invoices",
+    link: "https://perth.equatorit.net/StudentPortal/#public/login/SIC",
   },
 ];

@@ -17,4 +17,10 @@
 
 }
  
-  
+.home-outerlink-container {
+  height: 300px;
+  background-color: #00007B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
