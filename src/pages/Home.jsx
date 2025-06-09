@@ -8,10 +8,12 @@ import Heading from "../components/Heading";
 import EventCard from "../components/EventCard";
 import Discover from "../components/Discover";
 import SecondHeading from "../components/SecondHeading";
+import InfoCard from "../components/InfoCard";
 import backgroundPic from "../assets/images/home-background.jpeg";
 import { homeSlides } from "../config/homeConfig";
 import { EventCards } from "../config/eventCardConfig";
 import { DiscoverCards } from "../config/discoverConfig";
+import { homeCardData } from "../config/homeCardConfig";
 
 import "../styles/home.css";
 
@@ -54,6 +56,7 @@ function Home() {
         backgroundColor="#fff"
         textColor="#00007B"
       />
+      <InfoCard homeCardData={homeCardData} />
       <div>
         <ul>
           <li>
