@@ -7,6 +7,7 @@ import SwiperCom from "../components/SwiperCom";
 import Heading from "../components/Heading";
 import EventCard from "../components/EventCard";
 import Discover from "../components/Discover";
+import SecondHeading from "../components/SecondHeading";
 import backgroundPic from "../assets/images/home-background.jpeg";
 import { homeSlides } from "../config/homeConfig";
 import { EventCards } from "../config/eventCardConfig";
@@ -48,6 +49,11 @@ function Home() {
       <div className="discover-cards-container">
         <Discover cards={DiscoverCards} />
       </div>
+      <SecondHeading
+        title="Need Immediate Assistance?"
+        backgroundColor="#fff"
+        textColor="#00007B"
+      />
       <div>
         <ul>
           <li>
