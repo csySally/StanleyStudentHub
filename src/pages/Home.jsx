@@ -9,11 +9,15 @@ import EventCard from "../components/EventCard";
 import Discover from "../components/Discover";
 import SecondHeading from "../components/SecondHeading";
 import InfoCard from "../components/InfoCard";
+import Outerlink from "../components/Outerlink";
 import backgroundPic from "../assets/images/home-background.jpeg";
-import { homeSlides } from "../config/homeConfig";
-import { EventCards } from "../config/eventCardConfig";
-import { DiscoverCards } from "../config/discoverConfig";
-import { homeCardData } from "../config/homeCardConfig";
+import {
+  homeSlides,
+  homeOuterLink,
+  EventCards,
+  DiscoverCards,
+  homeCardData,
+} from "../config/homeContentConfig";
 
 import "../styles/home.css";
 
@@ -57,6 +61,7 @@ function Home() {
         textColor="#00007B"
       />
       <InfoCard homeCardData={homeCardData} />
+      <Outerlink outerLink={homeOuterLink} />
       <div>
         <ul>
           <li>
