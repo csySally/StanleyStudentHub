@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     margin-top: 20px;
+    justify-content: space-between;
 }
 
 .second-heading{
@@ -19,4 +20,13 @@
     left: 10%;
     top: 65%;
     width: 200px;
+}
+
+.second-heading-container p{
+    margin-right: 5%;
+    font-size: 18px;
+}
+
+.second-heading-container a{
+    text-decoration: none;
 }

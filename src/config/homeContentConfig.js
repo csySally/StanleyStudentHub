@@ -14,6 +14,10 @@ import home3 from "../assets/images/home3.jpeg";
 import home4 from "../assets/images/home4.jpeg";
 import outerLink1 from "../assets/icons/Easel.png";
 import outerLink2 from "../assets/icons/Browser.png";
+import repre1 from "../assets/images/repre1.png";
+import repre2 from "../assets/images/repre2.png";
+import repre3 from "../assets/images/repre3.png";
+import repre4 from "../assets/images/repre4.png";
 
 export const DiscoverCards = [
   {
@@ -137,5 +141,29 @@ export const homeOuterLink = [
     title: "Student Portal",
     description: "View your class schedule, results and invoices",
     link: "https://perth.equatorit.net/StudentPortal/#public/login/SIC",
+  },
+];
+
+export const studentRepresentative = [
+  {
+    image: repre1,
+    name: "Amy Smith",
+    position: "Bachelor of Business",
+  },
+  {
+    image: repre2,
+    name: "John Doe",
+    position: "Bachelor of Nursing",
+  },
+
+  {
+    image: repre3,
+    name: "Ben Parker",
+    position: "Diploma of Cookery",
+  },
+  {
+    image: repre4,
+    name: "Mia Johnson",
+    position: "Diploma of Hospitality",
   },
 ];

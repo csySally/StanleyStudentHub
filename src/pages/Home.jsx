@@ -59,6 +59,8 @@ function Home() {
         title="Need Immediate Assistance?"
         backgroundColor="#fff"
         textColor="#00007B"
+        toMore={true}
+        toLink="/important-contacts"
       />
       <InfoCard homeCardData={homeCardData} />
       <div className="home-outerlink-container">

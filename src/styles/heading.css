@@ -16,11 +16,11 @@
     margin: 0;
 }
 
-p{
+.heading-container p{
     margin-right: 5%;
     font-size: 18px;
 }
 
-a{
+.heading-container a{
     text-decoration: none;
 }
