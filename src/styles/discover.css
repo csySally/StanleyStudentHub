@@ -8,6 +8,9 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
     border-radius: 10px;
+    position: relative; 
+    z-index: 2;
+    background-color: white;
   }
   
  .discover-card-item{
@@ -56,4 +59,28 @@
     font-weight: bold;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .discover {
+   width: 100%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ .oval1{
+   position: absolute;
+   z-index: 1; 
+   top: 10%;
+   left: -10%;
+   width: 300px; 
+   height: 300px;
+ }
+
+ .oval2{
+   position: absolute;
+   z-index: 1; 
+   top: -5%;
+   right: -10%;
+   width: 340px; 
  }
