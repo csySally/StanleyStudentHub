@@ -1,0 +1,11 @@
+.qalist-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  margin: 50px 0;
+  background-color: #f2f2f2;
+}

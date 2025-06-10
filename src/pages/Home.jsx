@@ -10,6 +10,8 @@ import Discover from "../components/Discover";
 import SecondHeading from "../components/SecondHeading";
 import InfoCard from "../components/InfoCard";
 import Outerlink from "../components/Outerlink";
+import StudentRepre from "../components/StudentRepre";
+import QAList from "../components/Q&A/QAList";
 import backgroundPic from "../assets/images/home-background.jpeg";
 import {
   homeSlides,
@@ -17,6 +19,8 @@ import {
   EventCards,
   DiscoverCards,
   homeCardData,
+  studentRepresentative,
+  qaList,
 } from "../config/homeContentConfig";
 
 import "../styles/home.css";
@@ -66,6 +70,8 @@ function Home() {
       <div className="home-outerlink-container">
         <Outerlink outerLink={homeOuterLink} />
       </div>
+      <StudentRepre studentRepresentative={studentRepresentative} />
+      <QAList qaList={qaList} />
       <div>
         <ul>
           <li>

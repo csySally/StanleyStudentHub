@@ -149,21 +149,63 @@ export const studentRepresentative = [
     image: repre1,
     name: "Amy Smith",
     position: "Bachelor of Business",
+    description:
+      "I'm a student representative for the Bachelor of Business program. I'm here to help you with any questions you have about the program. I find the program very interesting and I'm looking forward to the future.",
   },
   {
     image: repre2,
     name: "John Doe",
     position: "Bachelor of Nursing",
+    description:
+      "I love Stanley College, it's a great place to study and I'm looking forward to the future. During the course, I've learned a lot and I'm looking forward to the future.",
   },
 
   {
     image: repre3,
     name: "Ben Parker",
     position: "Diploma of Cookery",
+    description:
+      "I'm a student representative for the Diploma of Cookery program. I'm here to help you with any questions you have about the program. I find the program very interesting and I'm looking forward to the future.",
   },
   {
     image: repre4,
     name: "Mia Johnson",
     position: "Diploma of Hospitality",
+    description:
+      "I'm a student representative for the Diploma of Hospitality program. I'm here to help you with any questions you have about the program. I find the program very interesting and I'm looking forward to the future.",
+  },
+];
+
+export const qaList = [
+  {
+    question: "What is the best way to study for a test?",
+    answer:
+      "The best way to study for a test is to study the material and practice the material. So, you can go to the school website and find the material and practice the material. And you can also ask your teacher for help. Don't forget to ask your teacher for help if you need it. If you need more information, you can go to the school website and find the material and practice the material.",
+    button: "Ask Teacher",
+    link: "https://www.google.com",
+  },
+  {
+    question: "What do I do if I am sick?",
+    answer:
+      "If you are sick, please stay home and rest. If you are feeling unwell, please contact your teacher or the school nurse.",
+  },
+  {
+    question: "How do I request timetable changes?",
+    answer:
+      "If you need to request a timetable change, please contact your teacher or the school office.",
+    button: "View More",
+    link: "https://www.google.com",
+  },
+  {
+    question: "Can I change my course?",
+    answer:
+      "Yes, you can change your course. Please contact the school office to request a course change. And some of the courses are available on the school website.",
+  },
+  {
+    question: "What if I forget to pay my fees?",
+    answer:
+      "If you forget to pay your fees, please contact the school office to pay your fees. And some of the fees are due on the first day of the term. Policy and procedure is available on the school website.",
+    button: "Go to Dashboard",
+    link: "https://www.google.com",
   },
 ];
