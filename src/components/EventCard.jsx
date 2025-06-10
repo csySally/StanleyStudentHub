@@ -1,0 +1,23 @@
+import React from "react";
+import "../styles/eventCard.css";
+
+function EventCard({ cards }) {
+  return (
+    <div className="cards-container">
+      {cards.map((card, index) => (
+        <div key={index} className="card-item">
+          <div className="card-item-image">
+            <img src={card.image} alt={card.title} />
+          </div>
+          <div className="card-item-content">
+            <h5>{card.date}</h5>
+            <h3>{card.title}</h3>
+            <p>{card.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default EventCard;

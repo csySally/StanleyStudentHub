@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/header";
-import Welcome from "../components/welcome";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Welcome from "../components/Welcome";
+import Footer from "../components/Footer";
 import backgroundPic from "../assets/images/events-background.jpeg";
 
 function EventsAndActivities() {

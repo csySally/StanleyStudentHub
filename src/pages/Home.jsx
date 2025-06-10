@@ -1,10 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BowingIcon from "../assets/icons/Bowing.svg";
-import Header from "../components/header";
-import Welcome from "../components/welcome";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Welcome from "../components/Welcome";
+import Footer from "../components/Footer";
+import SwiperCom from "../components/SwiperCom";
+import Heading from "../components/Heading";
+import EventCard from "../components/EventCard";
+import Discover from "../components/Discover";
+import SecondHeading from "../components/SecondHeading";
+import InfoCard from "../components/InfoCard";
+import Outerlink from "../components/Outerlink";
+import StudentRepre from "../components/StudentRepre";
+import QAList from "../components/Q&A/QAList";
 import backgroundPic from "../assets/images/home-background.jpeg";
+import {
+  homeSlides,
+  homeOuterLink,
+  EventCards,
+  DiscoverCards,
+  homeCardData,
+  studentRepresentative,
+  qaList,
+} from "../config/homeContentConfig";
+
+import "../styles/home.css";
 
 function Home() {
   return (
@@ -14,8 +33,45 @@ function Home() {
         backgroundPic={backgroundPic}
         welcomeText="Welcome to the Student Hub"
       />
-      <h1>Home</h1>
-      <img src={BowingIcon} alt="Bowing Icon" />
+      <Heading
+        title="What's Happening"
+        backgroundColor="#00007B"
+        textColor="#fff"
+        toMore={false}
+      />
+      <SwiperCom slides={homeSlides} />
+      <Heading
+        title="Coming Events"
+        backgroundColor="#00007B"
+        textColor="#fff"
+        toMore={true}
+        toLink="/events-and-activities"
+      />
+      <div className="event-cards-container">
+        <EventCard cards={EventCards} />
+      </div>
+      <Heading
+        title="Discover"
+        backgroundColor="#fff"
+        textColor="#00007B"
+        toMore={false}
+      />
+      <div className="discover-cards-container">
+        <Discover cards={DiscoverCards} />
+      </div>
+      <SecondHeading
+        title="Need Immediate Assistance?"
+        backgroundColor="#fff"
+        textColor="#00007B"
+        toMore={true}
+        toLink="/important-contacts"
+      />
+      <InfoCard homeCardData={homeCardData} />
+      <div className="home-outerlink-container">
+        <Outerlink outerLink={homeOuterLink} />
+      </div>
+      <StudentRepre studentRepresentative={studentRepresentative} />
+      <QAList qaList={qaList} />
       <div>
         <ul>
           <li>
@@ -41,6 +97,7 @@ function Home() {
           </li>
         </ul>
       </div>
+
       <Footer />
     </div>
   );

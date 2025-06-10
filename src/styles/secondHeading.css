@@ -1,0 +1,32 @@
+.second-heading-container{
+    width: auto;
+    height: 70px;
+    position: relative;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.second-heading{
+    font-size: 24px;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+}
+
+.second-heading-container img{
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    width: 200px;
+}
+
+.second-heading-container p{
+    margin-right: 5%;
+    font-size: 18px;
+}
+
+.second-heading-container a{
+    text-decoration: none;
+}

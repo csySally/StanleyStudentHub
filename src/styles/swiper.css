@@ -1,0 +1,83 @@
+.swiper {
+    width: 100%;
+    height: 600px; 
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide > div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  
+  .mask-content {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 20px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mask-content h3 {
+    width: 80%;
+    font-size: 34px;
+    margin: 60px 0 40px 0;
+    line-height: 1.2;
+  }
+  
+  .mask-content p {
+    width: 70%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 20px;
+    text-align: left;
+    white-space: pre-line;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #d3d3d3;
+    margin: 0 20px;
+  }
+  
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    color: #fff;
+  }
