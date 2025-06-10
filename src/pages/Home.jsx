@@ -13,6 +13,8 @@ import Outerlink from "../components/Outerlink";
 import StudentRepre from "../components/StudentRepre";
 import QAList from "../components/Q&A/QAList";
 import backgroundPic from "../assets/images/home-background.jpeg";
+import slogan from "../assets/images/slogan.png";
+
 import {
   homeSlides,
   homeOuterLink,
@@ -33,6 +35,9 @@ function Home() {
         backgroundPic={backgroundPic}
         welcomeText="Welcome to the Student Hub"
       />
+      <div className="slogan">
+        <img src={slogan} alt="" />
+      </div>
       <Heading
         title="What's Happening"
         backgroundColor="#00007B"
@@ -41,7 +46,7 @@ function Home() {
       />
       <SwiperCom slides={homeSlides} />
       <Heading
-        title="Coming Events"
+        title="Upcoming Events"
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={true}
@@ -59,6 +64,7 @@ function Home() {
       <div className="discover-cards-container">
         <Discover cards={DiscoverCards} />
       </div>
+
       <SecondHeading
         title="Need Immediate Assistance?"
         backgroundColor="#fff"
