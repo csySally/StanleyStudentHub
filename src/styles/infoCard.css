@@ -1,18 +1,20 @@
 .info-card {
   display: flex;
   width: auto;
-  height: 250px;
-  padding: 2% 10% 0 10%;
-  justify-content: space-between;
+  height: auto;
+  padding: 2% 10% 2% 10%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .info-card-item {
   height: 100%;
-  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  flex: 1;
+  min-width: 0;
 }
 
 .info-card-item img {
@@ -34,4 +36,3 @@
   margin-top: -5px;
   font-size: 0.9rem;
 }
-
