@@ -3,7 +3,15 @@ import "../styles/secondHeading.css";
 import vector from "../assets/images/vector.png";
 import { Link } from "react-router-dom";
 
-function SecondHeading({ title, backgroundColor, textColor, toMore, toLink }) {
+function SecondHeading({
+  title,
+  backgroundColor,
+  textColor,
+  toMore,
+  toLink,
+  isLink,
+  onMoreClick,
+}) {
   return (
     <div
       className="second-heading-container"
@@ -14,9 +22,18 @@ function SecondHeading({ title, backgroundColor, textColor, toMore, toLink }) {
         <img src={vector} alt="vector" className="vector" />
       </div>
       <p style={{ display: toMore ? "block" : "none" }}>
-        <Link to={toLink} style={{ color: textColor }} target="_blank">
-          {">>> More"}
-        </Link>
+        {isLink ? (
+          <Link to={toLink} style={{ color: textColor }} target="_blank">
+            {">>> More"}
+          </Link>
+        ) : (
+          <span
+            style={{ color: textColor, cursor: "pointer" }}
+            onClick={onMoreClick}
+          >
+            {">>> More"}
+          </span>
+        )}
       </p>
     </div>
   );

@@ -7,6 +7,7 @@ import StuffCard from "../components/StuffCard";
 import BigContent from "../components/BigContent";
 import InfoCard from "../components/InfoCard";
 import SecondHeading from "../components/SecondHeading";
+import QAList from "../components/Q&A/QAList";
 import backgroundPic from "../assets/images/support-background.jpeg";
 import ellipse from "../assets/images/Ellipse.png";
 import {
@@ -36,7 +37,7 @@ function StudentSupport() {
         textColor="#00007B"
         toMore={false}
       />
-      <StuffCard stuffCard={studentSupport} />
+      <StuffCard stuffCard={studentSupport} showAll={true} />
       <Heading
         title="Other Services"
         backgroundColor="#00007B"
@@ -44,6 +45,13 @@ function StudentSupport() {
         toMore={false}
       />
       <BigContent bigContent={otherServices} />
+      <Heading
+        title="FAQs"
+        backgroundColor="#fff"
+        textColor="#00007B"
+        toMore={false}
+      />
+      <QAList qaList={qaList} />
       <Footer />
     </div>
   );

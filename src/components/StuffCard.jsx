@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/stuffCard.css";
 
-function StuffCard({ stuffCard }) {
+function StuffCard({ stuffCard, showAll }) {
   return (
-    <div className="stuffCard-container">
+    <div className={`stuffCard-container ${showAll ? "" : "hide"}`}>
       {stuffCard.map((stuff, index) => (
         <div key={index} className="stuffCard-container-item">
           <div className="stuffCard-item-img">
