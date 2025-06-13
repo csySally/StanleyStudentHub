@@ -1,0 +1,18 @@
+.arrowheading-container{
+    height: 100px;
+    width: auto;
+    background-color: #00007B;
+    display: flex;
+    padding: 0 15%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.arrowheading-container>p{
+    color: #fff;
+    font-family: "Acme", sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.6px;
+    margin: 0 3%;
+}
