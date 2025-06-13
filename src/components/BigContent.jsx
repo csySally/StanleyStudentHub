@@ -36,6 +36,7 @@ function BigContent({ bigContent }) {
               ))}
             </p>
             <button
+              style={{ display: con.button ? "block" : "none" }}
               onClick={() => {
                 window.open(con.url);
               }}
