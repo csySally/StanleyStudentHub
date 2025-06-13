@@ -1,0 +1,174 @@
+import ss1 from "../assets/images/ss1.png";
+import ss2 from "../assets/images/ss2.png";
+import ss3 from "../assets/images/ss3.png";
+import ss4 from "../assets/images/ss4.png";
+import ss5 from "../assets/images/ss5.png";
+import ss6 from "../assets/images/ss6.png";
+import accounting from "../assets/images/accounting.jpg";
+import bs from "../assets/images/bs.png";
+import it from "../assets/images/it.png";
+
+export const executive = [
+  {
+    title: "Student Support Team",
+    name: "Nga (Elisa) Tong",
+    campus: "(Perth City Campus)",
+    image: ss1,
+  },
+  {
+    title: "Student Support Team",
+    name: "Jenisha Huluss",
+    campus: "(West Perth Campus)",
+    image: ss2,
+  },
+  {
+    title: "Student Support Team",
+    name: "Sujana Pokhrel",
+    campus: "(West Perth Campus)",
+    image: ss3,
+  },
+  {
+    title: "Student Support Team",
+    name: "Jindal Patel",
+    campus: "(West Perth Campus)",
+    image: ss4,
+  },
+  {
+    title: "Schedules Team",
+    name: "Darshwini Poonen",
+    campus: "(Online Meetings)",
+    image: ss5,
+  },
+  {
+    title: "Schedules Team",
+    name: "Jaynata Pandeea",
+    campus: "(West Perth Campus)",
+    image: ss6,
+  },
+];
+
+export const falcuty = [
+  {
+    title: "Student Support Team",
+    name: "Nga (Elisa) Tong",
+    campus: "(Perth City Campus)",
+    image: ss1,
+  },
+  {
+    title: "Student Support Team",
+    name: "Jenisha Huluss",
+    campus: "(West Perth Campus)",
+    image: ss2,
+  },
+  {
+    title: "Student Support Team",
+    name: "Sujana Pokhrel",
+    campus: "(West Perth Campus)",
+    image: ss3,
+  },
+  {
+    title: "Student Support Team",
+    name: "Jindal Patel",
+    campus: "(West Perth Campus)",
+    image: ss4,
+  },
+  {
+    title: "Schedules Team",
+    name: "Darshwini Poonen",
+    campus: "(Online Meetings)",
+    image: ss5,
+  },
+  {
+    title: "Schedules Team",
+    name: "Jaynata Pandeea",
+    campus: "(West Perth Campus)",
+    image: ss6,
+  },
+];
+
+export const support = [
+  {
+    title: "Student Support Team",
+    name: "Nga (Elisa) Tong",
+    campus: "(Perth City Campus)",
+    image: ss1,
+  },
+  {
+    title: "Student Support Team",
+    name: "Jenisha Huluss",
+    campus: "(West Perth Campus)",
+    image: ss2,
+  },
+  {
+    title: "Student Support Team",
+    name: "Sujana Pokhrel",
+    campus: "(West Perth Campus)",
+    image: ss3,
+  },
+  {
+    title: "Student Support Team",
+    name: "Jindal Patel",
+    campus: "(West Perth Campus)",
+    image: ss4,
+  },
+  {
+    title: "Schedules Team",
+    name: "Darshwini Poonen",
+    campus: "(Online Meetings)",
+    image: ss5,
+  },
+  {
+    title: "Schedules Team",
+    name: "Jaynata Pandeea",
+    campus: "(West Perth Campus)",
+    image: ss6,
+  },
+];
+
+export const employment = [
+  {
+    title: "Student Support Team",
+    name: "Nga (Elisa) Tong",
+    campus: "(Perth City Campus)",
+    image: ss1,
+  },
+  {
+    title: "Student Support Team",
+    name: "Jenisha Huluss",
+    campus: "(West Perth Campus)",
+    image: ss2,
+  },
+];
+
+export const studentRe = [
+  {
+    name: "Jamie Wang",
+    content: `Hi! I’m Jamie from China, currently studying the Diploma of Business at Stanley College. I’m passionate about marketing and hope to run my own online business one day. I love meeting people from different cultures and learning new perspectives. As a student representative, I’m always here to support and speak up for fellow students!`,
+    button: "Talk to Me",
+    image: bs,
+    url: "",
+  },
+  {
+    name: "Aaron Patel",
+    content: `Hey everyone! I’m Aaron from India. I’m studying Advanced Diploma of Information Technology and have a strong interest in cybersecurity and cloud solutions. Outside of class, I enjoy coding and playing chess. I joined the student rep team because I want to help create a more connected and supportive learning environment for all.`,
+    button: "Talk to Me",
+    image: accounting,
+    reverse: true,
+    url: "",
+  },
+  {
+    name: "Sophie Nguyen",
+    content: `Hello! I’m Sophie, originally from Vietnam, and I’m pursuing my Certificate IV in Hospitality. I’m passionate about customer service and aspire to work in luxury hotels around the world. I joined the student rep team because I want to help new students feel welcomed and confident in their journey at Stanley.`,
+    button: "Talk to Me",
+    image: it,
+    url: "",
+  },
+  {
+    name: "Jacob Smith",
+    content: `G’day! I’m Jacob, born and raised in Perth. I’m studying the Diploma of Leadership and Management because I enjoy working with people and solving problems. I joined the student representative team to be a voice for both domestic and international students, and to contribute to making Stanley College an even better place to learn and grow.`,
+    button: "Talk to Me",
+    image: it,
+    url: "",
+    reverse: true,
+  },
+];

@@ -35,7 +35,13 @@ function BigContent({ bigContent }) {
                 </React.Fragment>
               ))}
             </p>
-            <button>{con.button}</button>
+            <button
+              onClick={() => {
+                window.open(con.url);
+              }}
+            >
+              {con.button}
+            </button>
           </div>
         </div>
       ))}

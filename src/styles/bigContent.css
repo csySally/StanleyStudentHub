@@ -46,7 +46,7 @@
     left: 10%;
 }
 
-.bigContent-item-content>h2{
+.bigContent-item-content h2{
     font-family: "Acme", sans-serif;
     font-size: 28px;
 }
@@ -67,5 +67,5 @@
     font-family: "Acme", sans-serif;
     padding: 10px 20px;
     font-size: 18px;
-
+    cursor: pointer;
 }

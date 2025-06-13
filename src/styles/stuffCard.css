@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 8%;
+    padding: 0 8% 3% 8%;
     gap: 60px;
 }
 
@@ -62,4 +62,10 @@
     height: 30px;
     padding: 0 20px;
     cursor: pointer;
+}
+
+.stuffCard-container.hide {
+    flex-wrap: wrap;
+    height: 200px;
+    overflow: hidden;
 }

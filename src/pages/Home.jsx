@@ -73,7 +73,7 @@ function Home() {
         textColor="#00007B"
         toMore={false}
       />
-      <InfoCard homeCardData={homeCardData} />
+      <InfoCard cardData={homeCardData} />
       <Heading
         title="Learn"
         backgroundColor="#00007B"

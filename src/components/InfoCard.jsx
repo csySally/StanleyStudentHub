@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/infoCard.css";
 
-function InfoCard({ homeCardData }) {
+function InfoCard({ cardData }) {
   return (
     <div className="info-card">
-      {homeCardData.map((card, index) => (
+      {cardData.map((card, index) => (
         <div key={index} className="info-card-item">
           <img src={card.logo} alt={card.title} />
           <h4>{card.title}</h4>
@@ -15,7 +15,15 @@ function InfoCard({ homeCardData }) {
             {card.description}
           </p>
           <p>
-            <span style={{ fontWeight: "bold" }}>Email:</span> {card.email}
+            <span
+              style={{
+                fontWeight: "bold",
+                display: card.phone ? "block" : "none",
+              }}
+            >
+              Email:
+            </span>{" "}
+            {card.email}
           </p>
           <p style={{ display: card.phone ? "block" : "none" }}>
             <span style={{ fontWeight: "bold" }}>Phone:</span> {card.phone}

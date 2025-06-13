@@ -7,6 +7,10 @@ import ss6 from "../assets/images/ss6.png";
 import accounting from "../assets/images/accounting.jpg";
 import bs from "../assets/images/bs.png";
 import it from "../assets/images/it.png";
+import shield from "../assets/icons/Warning Shield.png";
+import online from "../assets/icons/Online Group Studying.svg";
+import change from "../assets/icons/Change.svg";
+import timetable from "../assets/icons/Timetable.svg";
 
 export const studentSupport = [
   {
@@ -61,6 +65,7 @@ export const otherServices = [
 	•	External Support: Participate in language and networking activities provided by StudyPerth or StudyAdelaide.`,
     button: "Learn More",
     image: bs,
+    url: "https://www.stanleycollege.edu.au/personalised-academic-guidance/",
   },
   {
     name: "Financial Support",
@@ -70,14 +75,16 @@ export const otherServices = [
     button: "Learn More",
     image: accounting,
     reverse: true,
+    url: "https://www.stanleycollege.edu.au/studying-with-us/scholarships-and-financial-assistance/",
   },
   {
-    name: "Academic Support",
+    name: "Complaints & Appeals",
     content: `	•	Submit a Complaint: Use our online form (CAFO) to raise an issue about your course or experience.
 	•	Appeals Process: Learn how to formally appeal academic decisions like grades or progress warnings.
 	•	Your Rights: You’re entitled to support throughout the process, including interpreters and support persons.`,
     button: "Learn More",
     image: it,
+    url: "https://www.stanleycollege.edu.au/studying-with-us/cafo-form/",
   },
 ];
 
@@ -112,5 +119,31 @@ export const qaList = [
       "If you forget to pay your fees, please contact the school office to pay your fees. And some of the fees are due on the first day of the term. Policy and procedure is available on the school website.",
     button: "Go to Dashboard",
     link: "https://www.google.com",
+  },
+];
+
+export const supportCardData = [
+  {
+    logo: shield,
+    title: "Warning Letter Received",
+    description: "Guidance on understanding and responding to warning letters",
+  },
+  {
+    logo: online,
+    title: "Course Progress",
+    description:
+      "Discuss your academic progress and get support to stay on track",
+  },
+  {
+    logo: change,
+    title: "Changing Your Course",
+    description:
+      "Explore your options and the process for changing your course",
+  },
+  {
+    logo: timetable,
+    title: "Changing  Your  Timetable",
+    description:
+      "Find out how to adjust your schedule to better suit your needs",
   },
 ];

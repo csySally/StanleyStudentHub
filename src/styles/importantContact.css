@@ -1,0 +1,13 @@
+.other-contact{
+    width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 2% 25% 0 10%;
+}
+
+.other-contact p{
+    font-size: 18px;
+    color: #00007B;
+}
