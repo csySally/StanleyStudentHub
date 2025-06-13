@@ -142,38 +142,30 @@ export const employment = [
 
 export const studentRe = [
   {
-    name: "Academic Support",
-    content: `	•	Conversation Club: Join weekly sessions at West Perth Campus to practice your English and build confidence in real conversations.
-	•	Academic Writing Help: Book a session with an Academic Support Lecturer to improve your essay writing, referencing, and academic communication.
-	•	External Support: Participate in language and networking activities provided by StudyPerth or StudyAdelaide.`,
+    name: "Jamie Wang",
+    content: `Hi! I’m Jamie from China, currently studying the Diploma of Business at Stanley College. I’m passionate about marketing and hope to run my own online business one day. I love meeting people from different cultures and learning new perspectives. As a student representative, I’m always here to support and speak up for fellow students!`,
     button: "Talk to Me",
     image: bs,
     url: "",
   },
   {
-    name: "Financial Support",
-    content: `	•	Payment Extensions: Apply for a payment plan if you need more time to pay your fees.
-    •	Late Fee Policy: Understand what happens if you miss a payment deadline and how to avoid penalties.
-    •	Support Contacts: Reach out to our finance team for help with invoices, payment methods, or questions.`,
+    name: "Aaron Patel",
+    content: `Hey everyone! I’m Aaron from India. I’m studying Advanced Diploma of Information Technology and have a strong interest in cybersecurity and cloud solutions. Outside of class, I enjoy coding and playing chess. I joined the student rep team because I want to help create a more connected and supportive learning environment for all.`,
     button: "Talk to Me",
     image: accounting,
     reverse: true,
     url: "",
   },
   {
-    name: "Complaints & Appeals",
-    content: `	•	Submit a Complaint: Use our online form (CAFO) to raise an issue about your course or experience.
-	•	Appeals Process: Learn how to formally appeal academic decisions like grades or progress warnings.
-	•	Your Rights: You’re entitled to support throughout the process, including interpreters and support persons.`,
+    name: "Sophie Nguyen",
+    content: `Hello! I’m Sophie, originally from Vietnam, and I’m pursuing my Certificate IV in Hospitality. I’m passionate about customer service and aspire to work in luxury hotels around the world. I joined the student rep team because I want to help new students feel welcomed and confident in their journey at Stanley.`,
     button: "Talk to Me",
     image: it,
     url: "",
   },
   {
-    name: "Complaints & Appeals",
-    content: `	•	Submit a Complaint: Use our online form (CAFO) to raise an issue about your course or experience.
-	•	Appeals Process: Learn how to formally appeal academic decisions like grades or progress warnings.
-	•	Your Rights: You’re entitled to support throughout the process, including interpreters and support persons.`,
+    name: "Jacob Smith",
+    content: `G’day! I’m Jacob, born and raised in Perth. I’m studying the Diploma of Leadership and Management because I enjoy working with people and solving problems. I joined the student representative team to be a voice for both domestic and international students, and to contribute to making Stanley College an even better place to learn and grow.`,
     button: "Talk to Me",
     image: it,
     url: "",
