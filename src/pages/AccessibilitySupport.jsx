@@ -16,6 +16,7 @@ function AccessibilitySupport() {
       />
       <h1>Accessibility Support</h1>
       <ArrowHeading arrowHeadings={arrowHeadings[0]} />
+
       <Footer />
     </div>
   );
