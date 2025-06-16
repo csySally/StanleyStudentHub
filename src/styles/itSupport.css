@@ -1,0 +1,28 @@
+.care-container{
+    height: 250px;
+    display: flex;
+    background-color: #00007B;
+    color: #fff;
+    padding: 0 8% 2% 8%;
+    position: relative;
+}
+
+.care-container-p{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.care-container-p>p{
+    font-size: 17px;
+    line-height: 1.9rem;
+}
+
+.care-container-card{
+    color: #000;
+    position: absolute;
+    top: 10%;
+    right: -40%;
+    width: 130% ;
+}
