@@ -7,6 +7,9 @@ import ss6 from "../assets/images/ss6.png";
 import accounting from "../assets/images/accounting.jpg";
 import bs from "../assets/images/bs.png";
 import it from "../assets/images/it.png";
+import { deAT } from "date-fns/locale";
+
+export const heading1 = "Important Contacts";
 
 export const executive = [
   {
@@ -170,5 +173,39 @@ export const studentRe = [
     image: it,
     url: "",
     reverse: true,
+  },
+];
+
+export const otherContacts = [
+  {
+    name: "Student Services: ",
+    detail: "studentservices@stanleycollege.edu.au | +61863719999 ",
+  },
+  {
+    name: "Academic Support:",
+    detail: "academicsupport@stanleycollege.edu.au",
+  },
+  {
+    name: "Work-Based Training Support:",
+    detail: "wbt@stanleycollege.edu.au",
+  },
+  {
+    name: "Health Support:",
+    detail: "healthsupport@stanleycollege.edu.au",
+  },
+  {
+    name: "IT Support: ",
+    detail: "itsupport@stanleycollege.edu.au",
+  },
+];
+
+export const otherContacts2 = [
+  {
+    name: "Local Police:",
+    detail: "131 444",
+  },
+  {
+    name: "Medical Emergency:",
+    detail: "000",
   },
 ];
