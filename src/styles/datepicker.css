@@ -1,0 +1,31 @@
+.date-picker-button>img{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.react-datepicker-wrapper {
+    height: 40px;
+    width: 180px;
+}
+
+.react-datepicker__input-container {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #d3d3d3;
+}
+
+.date-picker-button{
+    font-family: "Acme", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border:none;
+    cursor: pointer;
+    padding: 0 10px;
+    background-color: #fff;
+    width: auto;
+    font-size: 18px;
+    margin: 0 20px;
+}
