@@ -9,6 +9,8 @@ import ImportantContacts from "./pages/ImportantContacts";
 import RequestsAndFeedbacks from "./pages/RequestsAndFeedbacks";
 import EventsAndActivities from "./pages/EventsAndActivities";
 
+import "react-datepicker/dist/react-datepicker.css";
+
 function App() {
   return (
     <>
