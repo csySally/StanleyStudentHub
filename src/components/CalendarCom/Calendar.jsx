@@ -28,7 +28,12 @@ export default function Calendar({
         </div>
         <div className="my-calendar-grid">
           {days.map((day) => (
-            <div key={day.toISOString()} className="my-calendar-day">
+            <div
+              key={day.toISOString()}
+              className={`my-calendar-day ${
+                isSameDay(day, new Date()) ? "today" : ""
+              }`}
+            >
               <div className="my-calendar-date">
                 <span className="my-day-name">{format(day, "EEE")}</span>
                 <span className="my-day-number">{format(day, "dd")}</span>
