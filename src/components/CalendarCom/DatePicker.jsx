@@ -5,13 +5,20 @@ import Calendar from "../../assets/icons/Calendar.png";
 import "react-datepicker/dist/react-datepicker.css";
 import "../../styles/datepicker.css";
 
-export default function DatePickerComponent() {
+export default function DatePickerComponent({ onDateSelect }) {
   const [selectedDate, setSelectedDate] = useState(new Date());
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    if (onDateSelect) {
+      onDateSelect(date);
+    }
+  };
 
   return (
     <DatePicker
       selected={selectedDate}
-      onChange={(date) => setSelectedDate(date)}
+      onChange={handleDateChange}
       customInput={
         <button className="date-picker-button">
           <img src={Calendar} alt="Calendar Icon" />

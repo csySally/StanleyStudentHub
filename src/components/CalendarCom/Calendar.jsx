@@ -4,7 +4,12 @@ import { format, isSameDay } from "date-fns";
 import "../../styles/calendar.css";
 import { Link } from "react-router-dom";
 
-export default function Calendar({ days, events, calendarTitle }) {
+export default function Calendar({
+  days,
+  events,
+  calendarTitle,
+  onDateSelect,
+}) {
   const getEventsForDay = (day) => {
     return events
       .filter((e) => isSameDay(e.start, day))
@@ -18,7 +23,7 @@ export default function Calendar({ days, events, calendarTitle }) {
         <div className="my-calendar-header">
           <h1>{calendarTitle}</h1>
           <div className="my-calendar-datepicker">
-            <DatePicker />
+            <DatePicker onDateSelect={onDateSelect} />
           </div>
         </div>
         <div className="my-calendar-grid">
