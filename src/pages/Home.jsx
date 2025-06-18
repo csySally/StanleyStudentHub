@@ -117,7 +117,7 @@ function Home() {
         </div>
         <div className="career-content">
           <p>{careerContent}</p>
-          <Link to="./wbt-support" className="career-link">
+          <Link to="/wbt-support" className="career-link">
             {">>> More"}
           </Link>
         </div>

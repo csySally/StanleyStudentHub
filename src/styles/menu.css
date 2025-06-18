@@ -1,0 +1,27 @@
+.menu-container{
+    width: 12vw;
+    height: auto;
+    line-height: 50px;
+    background-color: #00007B;
+    position: absolute;
+    top:8vh;
+    right:2vw;
+    z-index: 100;
+    border-radius: 3px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+.menu-container li{
+    list-style-type:none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0;
+}
+
+.menu-item{
+    color: #fff;
+    text-decoration: none;
+}
