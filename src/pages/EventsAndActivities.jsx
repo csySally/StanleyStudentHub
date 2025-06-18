@@ -52,8 +52,8 @@ function EventsAndActivities() {
       <SwiperCom slides={eventSlides} />
       <Heading
         title={heading2}
-        backgroundColor="#fff"
-        textColor="#00007B"
+        backgroundColor="#00007B"
+        textColor="#fff"
         toMore={false}
       />
       <div className="calendar-container">

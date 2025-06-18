@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "./DatePicker";
-import { format, isSameDay } from "date-fns";
+import { format, isSameDay, isToday } from "date-fns";
 import "../../styles/calendar.css";
 import { Link } from "react-router-dom";
 
@@ -39,7 +39,10 @@ export default function Calendar({
               return dayOfWeek !== 0 && dayOfWeek !== 6;
             })
             .map((day) => (
-              <div key={day.toISOString()} className="my-calendar-day">
+              <div
+                key={day.toISOString()}
+                className={`my-calendar-day ${isToday(day) ? "today" : ""}`}
+              >
                 <div className="my-calendar-date">
                   <span className="my-day-name">{format(day, "EEE")}</span>
                   <span className="my-day-number">{format(day, "dd")}</span>
