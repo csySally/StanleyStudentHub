@@ -10,11 +10,14 @@ import "../styles/importantContact.css";
 
 import backgroundPic from "../assets/images/contacts-background.jpeg";
 import {
+  heading1,
   executive,
   falcuty,
   support,
   employment,
   studentRe,
+  otherContacts,
+  otherContacts2,
 } from "../config/contactContentConfig.js";
 
 function ImportantContacts() {
@@ -28,7 +31,7 @@ function ImportantContacts() {
       <Header />
       <Welcome backgroundPic={backgroundPic} welcomeText="Important Contacts" />
       <Heading
-        title="Key Contacts"
+        title={heading1}
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={false}
@@ -83,30 +86,18 @@ function ImportantContacts() {
       />
       <div className="other-contact">
         <div>
-          <p>
-            <b>Student Services: </b>studentservices@stanleycollege.edu.au |
-            +61863719999
-          </p>
-          <p>
-            <b>Academic Support:</b>academicsupport@stanleycollege.edu.au
-          </p>
-          <p>
-            <b>Work-Based Training Support:</b>wbt@stanleycollege.edu.au 
-          </p>
-          <p>
-            <b>Health Support:</b>healthsupport@stanleycollege.edu.au
-          </p>
-          <p>
-            <b>IT Support: </b>itsupport@stanleycollege.edu.au
-          </p>
+          {otherContacts.map((contact, index) => (
+            <p key={index}>
+              <b>{contact.name}:</b> {contact.detail}
+            </p>
+          ))}
         </div>
         <div>
-          <p>
-            <b>Local Police:</b>131 444
-          </p>
-          <p>
-            <b>Medical Emergency:</b>000
-          </p>
+          {otherContacts2.map((contact, index) => (
+            <p key={index}>
+              <b>{contact.name}:</b> {contact.detail}
+            </p>
+          ))}
         </div>
       </div>
       <Footer />

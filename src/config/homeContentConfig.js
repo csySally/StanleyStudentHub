@@ -19,6 +19,36 @@ import repre2 from "../assets/images/repre2.png";
 import repre3 from "../assets/images/repre3.png";
 import repre4 from "../assets/images/repre4.png";
 
+export const welcomeText = "Welcome to the Student Hub";
+
+export const heading1 = "What's Happening";
+
+export const heading2 = "Upcoming Events";
+
+export const heading3 = "Discover";
+
+export const heading4 = "Learn";
+
+export const secondHeading1 = "Need Immediate Assistance?";
+
+export const secondHeading2 = "Quick Access";
+
+export const secondHeading3 = "Career Development";
+
+export const secondHeading4 = "Meet Our Student Representatives";
+
+export const quickAccess =
+  "Need to check your timetable or access course materials? Use the links below to jump straight to your key systems.";
+
+export const careerContent =
+  "Our Employment Team is here to assist you with your placement needs. Whether you're seeking internships, work experience, or job placements, we’re here to help you every step of the way.";
+
+export const enjoyContent =
+  " At Stanley College, we celebrate diversity and foster an inclusive learning environment. We encourage you to participate in student clubs, societies, and volunteer initiatives to expand your network, make new friends, and develop a sense of belonging within the college community.";
+
+export const faqContent =
+  "Find answers to the questions we get asked the most about studying at Stanley College.";
+
 export const DiscoverCards = [
   {
     title: "Student Support",

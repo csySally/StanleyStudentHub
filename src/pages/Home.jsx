@@ -18,6 +18,15 @@ import oval3 from "../assets/images/oval3.png";
 import oval4 from "../assets/images/oval4.png";
 import career from "../assets/images/career.png";
 import {
+  welcomeText,
+  heading1,
+  heading2,
+  heading3,
+  heading4,
+  secondHeading1,
+  secondHeading2,
+  secondHeading3,
+  secondHeading4,
   homeSlides,
   homeSlides2,
   homeOuterLink,
@@ -26,6 +35,10 @@ import {
   homeCardData,
   studentRepresentative,
   qaList,
+  quickAccess,
+  careerContent,
+  enjoyContent,
+  faqContent,
 } from "../config/homeContentConfig";
 
 import "../styles/home.css";
@@ -34,22 +47,19 @@ function Home() {
   return (
     <div>
       <Header />
-      <Welcome
-        backgroundPic={backgroundPic}
-        welcomeText="Welcome to the Student Hub"
-      />
+      <Welcome backgroundPic={backgroundPic} welcomeText={welcomeText} />
       <div className="slogan">
         <img src={slogan} alt="" />
       </div>
       <Heading
-        title="What's Happening"
+        title={heading1}
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={false}
       />
       <SwiperCom slides={homeSlides} />
       <Heading
-        title="Upcoming Events"
+        title={heading2}
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={true}
@@ -59,7 +69,7 @@ function Home() {
         <EventCard cards={EventCards} />
       </div>
       <Heading
-        title="Discover"
+        title={heading3}
         backgroundColor="#fff"
         textColor="#00007B"
         toMore={false}
@@ -68,30 +78,27 @@ function Home() {
         <Discover cards={DiscoverCards} />
       </div>
       <SecondHeading
-        title="Need Immediate Assistance?"
+        title={secondHeading1}
         backgroundColor="#fff"
         textColor="#00007B"
         toMore={false}
       />
       <InfoCard cardData={homeCardData} />
       <Heading
-        title="Learn"
+        title={heading4}
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={false}
       />
       <SwiperCom slides={homeSlides2} />
       <SecondHeading
-        title="Quick Access"
+        title={secondHeading2}
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={false}
       />
       <div className="accessContent">
-        <p>
-          Need to check your timetable or access course materials? Use the links
-          below to jump straight to your key systems.
-        </p>
+        <p>{quickAccess}</p>
       </div>
       <div className="home-outerlink-container">
         <Outerlink outerLink={homeOuterLink} />
@@ -99,7 +106,7 @@ function Home() {
       </div>
 
       <SecondHeading
-        title="Career Development"
+        title={secondHeading3}
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={false}
@@ -109,11 +116,7 @@ function Home() {
           <img src={career} />
         </div>
         <div className="career-content">
-          <p>
-            Our Employment Team is here to assist you with your placement needs.
-            Whether you're seeking internships, work experience, or job
-            placements, we’re here to help you every step of the way.
-          </p>
+          <p>{careerContent}</p>
           <Link to="./wbt-support" className="career-link">
             {">>> More"}
           </Link>
@@ -126,19 +129,13 @@ function Home() {
           textColor="#00007B"
           toMore={false}
         />
-        <p>
-          At Stanley College, we celebrate diversity and foster an inclusive
-          learning environment.We encourage you to participate in student clubs,
-          societies, and volunteer initiatives to expand your network, make new
-          friends, and develop a sense of belonging within the college
-          community.
-        </p>
+        <p>{enjoyContent}</p>
         <img src={oval4} alt="" className="oval4" />
         <img src={oval4} alt="" className="oval5" />
       </div>
 
       <SecondHeading
-        title="Meet Our Student Representatives"
+        title={secondHeading4}
         backgroundColor="#fff"
         textColor="#00007B"
         toMore={true}
@@ -152,38 +149,9 @@ function Home() {
         toMore={false}
       />
       <div className="faqs">
-        <div className="faqs-content">
-          Find answers to the questions we get asked the most about studying at
-          Stanley College.
-        </div>
+        <div className="faqs-content">{faqContent}</div>
         <QAList qaList={qaList} />
       </div>
-
-      {/*       <div>
-        <ul>
-          <li>
-            <Link to="/it-support">IT Support</Link>
-          </li>
-          <li>
-            <Link to="/wbt-support">WBT Support</Link>
-          </li>
-          <li>
-            <Link to="/student-support">Student Support</Link>
-          </li>
-          <li>
-            <Link to="/accessibility-support">Accessibility Support</Link>
-          </li>
-          <li>
-            <Link to="/events-and-activities">Events and Activities</Link>
-          </li>
-          <li>
-            <Link to="/important-contacts">Important Contacts</Link>
-          </li>
-          <li>
-            <Link to="/requests-and-feedbacks">Requests and Feedbacks</Link>
-          </li>
-        </ul>
-      </div> */}
 
       <Footer />
     </div>
