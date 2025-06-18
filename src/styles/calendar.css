@@ -1,40 +1,61 @@
 .my-calendar-container{
     height:auto;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding: 20px;
+
 }
 
 .my-calendar-header{
     height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 16px;
     position: relative;
 
 }
+.go-today-button {
+  background-color: #00007B;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.go-today-button:hover {
+  background-color: #1a1aff;
+}
 
 .my-calendar-header>h1{
+    width: 100%;
     font-size: 30px;
     font-weight: 600;
     color: #1f2937; 
     margin: 0;
     font-family: "Acme", sans-serif;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
 
 }
 .my-calendar-datepicker{
-    position: absolute;
+
     right: 120px;
 }
   
 
 .my-calendar-grid {
    display: grid;
-   grid-template-columns: repeat(7, 1fr); 
+   grid-template-columns: repeat(5, 1fr); 
    padding: 16px;
 }
 
@@ -46,7 +67,7 @@
    flex-direction: column;
    border-right: none;
 }
-.my-calendar-day:last-child {
+.my-calendar-day:nth-child(5) {
   border-right: 1px solid #d3d3d3;
 }
 
