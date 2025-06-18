@@ -46,9 +46,13 @@
     left: 10%;
 }
 
-.bigContent-item-content h2{
+.bigContent-item-content-h2{
     font-family: "Acme", sans-serif;
     font-size: 28px;
+}
+
+.bigContent-item-content-h2.reverse{
+    margin-right: 80px;
 }
 
 .bigContent-item-content-content{

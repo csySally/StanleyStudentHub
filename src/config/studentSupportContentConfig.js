@@ -12,6 +12,14 @@ import online from "../assets/icons/Online Group Studying.svg";
 import change from "../assets/icons/Change.svg";
 import timetable from "../assets/icons/Timetable.svg";
 
+export const heading1 = "We are Here to Help";
+
+export const heading2 = "Other Services";
+
+export const heading3 = "FAQs";
+
+export const secondHeading1 = "Book a one-on-one 15-minute appointment";
+
 export const studentSupport = [
   {
     title: "Student Support Team",

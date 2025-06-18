@@ -11,6 +11,18 @@ import { deAT } from "date-fns/locale";
 
 export const heading1 = "Important Contacts";
 
+export const heading2 = "Student Representatives";
+
+export const heading3 = "Other Contacts";
+
+export const secondHeading1 = "Executive Management Team";
+
+export const secondHeading2 = "Faculty Manager";
+
+export const secondHeading3 = "Student Support Team";
+
+export const secondHeading4 = "Empolyment Team";
+
 export const executive = [
   {
     title: "Student Support Team",

@@ -11,6 +11,8 @@ import "../styles/importantContact.css";
 import backgroundPic from "../assets/images/contacts-background.jpeg";
 import {
   heading1,
+  heading2,
+  heading3,
   executive,
   falcuty,
   support,
@@ -18,6 +20,10 @@ import {
   studentRe,
   otherContacts,
   otherContacts2,
+  secondHeading1,
+  secondHeading2,
+  secondHeading3,
+  secondHeading4,
 } from "../config/contactContentConfig.js";
 
 function ImportantContacts() {
@@ -37,7 +43,7 @@ function ImportantContacts() {
         toMore={false}
       />
       <SecondHeading
-        title="Executive Management Team"
+        title={secondHeading1}
         backgroundColor="#fff"
         textColor="#00007B"
         toMore={true}
@@ -46,7 +52,7 @@ function ImportantContacts() {
       />
       <StuffCard stuffCard={executive} showAll={showEx} />
       <SecondHeading
-        title="Faculty Manager"
+        title={secondHeading2}
         backgroundColor="#fff"
         textColor="#00007B"
         toMore={true}
@@ -55,7 +61,7 @@ function ImportantContacts() {
       />
       <StuffCard stuffCard={falcuty} showAll={showFa} />
       <SecondHeading
-        title="Student Support Team"
+        title={secondHeading3}
         backgroundColor="#fff"
         textColor="#00007B"
         toMore={true}
@@ -64,7 +70,7 @@ function ImportantContacts() {
       />
       <StuffCard stuffCard={support} showAll={showSu} />
       <SecondHeading
-        title="Empolyment Team"
+        title={secondHeading4}
         backgroundColor="#fff"
         textColor="#00007B"
         toMore={false}
@@ -72,14 +78,14 @@ function ImportantContacts() {
       />
       <StuffCard stuffCard={employment} showAll={showEm} />
       <Heading
-        title="Student Representatives"
+        title={heading2}
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={false}
       />
       <BigContent bigContent={studentRe} />
       <Heading
-        title="Other Contacts"
+        title={heading3}
         backgroundColor="#fff"
         textColor="#00007B"
         toMore={false}

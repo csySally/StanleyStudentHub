@@ -20,7 +20,13 @@ function BigContent({ bigContent }) {
           </div>
           <div className="bigContent-item-content">
             <div className="bigContent-item-vector">
-              <h2>{con.name}</h2>
+              <h2
+                className={`bigContent-item-content-h2 ${
+                  con.reverse ? "reverse" : ""
+                }`}
+              >
+                {con.name}
+              </h2>
               <img src={vector} />
             </div>
             <p
