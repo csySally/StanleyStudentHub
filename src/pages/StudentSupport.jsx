@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "../components/Header";
 import Welcome from "../components/Welcome";
 import Heading from "../components/Heading";
@@ -23,16 +23,23 @@ import {
 import "../styles/studentSupport.css";
 
 function StudentSupport() {
+  const nextSectionRef = useRef(null);
   return (
     <div>
       <Header />
-      <Welcome backgroundPic={backgroundPic} welcomeText="Student Support" />
-      <Heading
-        title={heading1}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
+      <Welcome
+        backgroundPic={backgroundPic}
+        welcomeText="Student Support"
+        scrollTargetRef={nextSectionRef}
       />
+      <div ref={nextSectionRef}>
+        <Heading
+          title={heading1}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+      </div>
       <InfoCard cardData={supportCardData} />
       <img src={ellipse} className="ellipse" />
       <SecondHeading

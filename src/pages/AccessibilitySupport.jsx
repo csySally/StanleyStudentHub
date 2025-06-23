@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "../components/Header";
 import Welcome from "../components/Welcome";
 import Footer from "../components/Footer";
@@ -21,19 +21,23 @@ import "../styles/accessibilitySupport.css";
 import InfoCard from "../components/InfoCard.jsx";
 
 function AccessibilitySupport() {
+  const nextSectionRef = useRef(null);
   return (
     <div>
       <Header />
       <Welcome
         backgroundPic={backgroundPic}
         welcomeText="Accessibility Support"
+        scrollTargetRef={nextSectionRef}
       />
-      <Heading
-        title={heading1}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
-      />
+      <div ref={nextSectionRef}>
+        <Heading
+          title={heading1}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+      </div>
       <ArrowHeading arrowHeadings={arrowHeadings[0]} />
       <div className="care-container">
         <div className="care-container-p">

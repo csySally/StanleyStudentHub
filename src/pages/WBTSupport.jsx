@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "../components/Header";
 import Welcome from "../components/Welcome";
 import Footer from "../components/Footer";
@@ -21,16 +21,23 @@ import BigContent from "../components/BigContent";
 import "../styles/wbtSupport.css";
 
 function WBTSupport() {
+  const nextSectionRef = useRef(null);
   return (
     <div>
       <Header />
-      <Welcome backgroundPic={backgroundPic} welcomeText="WBT Support" />
-      <Heading
-        title={heading1}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
+      <Welcome
+        backgroundPic={backgroundPic}
+        welcomeText="WBT Support"
+        scrollTargetRef={nextSectionRef}
       />
+      <div ref={nextSectionRef}>
+        <Heading
+          title={heading1}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+      </div>
       <InfoCard cardData={wbtCardData} />
       <img src={ellipse} className="ellipse" />
       <SecondHeading

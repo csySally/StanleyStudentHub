@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Header from "../components/Header";
-import Welcome from "../components/Welcome";
+import Welcome from "../components/Welcome.jsx";
 import Footer from "../components/Footer";
 import Heading from "../components/Heading";
 import SecondHeading from "../components/SecondHeading";
@@ -32,16 +32,24 @@ function ImportantContacts() {
   const [showSu, setShowSu] = useState(false);
   const [showEm, setShowEm] = useState(false);
 
+  const nextSectionRef = useRef(null);
+
   return (
     <div>
       <Header />
-      <Welcome backgroundPic={backgroundPic} welcomeText="Important Contacts" />
-      <Heading
-        title={heading1}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
+      <Welcome
+        backgroundPic={backgroundPic}
+        welcomeText="Important Contacts"
+        scrollTargetRef={nextSectionRef}
       />
+      <div ref={nextSectionRef}>
+        <Heading
+          title={heading1}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+      </div>
       <SecondHeading
         title={secondHeading1}
         backgroundColor="#fff"
