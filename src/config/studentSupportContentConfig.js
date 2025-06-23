@@ -98,35 +98,67 @@ export const otherServices = [
 
 export const qaList = [
   {
-    question: "What is the best way to study for a test?",
-    answer:
-      "The best way to study for a test is to study the material and practice the material. So, you can go to the school website and find the material and practice the material. And you can also ask your teacher for help. Don't forget to ask your teacher for help if you need it. If you need more information, you can go to the school website and find the material and practice the material.",
-    button: "Ask Teacher",
-    link: "https://www.google.com",
+    question:
+      "How Can I Send My Official Documents to World Education Services (WES)?",
+    answer: `If you need to send your official academic documents to World Education Services (WES) for credential evaluation, please follow the steps below:
+
+1. Review WES Requirements
+Before submitting any requests, please check the specific documentation requirements on the WES website to ensure you are requesting the correct documents.
+
+2. Submit an Application for Award / Qualification
+Stanley College provides digital official documents that are accepted by WES. Physical submissions are no longer accepted.
+
+●  Complete the Application for Award / Qualification form
+●  Indicate the documents you require for your WES application.
+
+3. Receive Your Documents via My eQuals
+Once your application is processed, you will receive an email with a secure link to access your documents through My eQuals.
+
+4. Share Your Documents with WES
+
+●  Log into My eQuals.
+●  Navigate to the “Documents” section.
+●  Click the “Share” icon next to the document you wish to send.
+●  Select “Send my documents to a registered organisation”
+●  Choose “World Education Services (WES)” as the recipient.
+●  Enter your WES reference number and confirm the share.
+
+If you need assistance at any stage, please contact Stanley College Student Services.`,
+    button: "Application for Award / Qualification Form",
+    link: "https://highereducation.formstack.com/admin/session/auth_provider_form/1832/6198052?returnTo=/workflows/award_request",
   },
   {
-    question: "What do I do if I am sick?",
+    question: "How do I change my class schedules?",
     answer:
-      "If you are sick, please stay home and rest. If you are feeling unwell, please contact your teacher or the school nurse.",
+      "You can change your class schedules by sending the email to studentservices@stanleycollege.edu.au. Please note that, the change of schedules for your desired times are based on availability of classes.",
   },
   {
-    question: "How do I request timetable changes?",
+    question: "My attendance is wrong, or I was marked absent for no reason.",
     answer:
-      "If you need to request a timetable change, please contact your teacher or the school office.",
-    button: "View More",
-    link: "https://www.google.com",
+      "This information is entered by your Trainer. You can contact the trainer directly to update this information. Or you can email Student Services (studentservices@stanleycollege.edu.au) and we will contact your trainer.",
   },
   {
-    question: "Can I change my course?",
+    question: "Can my attendance be removed?",
     answer:
-      "Yes, you can change your course. Please contact the school office to request a course change. And some of the courses are available on the school website.",
+      "Your attendance can be removed only based on the medica condition and compassionate circumstances, requiring for the student to provide medical certificate in case of medical reason.",
   },
   {
-    question: "What if I forget to pay my fees?",
+    question: "How can I check if I have any holidays?",
     answer:
-      "If you forget to pay your fees, please contact the school office to pay your fees. And some of the fees are due on the first day of the term. Policy and procedure is available on the school website.",
-    button: "Go to Dashboard",
-    link: "https://www.google.com",
+      "You can check your scheduled holidays in your student portal by referring to the “results” tab.",
+  },
+  {
+    question: "Can I apply for a payment plan?",
+    answer: `Yes, if you're experiencing financial hardship, you may be eligible for a payment plan through our Hardship Payment Scheme. This option is available to continuing international onshore students on a student visa who are temporarily unable to pay their tuition fees due to unexpected and extenuating circumstances beyond their control. These circumstances must directly impact your ability to pay by the due date. 
+    
+    For further details including; eligibility, terms and conditions and requirements, please check the link below.`,
+    button: "Learn More",
+    link: "https://info.stanleycollege.edu.au/hubfs/Marketing-Publications/HE-Compliance-Docs/Financial-Hardship-Payment-Scheme-Guidelines.pdf",
+  },
+  {
+    question: "How can I update my contact details?",
+    answer:
+      "If there are any changes in your phone number or address, you can update it from your student portal from the option in the Profile.",
   },
 ];
 

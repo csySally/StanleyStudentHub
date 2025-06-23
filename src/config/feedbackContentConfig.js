@@ -39,8 +39,8 @@ export const feedbackMoreContent = [
 
 export const links = [
   {
-    name: "Request a timetable change",
-    link: "https://www.google.com",
+    name: "FInancial Hardship Payment Scheme Application Form",
+    link: "https://highereducation.formstack.com/workflows/fhps_application",
   },
   {
     name: "Apply for leave of absence",
