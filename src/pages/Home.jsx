@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Welcome from "../components/Welcome";
@@ -44,11 +44,16 @@ import {
 import "../styles/home.css";
 
 function Home() {
+  const nextSectionRef = useRef(null);
   return (
     <div>
       <Header />
-      <Welcome backgroundPic={backgroundPic} welcomeText={welcomeText} />
-      <div className="slogan">
+      <Welcome
+        backgroundPic={backgroundPic}
+        welcomeText={welcomeText}
+        scrollTargetRef={nextSectionRef}
+      />
+      <div className="slogan" ref={nextSectionRef}>
         <img src={slogan} alt="" />
       </div>
       <Heading

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "../components/Header";
-import Welcome from "../components/Welcome";
+import Welcome from "../components/Welcome.jsx";
 import Footer from "../components/Footer";
 import Heading from "../components/Heading.jsx";
 import ArrowHeading from "../components/ArrowHeading";
@@ -22,19 +22,23 @@ import backgroundPic from "../assets/images/requests-background.jpeg";
 import "../styles/requests&feedback.css";
 
 function RequestsAndFeedbacks() {
+  const nextSectionRef = useRef(null);
   return (
     <div>
       <Header />
       <Welcome
         backgroundPic={backgroundPic}
         welcomeText="Requests and Feedbacks"
+        scrollTargetRef={nextSectionRef}
       />
-      <Heading
-        title={heading1}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
-      />
+      <div ref={nextSectionRef}>
+        <Heading
+          title={heading1}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+      </div>
       <ArrowHeading arrowHeadings={arrowHeadings[0]} />
       <div className="feedback-container">
         <div className="feedback-container-p">

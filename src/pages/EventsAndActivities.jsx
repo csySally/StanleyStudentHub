@@ -1,6 +1,6 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useRef } from "react";
 import Header from "../components/Header";
-import Welcome from "../components/Welcome";
+import Welcome from "../components/Welcome.jsx";
 import Footer from "../components/Footer";
 import Heading from "../components/Heading.jsx";
 import ArrowHeading from "../components/ArrowHeading";
@@ -28,19 +28,23 @@ function EventsAndActivities() {
     const start = startOfWeek(selectedDate, { weekStartsOn: 0 });
     return Array.from({ length: 7 }, (_, i) => addDays(start, i));
   }, [selectedDate]);
+  const nextSectionRef = useRef(null);
   return (
     <div>
       <Header />
       <Welcome
         backgroundPic={backgroundPic}
         welcomeText="Events and Activities"
+        scrollTargetRef={nextSectionRef}
       />
-      <Heading
-        title={heading1}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
-      />
+      <div ref={nextSectionRef}>
+        <Heading
+          title={heading1}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+      </div>
       <ArrowHeading arrowHeadings={arrowHeadings[0]} />
       <div className="arrow-content">
         {arrowContent.map((item, index) => (
