@@ -3,6 +3,7 @@ import "../styles/header.css";
 import Menu from "./Menu";
 import Logo from "../assets/images/logo.png";
 import Show from "../assets/images/show.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -18,7 +19,9 @@ function Header() {
       <div className="nav-container">
         <div className="nav-text-container">
           <p className="nav-text">
-            <a href="/">Home</a>
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
           </p>
           <img
             src={Show}
