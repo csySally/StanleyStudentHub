@@ -20,7 +20,7 @@ Online Learning Support: Assistance with accessing and using online learning pla
 IT Workshops: Workshops on using college IT resources, cybersecurity, and digital literacy.
 `;
 
-export const ITStuff = [
+export const ITStaff = [
   {
     title: "IT Support Team",
     name: "itsupport@stanleycollege.edu.au  ",

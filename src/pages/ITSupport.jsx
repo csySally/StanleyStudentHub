@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Heading from "../components/Heading.jsx";
 import backgroundPic from "../assets/images/it-background.jpeg";
 import ArrowHeading from "../components/ArrowHeading";
-import StuffCard from "../components/StuffCard.jsx";
+import StaffCard from "../components/StaffCard.jsx";
 import QAList from "../components/Q&A/QAList";
 
 import "../styles/itSupport.css";
@@ -15,7 +15,7 @@ import {
   heading2,
   arrowHeadings,
   ITCont,
-  ITStuff,
+  ITStaff,
   qaList,
 } from "../config/ITContentConfig.js";
 
@@ -43,7 +43,7 @@ function ITSupport() {
           <p>{ITCont}</p>
         </div>
         <div className="care-container-card">
-          <StuffCard stuffCard={ITStuff} showAll={false} />
+          <StaffCard staffCard={ITStaff} showAll={false} />
         </div>
       </div>
       <Heading

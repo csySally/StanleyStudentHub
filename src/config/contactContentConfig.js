@@ -7,7 +7,6 @@ import ss6 from "../assets/images/ss6.png";
 import accounting from "../assets/images/accounting.jpg";
 import bs from "../assets/images/bs.png";
 import it from "../assets/images/it.png";
-import { deAT } from "date-fns/locale";
 
 export const heading1 = "Important Contacts";
 
@@ -29,6 +28,8 @@ export const executive = [
     name: "Nga (Elisa) Tong",
     campus: "(Perth City Campus)",
     image: ss1,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
   },
   {
     title: "Student Support Team",

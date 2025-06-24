@@ -23,7 +23,7 @@ export const arrowHeadings = [
   },
 ];
 
-export const careStuff = [
+export const careStaff = [
   {
     title: "Student Wellbeing Team",
     name: "Thalia O' Sullivan (Counsellor) ",

@@ -4,14 +4,14 @@ import Welcome from "../components/Welcome";
 import Footer from "../components/Footer";
 import ArrowHeading from "../components/ArrowHeading";
 import Heading from "../components/Heading.jsx";
-import StuffCard from "../components/StuffCard.jsx";
+import StaffCard from "../components/StaffCard.jsx";
 import SecondHeading from "../components/SecondHeading";
 import backgroundPic from "../assets/images/accessibility-background.jpeg";
 import {
   arrowHeadings,
   heading1,
   careCont,
-  careStuff,
+  careStaff,
   secondH1,
   external,
   externalCardData,
@@ -44,7 +44,7 @@ function AccessibilitySupport() {
           <p>{careCont}</p>
         </div>
         <div className="care-container-card">
-          <StuffCard stuffCard={careStuff} showAll={false} />
+          <StaffCard staffCard={careStaff} showAll={false} />
         </div>
       </div>
       <SecondHeading
