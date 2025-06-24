@@ -208,35 +208,33 @@ export const studentRepresentative = [
 
 export const qaList = [
   {
-    question: "What is the best way to study for a test?",
+    question: "How do I find my classes and my timetable?",
     answer:
-      "The best way to study for a test is to study the material and practice the material. So, you can go to the school website and find the material and practice the material. And you can also ask your teacher for help. Don't forget to ask your teacher for help if you need it. If you need more information, you can go to the school website and find the material and practice the material.",
-    button: "Ask Teacher",
-    link: "https://www.google.com",
+      "You can access classes and timetable details in your student portal. All your schedule classes are available on the portal.",
   },
   {
-    question: "What do I do if I am sick?",
+    question: "How do I check my attendance?",
     answer:
-      "If you are sick, please stay home and rest. If you are feeling unwell, please contact your teacher or the school nurse.",
+      "You can check your attendance in the Student Portal, you can also see a detailed list of your absences by logging in to your student portal.",
   },
   {
-    question: "How do I request timetable changes?",
+    question: "How can I obtain Student card?",
     answer:
-      "If you need to request a timetable change, please contact your teacher or the school office.",
-    button: "View More",
-    link: "https://www.google.com",
+      "Please submit the request form ro apply for the student card. Please make sure you fill the form correctly and provide the photo for the ID card in the plain white background. (There should be no other colour or object in the background).",
+    button: "Student Card Request Form",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeUuOdsfHxp6E2PVrcfXRHJgGB8pC5830SAX87Ue3SrKwA1oA/viewform",
   },
   {
-    question: "Can I change my course?",
+    question: "How can I pay my fees?",
     answer:
-      "Yes, you can change your course. Please contact the school office to request a course change. And some of the courses are available on the school website.",
+      "You can pay fees by an (Electronic Fund Transfer) EFT OR by BPOINT payment gateway provided by the Commonwealth Bank of Australia. BPOINT is a secure, real-time payment service that allows using your credit card (Visa and Mastercard only) and debit card.",
+    button: "Pay Fees",
+    link: "https://www.bpoint.com.au/pay/stanleycollege",
   },
   {
-    question: "What if I forget to pay my fees?",
+    question: "How can I confirm if my fees are paid?",
     answer:
-      "If you forget to pay your fees, please contact the school office to pay your fees. And some of the fees are due on the first day of the term. Policy and procedure is available on the school website.",
-    button: "Go to Dashboard",
-    link: "https://www.google.com",
+      "Once you have made the payment you can send the proof of payment, quote your Student ID as the payment reference and forward a copy of your payment receipt to finance@stanleycollege.edu.au. We will send you the confirmation with the receipt of your payment as a confirmation in your email.",
   },
 ];
 
