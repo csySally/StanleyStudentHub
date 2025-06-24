@@ -41,6 +41,11 @@
   padding: 20px 40px;
 }   
 
+.qa-item-content>a{
+  text-decoration: none;
+
+}
+
 .qa-item-content p {
   font-size: 17px;
   font-weight: 400;

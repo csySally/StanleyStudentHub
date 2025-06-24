@@ -14,7 +14,7 @@ import "react-datepicker/dist/react-datepicker.css";
 function App() {
   return (
     <>
-      <Router basename="/studenthub">
+      <Router basename="/studenthub/">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/student-support" element={<StudentSupport />} />
