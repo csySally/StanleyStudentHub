@@ -30,6 +30,7 @@ export const careStaff = [
     campus: "counselling@stanleycollege.edu.au ",
     button: "(08) 6371 9924 ",
     image: thalia,
+    link: "",
   },
 ];
 

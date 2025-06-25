@@ -16,12 +16,18 @@ function StaffCard({ staffCard, showAll }) {
             <h5 style={{ display: staff.email ? "block" : "none" }}>
               {staff.email}
             </h5>
-            <button
-              style={{ display: staff.button ? "block" : "none" }}
-              onClick={() => window.open(staff.link, "_blank")}
-            >
-              {staff.button}
-            </button>
+            {staff.button && (
+              <button
+                onClick={() => {
+                  if (staff.link) {
+                    window.open(staff.link, "_blank");
+                  }
+                }}
+                style={{ cursor: staff.link ? "pointer" : "default" }}
+              >
+                {staff.button}
+              </button>
+            )}
           </div>
         </div>
       ))}

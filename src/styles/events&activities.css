@@ -1,17 +1,17 @@
 .arrow-content {
-  width: 100%;
+  width: auto;
   height: 80px;
   background-color: #00007B;
   color: white;
   display: flex;
-  flex-wrap: wrap; 
-  gap: 10px; 
+  flex-wrap: wrap;  
   padding: 50px 20% 30px 20%;
   font-size: 20px;
   font-style: italic;
   font-family: "Inter", sans-serif;
+  justify-content: center;
 }
 
 .arrow-item {
-  width: 35%;
+  width: 50%;
 }
