@@ -8,6 +8,7 @@ import ITSupport from "./pages/ITSupport";
 import ImportantContacts from "./pages/ImportantContacts";
 import RequestsAndFeedbacks from "./pages/RequestsAndFeedbacks";
 import EventsAndActivities from "./pages/EventsAndActivities";
+import ScrollToTop from "./components/ScrollToTop";
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Router basename="/studenthub/">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/student-support" element={<StudentSupport />} />
