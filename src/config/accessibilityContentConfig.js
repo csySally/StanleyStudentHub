@@ -23,13 +23,14 @@ export const arrowHeadings = [
   },
 ];
 
-export const careStuff = [
+export const careStaff = [
   {
     title: "Student Wellbeing Team",
     name: "Thalia O' Sullivan (Counsellor) ",
     campus: "counselling@stanleycollege.edu.au ",
     button: "(08) 6371 9924 ",
     image: thalia,
+    link: "",
   },
 ];
 

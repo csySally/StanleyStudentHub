@@ -14,7 +14,7 @@ import {
 } from "../config/wbtContentConfig";
 import Heading from "../components/Heading";
 import SecondHeading from "../components/SecondHeading";
-import StuffCard from "../components/StuffCard";
+import StaffCard from "../components/StaffCard";
 import InfoCard from "../components/InfoCard";
 import BigContent from "../components/BigContent";
 
@@ -46,7 +46,7 @@ function WBTSupport() {
         textColor="#00007B"
         toMore={false}
       />
-      <StuffCard stuffCard={wbtSupport} showAll={false} />
+      <StaffCard staffCard={wbtSupport} showAll={false} />
       <Heading
         title={heading2}
         backgroundColor="#00007B"

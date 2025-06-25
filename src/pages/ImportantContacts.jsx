@@ -4,7 +4,7 @@ import Welcome from "../components/Welcome.jsx";
 import Footer from "../components/Footer";
 import Heading from "../components/Heading";
 import SecondHeading from "../components/SecondHeading";
-import StuffCard from "../components/StuffCard";
+import StaffCard from "../components/StaffCard.jsx";
 import BigContent from "../components/BigContent";
 import "../styles/importantContact.css";
 
@@ -58,7 +58,7 @@ function ImportantContacts() {
         isLink={false}
         onMoreClick={() => setShowEx(!showEx)}
       />
-      <StuffCard stuffCard={executive} showAll={showEx} />
+      <StaffCard staffCard={executive} showAll={showEx} />
       <SecondHeading
         title={secondHeading2}
         backgroundColor="#fff"
@@ -67,7 +67,7 @@ function ImportantContacts() {
         isLink={false}
         onMoreClick={() => setShowFa(!showFa)}
       />
-      <StuffCard stuffCard={falcuty} showAll={showFa} />
+      <StaffCard staffCard={falcuty} showAll={showFa} />
       <SecondHeading
         title={secondHeading3}
         backgroundColor="#fff"
@@ -76,7 +76,7 @@ function ImportantContacts() {
         isLink={false}
         onMoreClick={() => setShowSu(!showSu)}
       />
-      <StuffCard stuffCard={support} showAll={showSu} />
+      <StaffCard staffCard={support} showAll={showSu} />
       <SecondHeading
         title={secondHeading4}
         backgroundColor="#fff"
@@ -84,7 +84,7 @@ function ImportantContacts() {
         toMore={false}
         onMoreClick={() => setShowEm(!showEm)}
       />
-      <StuffCard stuffCard={employment} showAll={showEm} />
+      <StaffCard staffCard={employment} showAll={showEm} />
       <Heading
         title={heading2}
         backgroundColor="#00007B"

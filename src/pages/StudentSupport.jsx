@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Welcome from "../components/Welcome";
 import Heading from "../components/Heading";
 import Footer from "../components/Footer";
-import StuffCard from "../components/StuffCard";
+import StaffCard from "../components/StaffCard";
 import BigContent from "../components/BigContent";
 import InfoCard from "../components/InfoCard";
 import SecondHeading from "../components/SecondHeading";
@@ -48,7 +48,7 @@ function StudentSupport() {
         textColor="#00007B"
         toMore={false}
       />
-      <StuffCard stuffCard={studentSupport} showAll={true} />
+      <StaffCard staffCard={studentSupport} showAll={true} />
       <Heading
         title={heading2}
         backgroundColor="#00007B"
