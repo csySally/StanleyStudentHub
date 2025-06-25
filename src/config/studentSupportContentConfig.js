@@ -11,6 +11,7 @@ import shield from "../assets/icons/Warning Shield.png";
 import online from "../assets/icons/Online Group Studying.svg";
 import change from "../assets/icons/Change.svg";
 import timetable from "../assets/icons/Timetable.svg";
+import changeContact from "../assets/images/changeContact.png";
 
 export const heading1 = "We are Here to Help";
 
@@ -165,6 +166,7 @@ If you need assistance at any stage, please contact Stanley College Student Serv
     question: "How can I update my contact details?",
     answer:
       "If there are any changes in your phone number or address, you can update it from your student portal from the option in the Profile.",
+    image: [changeContact],
   },
 ];
 

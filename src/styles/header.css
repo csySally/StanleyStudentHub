@@ -45,15 +45,17 @@
 }
 
 .nav-container {
-  width: 11%;
+  width: 5%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right: -5%;
+  justify-content: center;
+
+
 }
 
 .nav-text-container {
+  width: auto;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -61,6 +63,7 @@
 }
 
 .nav-text > a{
+  width: auto;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -81,9 +84,4 @@
 }
 .nav-show-arrow.rotated {
   transform: rotate(180deg);
-}
-.nav-search-icon {
-  width: 30px;
-  cursor: pointer;
-  margin-right:10px ;
 }
