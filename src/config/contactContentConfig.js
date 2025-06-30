@@ -114,6 +114,7 @@ export const support = [
     image: zarin,
     button: "Book a Meeting",
     link: "https://calendar.app.google/TwZ9vFHnz51zZJiX6",
+    language: "Bengali, English, Japanese, Hindi, Urdu",
   },
   {
     title: "Student Support Team (Higher Education)",
@@ -122,6 +123,7 @@ export const support = [
     image: giulia,
     button: "Book a Meeting",
     link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
+    language: "English, Spanish, and Italian",
   },
   {
     title: "Student Support Team (Scheduling Team)",
@@ -130,6 +132,7 @@ export const support = [
     image: darshwini,
     button: "Book a Meeting",
     link: "https://calendar.app.google/iHyHRydzvedKH9r17 ",
+    language: "English, Mauritian Creole, French, Hindi",
   },
   {
     title: "Student Support Team (Higher Education)",
@@ -138,6 +141,7 @@ export const support = [
     image: jinal,
     button: "Book a Meeting",
     link: "https://calendar.app.google/3bvraWZDRSymHfXt5 ",
+    language: "English, Hindi, Gujarati",
   },
   {
     title: "Schedules Team",
