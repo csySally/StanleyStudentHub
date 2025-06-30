@@ -11,6 +11,7 @@ import zarin from "../assets/images/zarin.jpg";
 import giulia from "../assets/images/giulia.png";
 import darshwini from "../assets/images/darshwini.jpg";
 import jinal from "../assets/images/jinal.jpg";
+import jayanta from "../assets/images/jayanta.jpg";
 
 export const heading1 = "Important Contacts";
 
@@ -126,13 +127,22 @@ export const support = [
     language: "English, Spanish, and Italian",
   },
   {
-    title: "Student Support Team (Scheduling Team)",
+    title: "Scheduling Team",
     name: "Darshwini Poonen",
     campus: "(West Perth Campus)",
     image: darshwini,
     button: "Book a Meeting",
     link: "https://calendar.app.google/iHyHRydzvedKH9r17 ",
     language: "English, Mauritian Creole, French, Hindi",
+  },
+  {
+    title: "Schedules Team",
+    name: "Jayanta Pandeea",
+    campus: "(West Perth Campus)",
+    image: jayanta,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/kSGJKivuzsjJ2ESw6",
+    language: "Mauritian Creole, French, English",
   },
   {
     title: "Student Support Team (Higher Education)",
@@ -142,18 +152,6 @@ export const support = [
     button: "Book a Meeting",
     link: "https://calendar.app.google/3bvraWZDRSymHfXt5 ",
     language: "English, Hindi, Gujarati",
-  },
-  {
-    title: "Schedules Team",
-    name: "Darshwini Poonen",
-    campus: "(Online Meetings)",
-    image: ss5,
-  },
-  {
-    title: "Schedules Team",
-    name: "Jaynata Pandeea",
-    campus: "(West Perth Campus)",
-    image: ss6,
   },
 ];
 
