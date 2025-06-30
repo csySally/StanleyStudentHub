@@ -67,3 +67,20 @@
   font-weight: 600;
   font-family: "Arial", sans-serif;
 }
+
+.qa-item-images-container{
+  width: autos;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh 0;
+  gap: 20px;
+}
+
+.qa-item-images{
+  max-width: 60%;
+  width: auto;
+  height: auto;
+}

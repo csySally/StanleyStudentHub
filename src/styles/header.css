@@ -12,7 +12,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .logo-area {
@@ -30,31 +30,40 @@
   margin-left: -10%;
 }
 
+.hub-link{
+  text-decoration: none;
+}
+
 .hub-text{
+  width: 100%;
   font-weight: 700;
   font-size: 22px;
   color: #ffffff;   
   font-family: "Bowlby One", sans-serif;
   margin-left: 5%;
+  
 }
 
 .nav-container {
-  width: 11%;
+  width: 5%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 1%;
+  justify-content: center;
+
+
 }
 
 .nav-text-container {
+  width: auto;
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-right: 20%;
+  margin-right: 60%;
 }
 
 .nav-text > a{
+  width: auto;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -75,9 +84,4 @@
 }
 .nav-show-arrow.rotated {
   transform: rotate(180deg);
-}
-.nav-search-icon {
-  width: 30px;
-  cursor: pointer;
-  margin-right:10px ;
 }
