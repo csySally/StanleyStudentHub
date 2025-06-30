@@ -14,15 +14,12 @@ function Header() {
         <div className="logo-area">
           <img src={Logo} alt="Logo" className="logo-img" />
         </div>
-        <p className="hub-text">Student Hub</p>
+        <Link to="/" className="hub-link">
+          <p className="hub-text">Student Hub</p>
+        </Link>
       </div>
       <div className="nav-container">
         <div className="nav-text-container">
-          <p className="nav-text">
-            <Link to="/" className="nav-link">
-              Home
-            </Link>
-          </p>
           <img
             src={Show}
             alt=""

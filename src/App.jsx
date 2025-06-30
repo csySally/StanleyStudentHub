@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import StudentSupport from "./pages/StudentSupport";
@@ -8,13 +8,53 @@ import ITSupport from "./pages/ITSupport";
 import ImportantContacts from "./pages/ImportantContacts";
 import RequestsAndFeedbacks from "./pages/RequestsAndFeedbacks";
 import EventsAndActivities from "./pages/EventsAndActivities";
+import ScrollToTop from "./components/ScrollToTop";
 
+import upward from "./assets/icons/Upward.png";
 import "react-datepicker/dist/react-datepicker.css";
 
 function App() {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollButton(window.scrollY > window.innerHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
+      {showScrollButton && (
+        <div className="scroll-to-top">
+          <img
+            src={upward}
+            alt="Scroll to top"
+            style={{
+              position: "fixed",
+              bottom: 50,
+              right: 50,
+              width: 50,
+              height: 50,
+              cursor: "pointer",
+              zIndex: 1000,
+            }}
+            onClick={scrollToTop}
+          />
+        </div>
+      )}
+
       <Router basename="/studenthub/">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/student-support" element={<StudentSupport />} />

@@ -13,6 +13,9 @@ function StaffCard({ staffCard, showAll }) {
             <h3>{staff.title}</h3>
             <h4>{staff.name}</h4>
             <h5>{staff.campus}</h5>
+            <h6 style={{ display: staff.language ? "block" : "none" }}>
+              {staff.language}
+            </h6>
             <h5 style={{ display: staff.email ? "block" : "none" }}>
               {staff.email}
             </h5>

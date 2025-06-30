@@ -11,24 +11,31 @@
 
 .staffCard-container-item{
     width:30%;
-    height: 200px;
+    height: 230px;
     display: flex;
     border: 1px #f2f2f2 solid;
-    justify-content: center;
+    
     align-items: center;
     background-color: #fff;
 }
 .staffCard-item-img{
-    margin-right: 40px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .staffCard-item-img>img{
-    width: 120px;
+    width: 85%;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .staffCard-item-content{
+    width: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,14 +45,15 @@
     margin: 0;
     font-family: "Acme", sans-serif;
     font-size: 20px;
-    margin-bottom: 18px;
+    text-align: center;
+    line-height: 1.4;
 }
 
 .staffCard-item-content>h4{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-top: 13px;
 }
 
 .staffCard-item-content>h5{
@@ -53,7 +61,19 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.staffCard-item-content>h6{
+    width: 80%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+
 }
 
 .staffCard-item-content>button{
@@ -63,10 +83,20 @@
     height: 30px;
     padding: 0 20px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 16px;
 }
 
 .staffCard-container.hide {
     flex-wrap: wrap;
     height: 200px;
     overflow: hidden;
+}
+
+.staffCard-item-content>button:hover {
+    background-color: #EABE4C;
+    color: #00007B;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
 }

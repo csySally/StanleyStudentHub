@@ -28,6 +28,20 @@ function QAItem({ qa }) {
             </React.Fragment>
           ))}
         </p>
+        <div
+          style={{ display: qa.image ? "flex" : "none" }}
+          className="qa-item-images-container"
+        >
+          {qa.image &&
+            qa.image.map((imgSrc, index) => (
+              <img
+                key={index}
+                src={imgSrc}
+                alt={`QA-${index}`}
+                className="qa-item-images"
+              />
+            ))}
+        </div>
         <a href={qa.link} target="_blank">
           <button style={{ display: qa.button ? "block" : "none" }}>
             {qa.button}

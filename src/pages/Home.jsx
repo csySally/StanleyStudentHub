@@ -69,6 +69,7 @@ function Home() {
         textColor="#006662"
         toMore={true}
         toLink="/events-and-activities"
+        isLink={true}
       />
       <div className="event-cards-container">
         <EventCard cards={EventCards} />
@@ -145,6 +146,7 @@ function Home() {
         textColor="#fcd60b"
         toMore={true}
         toLink="/important-contacts"
+        isLink={true}
       />
       <StudentRepre studentRepresentative={studentRepresentative} />
       <Heading

@@ -20,6 +20,12 @@
   
 }
 
+.student-repre-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .student-repre-item img {
   width: 55%;
   aspect-ratio: 1 / 1;
