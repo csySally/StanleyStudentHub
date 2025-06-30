@@ -35,7 +35,7 @@ function StudentSupport() {
       <div ref={nextSectionRef}>
         <Heading
           title={heading1}
-          backgroundColor="#00007B"
+          backgroundColor="#fcd60b"
           textColor="#fff"
           toMore={false}
         />
@@ -45,13 +45,13 @@ function StudentSupport() {
       <SecondHeading
         title={secondHeading1}
         backgroundColor="#fff"
-        textColor="#00007B"
+        textColor="#fcd60b"
         toMore={false}
       />
       <StaffCard staffCard={studentSupport} showAll={true} />
       <Heading
         title={heading2}
-        backgroundColor="#00007B"
+        backgroundColor="#fcd60b"
         textColor="#fff"
         toMore={false}
       />
@@ -59,7 +59,7 @@ function StudentSupport() {
       <Heading
         title={heading3}
         backgroundColor="#fff"
-        textColor="#00007B"
+        textColor="#fcd60b"
         toMore={false}
       />
       <QAList qaList={qaList} />

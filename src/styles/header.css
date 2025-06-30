@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 70px;
-  background-color: #00007B;
+  background-color: #fcd60b;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +33,7 @@
 .hub-text{
   font-weight: 700;
   font-size: 22px;
-  color: #ffffff;   
+  color: #006662;   
   font-family: "Bowlby One", sans-serif;
   margin-left: 5%;
 }

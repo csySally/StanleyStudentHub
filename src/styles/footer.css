@@ -5,8 +5,8 @@
   justify-content: space-between;
   align-items: top;
 
-  background-color: #00007B;
-  color: white;
+  background-color: #fcd60b;
+  color: #006662;
 }
 
 .footer-about{
@@ -43,7 +43,7 @@ p {
 
 .footer-useful-links-list a{
     text-decoration: none;
-    color: white;
+    color: #006662;
     font-size: 15px;
     font-family: "Arial", sans-serif;
     margin-bottom: 10px;
@@ -53,7 +53,7 @@ p {
 }
 
 a:hover{
- text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+ text-shadow: 0 0 5px #d3f0ef;
 }
 
 .footer-stay-connected>div{

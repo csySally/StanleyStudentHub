@@ -40,7 +40,7 @@ function EventsAndActivities() {
       <div ref={nextSectionRef}>
         <Heading
           title={heading1}
-          backgroundColor="#00007B"
+          backgroundColor="#fcd60b"
           textColor="#fff"
           toMore={false}
         />
@@ -56,7 +56,7 @@ function EventsAndActivities() {
       <SwiperCom slides={eventSlides} />
       <Heading
         title={heading2}
-        backgroundColor="#00007B"
+        backgroundColor="#fcd60b"
         textColor="#fff"
         toMore={false}
       />

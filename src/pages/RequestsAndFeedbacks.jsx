@@ -34,7 +34,7 @@ function RequestsAndFeedbacks() {
       <div ref={nextSectionRef}>
         <Heading
           title={heading1}
-          backgroundColor="#00007B"
+          backgroundColor="#fcd60b"
           textColor="#fff"
           toMore={false}
         />
@@ -63,7 +63,7 @@ function RequestsAndFeedbacks() {
       <Heading
         title={heading2}
         backgroundColor="#fff"
-        textColor="#00007B"
+        textColor="#fcd60b"
         toMore={false}
       />
       <QuickLinks quickLinks={links} />

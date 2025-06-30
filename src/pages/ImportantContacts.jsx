@@ -45,7 +45,7 @@ function ImportantContacts() {
       <div ref={nextSectionRef}>
         <Heading
           title={heading1}
-          backgroundColor="#00007B"
+          backgroundColor="#fcd60b"
           textColor="#fff"
           toMore={false}
         />
@@ -53,7 +53,7 @@ function ImportantContacts() {
       <SecondHeading
         title={secondHeading1}
         backgroundColor="#fff"
-        textColor="#00007B"
+        textColor="#fcd60b"
         toMore={true}
         isLink={false}
         onMoreClick={() => setShowEx(!showEx)}
@@ -62,7 +62,7 @@ function ImportantContacts() {
       <SecondHeading
         title={secondHeading2}
         backgroundColor="#fff"
-        textColor="#00007B"
+        textColor="#fcd60b"
         toMore={true}
         isLink={false}
         onMoreClick={() => setShowFa(!showFa)}
@@ -71,7 +71,7 @@ function ImportantContacts() {
       <SecondHeading
         title={secondHeading3}
         backgroundColor="#fff"
-        textColor="#00007B"
+        textColor="#fcd60b"
         toMore={true}
         isLink={false}
         onMoreClick={() => setShowSu(!showSu)}
@@ -80,14 +80,14 @@ function ImportantContacts() {
       <SecondHeading
         title={secondHeading4}
         backgroundColor="#fff"
-        textColor="#00007B"
+        textColor="#fcd60b"
         toMore={false}
         onMoreClick={() => setShowEm(!showEm)}
       />
       <StaffCard staffCard={employment} showAll={showEm} />
       <Heading
         title={heading2}
-        backgroundColor="#00007B"
+        backgroundColor="#fcd60b"
         textColor="#fff"
         toMore={false}
       />
@@ -95,7 +95,7 @@ function ImportantContacts() {
       <Heading
         title={heading3}
         backgroundColor="#fff"
-        textColor="#00007B"
+        textColor="#fcd60b"
         toMore={false}
       />
       <div className="other-contact">

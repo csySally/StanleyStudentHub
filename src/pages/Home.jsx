@@ -58,15 +58,15 @@ function Home() {
       </div>
       <Heading
         title={heading1}
-        backgroundColor="#00007B"
-        textColor="#fff"
+        backgroundColor="#fcd60b"
+        textColor="#006662"
         toMore={false}
       />
       <SwiperCom slides={homeSlides} />
       <Heading
         title={heading2}
-        backgroundColor="#00007B"
-        textColor="#fff"
+        backgroundColor="#fcd60b"
+        textColor="#006662"
         toMore={true}
         toLink="/events-and-activities"
       />
@@ -75,8 +75,8 @@ function Home() {
       </div>
       <Heading
         title={heading3}
-        backgroundColor="#fff"
-        textColor="#00007B"
+        backgroundColor="#006662"
+        textColor="#fcd60b"
         toMore={false}
       />
       <div className="discover-cards-container">
@@ -84,22 +84,22 @@ function Home() {
       </div>
       <SecondHeading
         title={secondHeading1}
-        backgroundColor="#fff"
-        textColor="#00007B"
+        backgroundColor="#006662"
+        textColor="#fcd60b"
         toMore={false}
       />
       <InfoCard cardData={homeCardData} />
       <Heading
         title={heading4}
-        backgroundColor="#00007B"
-        textColor="#fff"
+        backgroundColor="#fcd60b"
+        textColor="#006662"
         toMore={false}
       />
       <SwiperCom slides={homeSlides2} />
       <SecondHeading
         title={secondHeading2}
-        backgroundColor="#00007B"
-        textColor="#fff"
+        backgroundColor="#fff"
+        textColor="#006662"
         toMore={false}
       />
       <div className="accessContent">
@@ -112,8 +112,8 @@ function Home() {
 
       <SecondHeading
         title={secondHeading3}
-        backgroundColor="#00007B"
-        textColor="#fff"
+        backgroundColor="#fcd60b"
+        textColor="#006662"
         toMore={false}
       />
       <div className="career">
@@ -130,8 +130,8 @@ function Home() {
       <div className="enjoy">
         <Heading
           title="Enjoy"
-          backgroundColor="#fff"
-          textColor="#00007B"
+          backgroundColor="#006662"
+          textColor="#fcd60b"
           toMore={false}
         />
         <p>{enjoyContent}</p>
@@ -141,16 +141,16 @@ function Home() {
 
       <SecondHeading
         title={secondHeading4}
-        backgroundColor="#fff"
-        textColor="#00007B"
+        backgroundColor="#006662"
+        textColor="#fcd60b"
         toMore={true}
         toLink="/important-contacts"
       />
       <StudentRepre studentRepresentative={studentRepresentative} />
       <Heading
         title="FAQs"
-        backgroundColor="#00007B"
-        textColor="#fff"
+        backgroundColor="#fcd60b"
+        textColor="#006662"
         toMore={false}
       />
       <div className="faqs">
