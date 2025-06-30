@@ -52,10 +52,6 @@ p {
 
 }
 
-a:hover{
- text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
-}
-
 .footer-stay-connected>div{
     width: 45%;
   display: flex;

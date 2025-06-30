@@ -93,3 +93,10 @@
     height: 200px;
     overflow: hidden;
 }
+
+.staffCard-item-content>button:hover {
+    background-color: #EABE4C;
+    color: #00007B;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
