@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 70px;
+  height: 80px;
   background-color: #fcd60b;
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,7 @@
 }
 
 .logo-container {
-  width: 400px;
+  width: 500px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .logo-area {
-  width: 45%;
+  width: 50%;
   height: 100%;
   background-color: white;
   border-radius: 0 50px 50px 0;
@@ -26,8 +26,7 @@
 }
 
 .logo-img {
-  height: 80%;
-  margin-left: -10%;
+  height: 70%;
 }
 
 .hub-link{
@@ -38,11 +37,12 @@
 
 .hub-text{
   width: 100%;
-  font-weight: 700;
-  font-size: 22px;
+  font-weight: 200;
+  font-size: 54px;
+  letter-spacing: 0.3px;
   color: #006662;   
-  font-family: "Bowlby One", sans-serif;
-  margin-left: 5%;
+  font-family: "PressioTEST35", sans-serif;
+  margin-left:10%;
   cursor: pointer;
   
 }
@@ -66,7 +66,7 @@
 }
 
 .nav-show-arrow {
-  width: 18px;
+  width: 24px;
   cursor: pointer;
 }
 

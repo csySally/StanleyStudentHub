@@ -10,8 +10,8 @@
 
 .second-heading{
     font-size: 24px;
-    font-family: "Acme", sans-serif;
-    font-weight: 400;
+    font-family: "SofiaPro", sans-serif;
+    font-weight: 600;
 }
 
 .second-heading-container img{
@@ -28,4 +28,6 @@
 
 .second-heading-container a{
     text-decoration: none;
+    font-family: "SofiaPro", sans-serif;
+    font-weight: 600;
 }

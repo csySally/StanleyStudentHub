@@ -30,3 +30,81 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "PressioTEST35";
+  src: url("./assets/fonts/PressioTEST-No.35.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("./assets/fonts/sofia-pro-light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("./assets/fonts/sofia-pro-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("./assets/fonts/sofia-pro-semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SofiaPro";
+  src: url("./assets/fonts/sofia-pro-black.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "CenturyGothic";
+  src: url("./assets/fonts/CenturyGothic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("./assets/fonts/centurygothic_bold.ttf") format("truetype") ;
+  font-weight: 700;
+}
+
+.text-light {
+  font-family: "CenturyGothic", sans-serif;
+  font-weight: 400;
+}
+
+.text-bold {
+  font-family: "CenturyGothic", sans-serif;
+  font-weight: 700;
+}
+
+.title-light {
+  font-family: "SofiaPro", sans-serif;
+  font-weight: 300;
+}
+
+.title-regular {
+  font-family: "SofiaPro", sans-serif;
+  font-weight: 400;
+}
+
+.title-semibold {
+  font-family: "SofiaPro", sans-serif;
+  font-weight: 600;
+}
+
+.title-bold {
+  font-family: "SofiaPro", sans-serif;
+  font-weight: 700;
+}

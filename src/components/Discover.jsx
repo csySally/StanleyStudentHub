@@ -21,8 +21,6 @@ function Discover({ cards }) {
           </div>
         ))}
       </div>
-      <img src={oval1} alt="" className="oval1" />
-      <img src={oval2} alt="" className="oval2" />
     </div>
   );
 }

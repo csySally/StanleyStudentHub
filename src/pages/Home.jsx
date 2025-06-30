@@ -13,7 +13,6 @@ import Outerlink from "../components/Outerlink";
 import StudentRepre from "../components/StudentRepre";
 import QAList from "../components/Q&A/QAList";
 import backgroundPic from "../assets/images/home-background.jpeg";
-import slogan from "../assets/images/slogan.png";
 import oval3 from "../assets/images/oval3.png";
 import oval4 from "../assets/images/oval4.png";
 import career from "../assets/images/career.png";
@@ -54,7 +53,12 @@ function Home() {
         scrollTargetRef={nextSectionRef}
       />
       <div className="slogan" ref={nextSectionRef}>
-        <img src={slogan} alt="" />
+        <span>Y </span>our&nbsp; <span> O</span>ne-<span> S</span>top&nbsp;
+        <span>R</span>
+        esource for &nbsp; <span>S</span>upport and &nbsp; <span>C</span>
+        ampus&nbsp;
+        <span>L</span>
+        ife
       </div>
       <Heading
         title={heading1}
@@ -85,8 +89,8 @@ function Home() {
       </div>
       <SecondHeading
         title={secondHeading1}
-        backgroundColor="#006662"
-        textColor="#fcd60b"
+        backgroundColor="#fff"
+        textColor="#006662"
         toMore={false}
       />
       <InfoCard cardData={homeCardData} />
@@ -99,7 +103,7 @@ function Home() {
       <SwiperCom slides={homeSlides2} />
       <SecondHeading
         title={secondHeading2}
-        backgroundColor="#fff"
+        backgroundColor="#c9d7ee"
         textColor="#006662"
         toMore={false}
       />
@@ -108,7 +112,6 @@ function Home() {
       </div>
       <div className="home-outerlink-container">
         <Outerlink outerLink={homeOuterLink} />
-        <img src={oval3} alt="" className="oval3" />
       </div>
 
       <SecondHeading
@@ -136,14 +139,12 @@ function Home() {
           toMore={false}
         />
         <p>{enjoyContent}</p>
-        <img src={oval4} alt="" className="oval4" />
-        <img src={oval4} alt="" className="oval5" />
       </div>
 
       <SecondHeading
         title={secondHeading4}
-        backgroundColor="#006662"
-        textColor="#fcd60b"
+        backgroundColor="#fff"
+        textColor="#006662"
         toMore={true}
         toLink="/important-contacts"
         isLink={true}

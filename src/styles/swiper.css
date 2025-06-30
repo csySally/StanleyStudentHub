@@ -48,7 +48,7 @@
     z-index: 2;
     padding: 20px;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    background: rgba(0, 0, 0, 0.7);
+    background: #006663c9;
     color: white;
     display: flex;
     flex-direction: column;

@@ -24,7 +24,7 @@
 
 .card-item:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px #00666369;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -58,13 +58,15 @@
   color: #006662;
   margin:0;
   padding: 10px 0;
+  font-family: "CenturyGothic", sans-serif;
+  font-family: 700;
 }
 
 .cards-container h3{
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 700;
-  color: #006662;
-  font-family: "Inter", sans-serif;
+  color: #1c2b39;
+  font-family: "SofiaPro", sans-serif;
   margin:0;
   padding: 10px 20px 10px 0;
 }
@@ -75,6 +77,8 @@
   margin:0;
   padding-top: 20px;
   padding-right: 30px;
+  font-family: "CenturyGothic", sans-serif;
+  font-weight: 500;
 }
 
 .card-item-content a{
