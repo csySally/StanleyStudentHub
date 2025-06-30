@@ -1,9 +1,8 @@
-import ss1 from "../assets/images/ss1.png";
-import ss2 from "../assets/images/ss2.png";
-import ss3 from "../assets/images/ss3.png";
-import ss4 from "../assets/images/ss4.png";
-import ss5 from "../assets/images/ss5.png";
-import ss6 from "../assets/images/ss6.png";
+import zarin from "../assets/images/zarin.jpg";
+import giulia from "../assets/images/giulia.png";
+import darshwini from "../assets/images/darshwini.jpg";
+import jinal from "../assets/images/jinal.jpg";
+import jayanta from "../assets/images/jayanta.jpg";
 import accounting from "../assets/images/accounting.jpg";
 import bs from "../assets/images/bs.png";
 import it from "../assets/images/it.png";
@@ -24,51 +23,48 @@ export const secondHeading1 = "Book a one-on-one 15-minute appointment";
 export const studentSupport = [
   {
     title: "Student Support Team",
-    name: "Nga (Elisa) Tong",
-    campus: "(Perth City Campus)",
-    button: "Book a Meeting",
-    link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
-    image: ss1,
-  },
-  {
-    title: "Student Support Team",
-    name: "Jenisha Huluss",
+    name: "Zarin Sharmily",
     campus: "(West Perth Campus)",
+    image: zarin,
     button: "Book a Meeting",
-    link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
-    image: ss2,
+    link: "https://calendar.app.google/TwZ9vFHnz51zZJiX6",
+    language: "Bengali, English, Japanese, Hindi, Urdu",
   },
   {
-    title: "Student Support Team",
-    name: "Sujana Pokhrel",
+    title: "Student Support Team (Higher Education)",
+    name: "Giulia Posillipo",
     campus: "(West Perth Campus)",
+    image: giulia,
     button: "Book a Meeting",
     link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
-    image: ss3,
+    language: "English, Spanish, and Italian",
   },
   {
-    title: "Student Support Team",
-    name: "Jindal Patel",
-    campus: "(West Perth Campus)",
-    button: "Book a Meeting",
-    link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
-    image: ss4,
-  },
-  {
-    title: "Schedules Team",
+    title: "Scheduling Team",
     name: "Darshwini Poonen",
-    campus: "(Online Meetings)",
+    campus: "(West Perth Campus)",
+    image: darshwini,
     button: "Book a Meeting",
-    link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
-    image: ss5,
+    link: "https://calendar.app.google/iHyHRydzvedKH9r17 ",
+    language: "English, Mauritian Creole, French, Hindi",
   },
   {
     title: "Schedules Team",
-    name: "Jaynata Pandeea",
+    name: "Jayanta Pandeea",
     campus: "(West Perth Campus)",
+    image: jayanta,
     button: "Book a Meeting",
-    link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
-    image: ss6,
+    link: "https://calendar.app.google/kSGJKivuzsjJ2ESw6",
+    language: "Mauritian Creole, French, English",
+  },
+  {
+    title: "Student Support Team (Higher Education)",
+    name: "Jinal Patel",
+    campus: "(Adelaide Campus)",
+    image: jinal,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/3bvraWZDRSymHfXt5 ",
+    language: "English, Hindi, Gujarati",
   },
 ];
 

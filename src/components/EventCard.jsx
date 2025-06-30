@@ -11,7 +11,9 @@ function EventCard({ cards }) {
           </div>
           <div className="card-item-content">
             <h5>{card.date}</h5>
-            <h3>{card.title}</h3>
+            <a href={card.link} target="_blank" rel="noopener noreferrer">
+              <h3>{card.title}</h3>
+            </a>
             <p>{card.description}</p>
           </div>
         </div>

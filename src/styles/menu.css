@@ -1,5 +1,5 @@
 .menu-container{
-    width: 12vw;
+    width: 15vw;
     height: auto;
     line-height: 50px;
     background-color: #00007B;
@@ -8,8 +8,9 @@
     right:2vw;
     z-index: 100;
     border-radius: 3px;
-    padding-left: 30px;
+    padding-left: 0px;
     padding-bottom: 5px;
+    
 }
 
 .menu-container li{
@@ -17,10 +18,15 @@
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
-    justify-content: left;
+    padding-left: 30px;
     margin: 0;
 }
-
+.menu-container li:hover{
+    border: 2px solid #c9d7ee;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 600;
+}
 .menu-item{
     color: #fff;
     text-decoration: none;
