@@ -123,7 +123,7 @@ export const support = [
     campus: "(West Perth Campus)",
     image: giulia,
     button: "Book a Meeting",
-    link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
+    link: "https://calendar.app.google/HpxFdVntEFXVeovz8",
     language: "English, Spanish, and Italian",
   },
   {
