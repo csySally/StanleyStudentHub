@@ -7,6 +7,10 @@ import ss6 from "../assets/images/ss6.png";
 import accounting from "../assets/images/accounting.jpg";
 import bs from "../assets/images/bs.png";
 import it from "../assets/images/it.png";
+import zarin from "../assets/images/zarin.jpg";
+import giulia from "../assets/images/giulia.png";
+import darshwini from "../assets/images/darshwini.jpg";
+import jinal from "../assets/images/jinal.jpg";
 
 export const heading1 = "Important Contacts";
 
@@ -105,27 +109,35 @@ export const falcuty = [
 export const support = [
   {
     title: "Student Support Team",
-    name: "Nga (Elisa) Tong",
-    campus: "(Perth City Campus)",
-    image: ss1,
+    name: "Zarin Sharmily",
+    campus: "(West Perth Campus)",
+    image: zarin,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/TwZ9vFHnz51zZJiX6",
   },
   {
-    title: "Student Support Team",
-    name: "Jenisha Huluss",
+    title: "Student Support Team (Higher Education)",
+    name: "Giulia Posillipo",
     campus: "(West Perth Campus)",
-    image: ss2,
+    image: giulia,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
   },
   {
-    title: "Student Support Team",
-    name: "Sujana Pokhrel",
+    title: "Student Support Team (Scheduling Team)",
+    name: "Darshwini Poonen",
     campus: "(West Perth Campus)",
-    image: ss3,
+    image: darshwini,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/iHyHRydzvedKH9r17 ",
   },
   {
-    title: "Student Support Team",
-    name: "Jindal Patel",
-    campus: "(West Perth Campus)",
-    image: ss4,
+    title: "Student Support Team (Higher Education)",
+    name: "Jinal Patel",
+    campus: "(Adelaide Campus)",
+    image: jinal,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/3bvraWZDRSymHfXt5 ",
   },
   {
     title: "Schedules Team",
