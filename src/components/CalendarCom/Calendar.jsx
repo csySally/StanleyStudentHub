@@ -67,6 +67,9 @@ export default function Calendar({
                             {format(event.start, "HH:mm")}
                           </div>
                           <div className="my-event-title">{event.title}</div>
+                          <div className="my-event-description">
+                            {event.description || "No description available"}
+                          </div>
                           {event.location && (
                             <div className="my-event-location">
                               📍 {event.location}

@@ -67,7 +67,7 @@ export default function useGoogleCalendar() {
       }
 
       const formatted = data.items.map((item) => ({
-        title: item.description,
+        title: item.summary || "",
         start: new Date(item.start.dateTime || item.start.date),
         location: item.location || "Online",
         link: item.htmlLink,
