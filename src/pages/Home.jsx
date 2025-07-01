@@ -17,6 +17,8 @@ import slogan from "../assets/images/slogan.png";
 import oval3 from "../assets/images/oval3.png";
 import oval4 from "../assets/images/oval4.png";
 import career from "../assets/images/career.png";
+import useGoogleCalendar from "../hooks/useGoogleCalendar.js";
+import { format, isAfter } from "date-fns";
 import {
   welcomeText,
   heading1,
@@ -45,6 +47,22 @@ import "../styles/home.css";
 
 function Home() {
   const nextSectionRef = useRef(null);
+  const { events } = useGoogleCalendar();
+  const yesterday = new Date() - 24 * 60 * 60 * 1000; // 24 hours ago
+  const uniqueDateEvents = [];
+  const seenDates = new Set();
+
+  events
+    .filter((event) => isAfter(event.start, yesterday))
+    .sort((a, b) => a.start - b.start)
+    .forEach((event) => {
+      const dayStr = format(event.start, "yyyy-MM-dd");
+      if (!seenDates.has(dayStr) && uniqueDateEvents.length < 3) {
+        seenDates.add(dayStr);
+        uniqueDateEvents.push(event);
+      }
+    });
+
   return (
     <div>
       <Header />
@@ -72,7 +90,7 @@ function Home() {
         isLink={true}
       />
       <div className="event-cards-container">
-        <EventCard cards={EventCards} />
+        <EventCard cards={uniqueDateEvents} />
       </div>
       <Heading
         title={heading3}

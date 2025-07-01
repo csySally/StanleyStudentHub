@@ -1,12 +1,12 @@
 .cards-container {
-  height: 340px;
+  height: 250px;
   width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   padding: 0 5%;
-  gap: 40px;
+  gap: 50px;
 }
 
 
@@ -19,6 +19,7 @@
   justify-content: center;
   background-color: #fff;
   border-radius: 15px;
+  padding: 0 20px;
  
 }
 
@@ -52,6 +53,11 @@
   padding-top: 60px;
 }
 
+.card-item-date {
+  display: flex;
+  align-items: center;
+  gap:20px
+}
 .cards-container h5{
   font-size: 16px;
   font-weight: 700;
@@ -75,6 +81,12 @@
   margin:0;
   padding-top: 20px;
   padding-right: 30px;
+  line-height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
 }
 
 .card-item-content a{

@@ -72,6 +72,19 @@ export default function useGoogleCalendar() {
         location: item.location || "Online",
         link: item.htmlLink,
         description: item.description || "",
+        date: new Date(
+          item.start.dateTime || item.start.date
+        ).toLocaleDateString("en-AU", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        }),
+        time: new Date(
+          item.start.dateTime || item.start.date
+        ).toLocaleTimeString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+        }),
       }));
 
       setEvents(formatted);
