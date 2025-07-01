@@ -56,7 +56,7 @@ Visit Stanley College at Booth #𝟰𝟬𝟭 and #𝟱𝟬𝟮!🤩`,
     image: home4,
   },
 ];
-export const events = [
+/* export const events = [
   {
     title: "Morning Jog with Friends",
     start: new Date(2025, 5, 17, 7, 30),
@@ -112,4 +112,4 @@ export const events = [
     location: "Campus",
     link: "https://www.google.com",
   },
-];
+]; */

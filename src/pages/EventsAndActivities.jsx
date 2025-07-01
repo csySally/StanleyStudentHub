@@ -5,13 +5,11 @@ import Footer from "../components/Footer";
 import Heading from "../components/Heading.jsx";
 import ArrowHeading from "../components/ArrowHeading";
 import SwiperCom from "../components/SwiperCom";
-
 import { startOfWeek, addDays } from "date-fns";
 import Calendar from "../components/CalendarCom/Calendar.jsx";
 import backgroundPic from "../assets/images/events-background.jpeg";
-
+import useGoogleCalendar from "../hooks/useGoogleCalendar.js";
 import {
-  events,
   calendarTitle,
   arrowHeadings,
   heading1,
@@ -19,16 +17,24 @@ import {
   eventSlides,
   heading2,
 } from "../config/eventContentConfig";
-
 import "../styles/events&activities.css";
 
 function EventsAndActivities() {
   const [selectedDate, setSelectedDate] = useState(new Date());
+
   const daysOfWeek = useMemo(() => {
     const start = startOfWeek(selectedDate, { weekStartsOn: 0 });
     return Array.from({ length: 7 }, (_, i) => addDays(start, i));
   }, [selectedDate]);
+
   const nextSectionRef = useRef(null);
+  const { events } = useGoogleCalendar();
+
+  const handleDateSelect = (date) => {
+    console.log("Date selected:", date);
+    setSelectedDate(date);
+  };
+
   return (
     <div>
       <Header />
@@ -64,8 +70,9 @@ function EventsAndActivities() {
         <Calendar
           days={daysOfWeek}
           events={events}
-          calendarTitle={calendarTitle}
-          onDateSelect={setSelectedDate}
+          calendarTitle="Stanley College Events Calendar"
+          selectedDate={selectedDate}
+          onDateSelect={handleDateSelect}
         />
       </div>
       <Footer />
