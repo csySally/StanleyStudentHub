@@ -74,6 +74,8 @@
     margin: 40px 8% 40px 8%;
     border-radius: 10px;
     position: relative;
+        box-shadow: 0 0 15px rgba(147, 144, 144, 0.3);
+
 }
 
 .vet-card-content>h2>button{
@@ -90,7 +92,9 @@
 .vet-card-content>h2>button:hover{
     transform: scale(1.3);
     transition: transform 0.3s ease;
-    text-shadow: 0 0 5px #EABE4C;
+
+    color: #EABE4C;
+    
 }
 
 .vet-card-content h1{
