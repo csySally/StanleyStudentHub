@@ -30,3 +30,30 @@
 npm install
 npm start
 ```
+
+## Google Calendar Integration Setup
+
+### Get Calendar ID
+
+1. Create a dedicated Google Calendar
+   • Go to Google Calendar
+   • On the left panel, click the "+" next to “Other calendars” → Create new calendar
+   • Name it something like Stanley Events Calendar
+   • Save it
+   • Create events under this calendar
+
+2. Make the calendar public
+   • Go to the calendar’s Settings
+   • Under “Access permissions for events” → Check Make available to public
+   • Copy the Calendar ID under “Integrate calendar”
+   • Format looks like: c_xxxxxxxxxxxxxxxxxxxxxxxxxxx@group.calendar.google.com
+
+### Why this is not set up using a Stanley College staff account
+
+Due to admin-level restrictions on our Stanley Google Workspace:
+• Calendar access and sharing options are limited;
+• Staff-created calendars cannot be made publicly visible to everyone (outside the organization).
+
+To allow public access (so the events can be seen by external visitors without logging in), I used a personal Google account to create and share the calendar.
+
+Once Stanley’s admin permissions are updated, this integration can be migrated to an official calendar account.
