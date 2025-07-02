@@ -236,6 +236,11 @@ export const qaList = [
     answer:
       "Once you have made the payment you can send the proof of payment, quote your Student ID as the payment reference and forward a copy of your payment receipt to finance@stanleycollege.edu.au. We will send you the confirmation with the receipt of your payment as a confirmation in your email.",
   },
+  {
+    question: "How can I apply to change my current course or program?",
+    answer: `To request a course variation (e.g., change course, defer, or transfer), please complete the Course Variation Application Form (CVAF). <iframe src='https://highereducation.formstack.com/workflows/cvaf' title='Formstack Form' width='100%' height='800' scrolling='yes' frameborder='0'></iframe>`,
+    isIframe: true,
+  },
 ];
 
 export const homeSlides2 = [

@@ -20,14 +20,18 @@ function QAItem({ qa }) {
         className="qa-item-content"
         style={{ display: isOpen ? "block" : "none" }}
       >
-        <p>
-          {qa.answer.split("\n").map((line, index) => (
-            <React.Fragment key={index}>
-              {line}
-              <br />
-            </React.Fragment>
-          ))}
-        </p>
+        {qa.isIframe ? (
+          <div dangerouslySetInnerHTML={{ __html: qa.answer }} />
+        ) : (
+          <p>
+            {qa.answer.split("\n").map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+          </p>
+        )}
         <div
           style={{ display: qa.image ? "flex" : "none" }}
           className="qa-item-images-container"

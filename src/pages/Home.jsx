@@ -114,13 +114,6 @@ function Home() {
         textColor="#fff"
         toMore={false}
       />
-      <SwiperCom slides={homeSlides2} />
-      <SecondHeading
-        title={secondHeading2}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
-      />
       <div className="accessContent">
         <p>{quickAccess}</p>
       </div>
