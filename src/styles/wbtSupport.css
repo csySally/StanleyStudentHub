@@ -2,3 +2,132 @@
     width: 100%;
     aspect-ratio:100/1;
     }
+
+.card-container{
+    height: auto;
+}
+
+.work-card{
+    display: flex;
+    padding: 3% 8%;
+    gap:60px;
+
+}
+
+.wbt-card, .he-card{
+    width: 100%;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: 2px solid #00007B;
+}
+
+.wbt-card:hover, .he-card:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wbt-card h3, .he-card h3{
+    font-family: "Acme", sans-serif;
+    font-size: 24px;
+}
+
+.wbt-card>div, .he-card>div{
+    width: 100%;
+    height: 80%;
+}
+.wbt-card p, .he-card p{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 2% 0;
+}
+
+.wbt-card button, .he-card button{
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00007B;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.wbt-card button:hover, .he-card button:hover{
+    background-color: #EABE4C;
+    color: #00007B;
+    transition: background-color 0.3s ease;
+}
+.vet-card-content{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #00007B;
+    margin: 40px 8% 40px 8%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.vet-card-content>h2>button{
+    position: absolute;
+    top: 50px;
+    right: 10%;
+    color:#00007B;
+    font-weight: 800;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;}
+
+.vet-card-content>h2>button:hover{
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+    text-shadow: 0 0 5px #EABE4C;
+}
+
+.vet-card-content h1{
+    font-family: "Acme", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0 -10px 0;
+}
+
+.vet-card-content p, .vet-card-content ul, .vet-card-content table{
+    padding: 0 8%;
+}
+
+.wbt-support-staff{
+    margin:0 -12%
+}
+
+.what-is-wbt>p, .what-is-wbt li{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 15px;
+}
+
+.wbt-requirements thead th{
+    font-family: "Acme", sans-serif;
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 30px;
+    border-bottom: 2px solid #00007B;
+}
+
+.wbt-requirements tbody tr td{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #d3d3d3;
+    line-height: 28px;
+}
+
+
