@@ -11,6 +11,8 @@ import online from "../assets/icons/Online Group Studying.svg";
 import change from "../assets/icons/Change.svg";
 import timetable from "../assets/icons/Timetable.svg";
 import changeContact from "../assets/images/changeContact.png";
+import sujana from "../assets/images/Sujana.jpg";
+import saw from "../assets/images/Saw.jpg";
 
 export const heading1 = "We are Here to Help";
 
@@ -31,6 +33,15 @@ export const studentSupport = [
     language: "Bengali, English, Japanese, Hindi, Urdu",
   },
   {
+    title: "Student Support Team",
+    name: "Sujana Pokhrel",
+    campus: "(West Perth Campus)",
+    image: sujana,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/RccfZ56XJ61nFBwX7",
+    language: "English, Nepali",
+  },
+  {
     title: "Student Support Team (Higher Education)",
     name: "Giulia Posillipo",
     campus: "(West Perth Campus)",
@@ -38,6 +49,24 @@ export const studentSupport = [
     button: "Book a Meeting",
     link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
     language: "English, Spanish, and Italian",
+  },
+  {
+    title: "Student Support Team (Higher Education)",
+    name: "Saw Vincent Mya",
+    campus: "(West Perth Campus)",
+    image: saw,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/6KaWQ4t7vXScGmiH9",
+    language: "English, Burmese",
+  },
+  {
+    title: "Student Support Team (Higher Education)",
+    name: "Jinal Patel",
+    campus: "(Adelaide Campus)",
+    image: jinal,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/3bvraWZDRSymHfXt5 ",
+    language: "English, Hindi, Gujarati",
   },
   {
     title: "Scheduling Team",
@@ -56,15 +85,6 @@ export const studentSupport = [
     button: "Book a Meeting",
     link: "https://calendar.app.google/kSGJKivuzsjJ2ESw6",
     language: "Mauritian Creole, French, English",
-  },
-  {
-    title: "Student Support Team (Higher Education)",
-    name: "Jinal Patel",
-    campus: "(Adelaide Campus)",
-    image: jinal,
-    button: "Book a Meeting",
-    link: "https://calendar.app.google/3bvraWZDRSymHfXt5 ",
-    language: "English, Hindi, Gujarati",
   },
 ];
 
