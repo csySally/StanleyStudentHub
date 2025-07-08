@@ -199,6 +199,7 @@ function WBTSupport() {
                 **This course requires Clinical Work Placement to be completed
                 full time (minimum 40 hours per week).
               </p>
+              <button className="wbt-more">Learn More</button>
             </div>
             <SecondHeading
               title={secondH1}
@@ -209,9 +210,83 @@ function WBTSupport() {
             <div className="wbt-support-staff">
               <StaffCard staffCard={wbtSupport} showAll={false} />
             </div>
+            <button className="wbt-more">Learn More</button>
           </div>
         )}
-        <div className="he-card-content"></div>
+        {activeCard === "he" && (
+          <div className="he-card-content">
+            <h1>Higher Education Students – Internship & WIL Support</h1>
+            <h2>
+              <button onClick={handleClose}>—</button>
+            </h2>
+            <SecondHeading
+              title="What is Internship / WIL?"
+              backgroundColor="#fff"
+              textColor="#00007B"
+              toMore={false}
+            />
+            <div className="what-is-he">
+              <p>
+                Internships, Fieldwork Placements or WIL (Work-Integrated
+                Learning) are <b>academic units</b> designed to bridge your
+                study and your future career. They give you real-world
+                experience and help develop your professional identity.
+              </p>
+              <ul>
+                <li>Placements are part of your degree</li>
+                <li>
+                  Can be arranged by Stanley or self-sourced (with approval)
+                </li>
+                <li>Usually unpaid and must comply with the Fair Work Act</li>
+                <li>
+                  Placement hours are treated as class time, not part of work
+                  rights limits
+                </li>
+              </ul>
+            </div>
+            <SecondHeading
+              title="Placement Requirements by Course"
+              backgroundColor="#fff"
+              textColor="#00007B"
+              toMore={false}
+            />
+            <div className="wbt-requirements">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Stanley College Program</th>
+                    <th>Unit</th>
+                    <th>Required Hours</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowSpan="2">Bachelor of Community Services</td>
+                    <td>COS208 Fieldwork 1</td>
+                    <td>Placement 200 hours in total</td>
+                  </tr>
+                  <tr>
+                    <td>COS308 Fieldwork 2</td>
+                    <td>Placement 200 hours in total</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Bachelor of Information and Communication Technology
+                    </td>
+                    <td>ICT303 ICT Practicum</td>
+                    <td>Placement 100-120 hours in total</td>
+                  </tr>
+                  <tr>
+                    <td>Master of Business (all specialisations)</td>
+                    <td>MBS604 WIL/Research project preparation</td>
+                    <td>Placement 100-120 hours in total</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button className="he-more">Learn More</button>
+          </div>
+        )}
       </div>
 
       <Heading
