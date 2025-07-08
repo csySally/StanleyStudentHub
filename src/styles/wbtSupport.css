@@ -136,4 +136,22 @@
     line-height: 28px;
 }
 
+.wbt-more, .he-more{
+    width: 10%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00007B;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
 
+.wbt-more:hover, .he-more:hover{
+    background-color: #EABE4C;
+    color: #00007B;
+    transition: background-color 0.3s ease;
+}

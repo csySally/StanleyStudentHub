@@ -199,7 +199,6 @@ function WBTSupport() {
                 **This course requires Clinical Work Placement to be completed
                 full time (minimum 40 hours per week).
               </p>
-              <button className="wbt-more">Learn More</button>
             </div>
             <SecondHeading
               title={secondH1}
@@ -210,7 +209,16 @@ function WBTSupport() {
             <div className="wbt-support-staff">
               <StaffCard staffCard={wbtSupport} showAll={false} />
             </div>
-            <button className="wbt-more">Learn More</button>
+            <button
+              className="wbt-more"
+              onClick={() => {
+                window.open(
+                  "https://info.stanleycollege.edu.au/hubfs/Marketing-Publications/Compliance-Docs/Stanley-College-Student-Handbook-Domestic.pdf"
+                );
+              }}
+            >
+              Learn More
+            </button>
           </div>
         )}
         {activeCard === "he" && (
@@ -284,7 +292,16 @@ function WBTSupport() {
                 </tbody>
               </table>
             </div>
-            <button className="he-more">Learn More</button>
+            <button
+              className="he-more"
+              onClick={() => {
+                window.open(
+                  "https://www.highereducation.stanleycollege.edu.au/wp-content/uploads/2021/12/Work-Integrated-Learning-and-Placements-Policy_v1.2.pdf"
+                );
+              }}
+            >
+              Learn More
+            </button>
           </div>
         )}
       </div>
