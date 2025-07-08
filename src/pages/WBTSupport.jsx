@@ -223,12 +223,14 @@ function WBTSupport() {
         )}
         {activeCard === "he" && (
           <div className="he-card-content">
-            <h1>Higher Education Students – Internship & WIL Support</h1>
+            <h1>
+              Higher Education Students – Fieldwork Placement & WIL Support
+            </h1>
             <h2>
               <button onClick={handleClose}>—</button>
             </h2>
             <SecondHeading
-              title="What is Internship / WIL?"
+              title="What is Fieldwork Placement / WIL?"
               backgroundColor="#fff"
               textColor="#00007B"
               toMore={false}
