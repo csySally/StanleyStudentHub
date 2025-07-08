@@ -194,9 +194,11 @@ export const studentRe = [
   {
     name: "Jamie Wang",
     content: `Hi! I’m Jamie from China, currently studying the Diploma of Business at Stanley College. I’m passionate about marketing and hope to run my own online business one day. I love meeting people from different cultures and learning new perspectives. As a student representative, I’m always here to support and speak up for fellow students!`,
-    button: "Talk to Me",
+    button: "Email Me",
     image: bs,
-    url: "",
+    email: "12042822@stanleycollege.edu.au",
+    subject: "Course Inquiry",
+    body: "Hi, I would like to ask about...",
   },
   {
     name: "Aaron Patel",

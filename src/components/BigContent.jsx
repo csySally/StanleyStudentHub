@@ -44,7 +44,16 @@ function BigContent({ bigContent }) {
             <button
               style={{ display: con.button ? "block" : "none" }}
               onClick={() => {
-                window.open(con.url);
+                if (con.email) {
+                  const subject = encodeURIComponent(con.subject || "");
+                  const body = encodeURIComponent(con.body || "");
+                  window.open(
+                    `https://mail.google.com/mail/?view=cm&fs=1&to=${con.email}&su=${subject}&body=${body}`,
+                    "_blank"
+                  );
+                } else if (con.url) {
+                  window.open(con.url);
+                }
               }}
             >
               {con.button}
