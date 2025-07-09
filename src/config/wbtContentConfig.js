@@ -49,7 +49,7 @@ export const wbtSupport = [
   {
     title: "Employment Team",
     name: "Gulnaz Batool",
-    campus: "(ommunity Services, Early Childhood Education & Health) ",
+    campus: "(Community Services, Early Childhood Education & Health) ",
     button: "Book a meeting",
     image: wbt2,
     link: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3uU5AFK40QWWGEHlPA1zCHRLb8Sx9nkgg-XDLq2ocwtMVfRimmIIXYxu-PHeACmM-LGkRKLNFT?gv=true",

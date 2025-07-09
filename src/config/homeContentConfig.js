@@ -56,7 +56,7 @@ export const DiscoverCards = [
     image: discover1,
   },
   {
-    title: "Work Based Training (WBT) Support",
+    title: "Placement & Employment Support",
     url: "/wbt-support",
     image: discover2,
   },
