@@ -45,6 +45,8 @@ export const wbtSupport = [
     campus: "(Cookery, Hospitality & PYP) ",
     button: "Book a meeting",
     image: wbt1,
+    link: "https://calendar.app.google/mXSdfVUt84xCfQfc8",
+    language: "English, Nepali",
   },
   {
     title: "Employment Team",
@@ -53,6 +55,7 @@ export const wbtSupport = [
     button: "Book a meeting",
     image: wbt2,
     link: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3uU5AFK40QWWGEHlPA1zCHRLb8Sx9nkgg-XDLq2ocwtMVfRimmIIXYxu-PHeACmM-LGkRKLNFT?gv=true",
+    language: "English, Urdu, Hindi, Punjabi, Saraiki",
   },
 ];
 
