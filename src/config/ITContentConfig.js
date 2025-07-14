@@ -12,7 +12,7 @@ export const arrowHeadings = [
   {
     firstImg: star,
     firstCont: "Something not working? ",
-    secondCont: "We’ve got your back!e!",
+    secondCont: "We’ve got your back!",
   },
 ];
 

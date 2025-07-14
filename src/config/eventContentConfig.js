@@ -12,7 +12,7 @@ export const calendarTitle = "Calendar of Events in Stanley College";
 export const arrowHeadings = [
   {
     firstImg: fire,
-    firstCont: "New tp Australia? ",
+    firstCont: "New to Australia? ",
     secondCont: "Join our social activities!",
   },
 ];

@@ -66,10 +66,10 @@ function WBTSupport() {
               <button onClick={() => handleOpen("vet")}>View Details</button>
             </div>
             <div className="he-card">
-              <h3>Higher Education Students – Internship & WIL</h3>
+              <h3>Higher Education Students – Fieldwork Placement & WIL</h3>
               <div>
                 <p>
-                  Transition from study to work with internships and WIL
+                  Transition from study to work with fieldwork placement and WIL
                   (Work-Integrated Learning).
                 </p>
                 <p>
