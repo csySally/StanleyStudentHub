@@ -18,6 +18,7 @@ import oval3 from "../assets/images/oval3.png";
 import oval4 from "../assets/images/oval4.png";
 import career from "../assets/images/career.png";
 import useGoogleCalendar from "../hooks/useGoogleCalendar.js";
+import useCarouselData from "../hooks/useCarouselData.js";
 import { format, isAfter } from "date-fns";
 import {
   welcomeText,
@@ -80,7 +81,7 @@ function Home() {
         textColor="#fff"
         toMore={false}
       />
-      <SwiperCom slides={homeSlides} />
+      <SwiperCom />
       <Heading
         title={heading2}
         backgroundColor="#00007B"
