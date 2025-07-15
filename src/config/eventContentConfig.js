@@ -6,8 +6,9 @@ import home4 from "../assets/images/home4.jpeg";
 
 export const heading1 = "Events and Activities";
 export const heading2 = "Upcoming Events";
+export const heading3 = "Workshops";
 
-export const calendarTitle = "Calendar of Events in Stanley College";
+export const calendarTitle = "Stanley College Events Calendar";
 
 export const arrowHeadings = [
   {

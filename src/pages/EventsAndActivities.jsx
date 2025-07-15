@@ -16,6 +16,7 @@ import {
   arrowContent,
   eventSlides,
   heading2,
+  heading3,
 } from "../config/eventContentConfig";
 import "../styles/events&activities.css";
 
@@ -70,11 +71,18 @@ function EventsAndActivities() {
         <Calendar
           days={daysOfWeek}
           events={events}
-          calendarTitle="Stanley College Events Calendar"
+          calendarTitle={calendarTitle}
           selectedDate={selectedDate}
           onDateSelect={handleDateSelect}
         />
       </div>
+      <Heading
+        title={heading3}
+        backgroundColor="#00007B"
+        textColor="#fff"
+        toMore={false}
+      />
+      <img src="https://drive.google.com/uc?export=view&id=1Gt8rtJfmD09aEJBR6D0JBSt_MSnwOw1G" />
       <Footer />
     </div>
   );
