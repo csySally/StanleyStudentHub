@@ -5,7 +5,7 @@ export default function useCarouselData() {
 
   useEffect(() => {
     fetch(
-      "https://script.google.com/macros/s/AKfycbxZXAfxZkryZQ1XFNm5qaHJ-p_ZLw0yOFxzq97ccv4-MlnuQ913_9F9n1VC788C-KOR/exec?sheet=carousel"
+      "https://script.google.com/macros/s/AKfycbyOxrUFoqpOwHpsThdHYLeqTC_FYbAJ1DiR-HKxlrJAlOfOBlasmOIwJdSX9QMm6hUF/exec?sheet=carousel"
     )
       .then((res) => res.json())
       .then((data) => setSlides(data))

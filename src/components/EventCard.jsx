@@ -6,9 +6,9 @@ function EventCard({ cards }) {
     <div className="cards-container">
       {cards.map((card, index) => (
         <div key={index} className="card-item">
-          {/*           <div className="card-item-image">
+          <div className="card-item-image">
             <img src={card.image} alt={card.title} />
-          </div> */}
+          </div>
           <div className="card-item-content">
             <div className="card-item-date">
               <h5>{card.date}</h5> <h5>{card.time}</h5>
