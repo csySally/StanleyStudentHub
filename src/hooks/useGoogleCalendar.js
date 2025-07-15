@@ -9,35 +9,35 @@ export default function useGoogleCalendar() {
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        const formatted = data.map((item) => {
-          // 使用原始的 start 字段创建 Date 对象
-          const startDate = new Date(item.start);
+        const formatted = data
+          .map((item) => {
+            const iso = item.start?.endsWith("Z")
+              ? item.start
+              : item.start + "Z";
+            const startDate = new Date(iso);
+            if (isNaN(startDate)) return null;
 
-          return {
-            title: item.title,
-            description: item.description,
-            location: item.location,
-            link: item.link,
-            image: item.image,
-            // 格式化显示用的日期和时间
-            date: startDate.toLocaleDateString("en-AU", {
-              year: "numeric",
-              month: "2-digit",
-              day: "2-digit",
-            }),
-            time: startDate.toLocaleTimeString("en-AU", {
-              hour: "2-digit",
-              minute: "2-digit",
-              hour12: false, // 使用24小时制，更符合澳洲习惯
-            }),
-            // 保留原始的 Date 对象供排序和其他操作使用
-            start: startDate,
-          };
-        });
-
-        // 可以按时间排序
-        formatted.sort((a, b) => a.start - b.start);
+            return {
+              title: item.title,
+              description: item.description,
+              location: item.location,
+              link: item.link,
+              image: item.image,
+              date: startDate.toLocaleDateString("en-AU", {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+              }),
+              time: startDate.toLocaleTimeString("en-AU", {
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false,
+              }),
+              start: startDate,
+            };
+          })
+          .filter(Boolean)
+          .sort((a, b) => a.start - b.start);
 
         setEvents(formatted);
       })

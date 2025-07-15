@@ -19,7 +19,6 @@ import oval4 from "../assets/images/oval4.png";
 import career from "../assets/images/career.png";
 import useGoogleCalendar from "../hooks/useGoogleCalendar.js";
 import useCarouselData from "../hooks/useCarouselData.js";
-import { format, isAfter } from "date-fns";
 import {
   welcomeText,
   heading1,
@@ -49,20 +48,21 @@ import "../styles/home.css";
 function Home() {
   const nextSectionRef = useRef(null);
   const { events } = useGoogleCalendar();
-  const yesterday = new Date() - 24 * 60 * 60 * 1000; // 24 hours ago
-  const uniqueDateEvents = [];
-  const seenDates = new Set();
 
-  events
-    .filter((event) => isAfter(event.start, yesterday))
-    .sort((a, b) => a.start - b.start)
-    .forEach((event) => {
-      const dayStr = format(event.start, "yyyy-MM-dd");
-      if (!seenDates.has(dayStr) && uniqueDateEvents.length < 3) {
-        seenDates.add(dayStr);
-        uniqueDateEvents.push(event);
-      }
+  const getNext3Events = (events) => {
+    const now = new Date();
+
+    const futureEvents = events.filter((event) => {
+      const isInFuture = event.start >= now;
+      return isInFuture;
     });
+
+    const sortedEvents = futureEvents.sort((a, b) => a.start - b.start);
+    const next3Events = sortedEvents.slice(0, 3);
+    return next3Events;
+  };
+
+  const uniqueDateEvents = getNext3Events(events);
 
   return (
     <div>
