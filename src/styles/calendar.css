@@ -15,6 +15,7 @@
     justify-content: space-between;
     padding: 16px;
     position: relative;
+    margin-bottom: 30px;
 
 }
 .go-today-button {
@@ -44,12 +45,16 @@
 
 
 .my-calendar-grid {
+  
    display: grid;
    grid-template-columns: repeat(5, 1fr); 
-   padding: 16px;
+   width: 100%; 
+    table-layout: fixed; 
 }
 
 .my-calendar-day {
+  min-width: 0; /* 新增，防止内容撑开 */
+  box-sizing: border-box;
    background-color: #f2f2f2; 
    border: 1px solid #d3d3d3;
    min-height: 160px;
@@ -91,7 +96,6 @@
 
 .my-calendar-event {
   display: block;
-  width: auto;
   height: 180px; 
   background-color: white;
   padding: 7px 13px;
