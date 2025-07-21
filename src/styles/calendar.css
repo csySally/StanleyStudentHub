@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding-top: 20px;
+    padding: 20px 0 40px 0;
 }
 
 .my-calendar-header{
@@ -53,7 +53,7 @@
 }
 
 .my-calendar-day {
-  min-width: 0; /* 新增，防止内容撑开 */
+  min-width: 0; 
   box-sizing: border-box;
    background-color: #f2f2f2; 
    border: 1px solid #d3d3d3;
