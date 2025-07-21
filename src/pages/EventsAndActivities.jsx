@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Heading from "../components/Heading.jsx";
 import ArrowHeading from "../components/ArrowHeading";
 import SwiperCom from "../components/SwiperCom";
+import SwiperWorkshop from "../components/SwiperWorkshop";
 import { startOfWeek, addDays } from "date-fns";
 import Calendar from "../components/CalendarCom/Calendar.jsx";
 import backgroundPic from "../assets/images/events-background.jpeg";
@@ -80,9 +81,12 @@ function EventsAndActivities() {
         title={heading3}
         backgroundColor="#00007B"
         textColor="#fff"
-        toMore={false}
+        toMore={true}
+        toLink="https://drive.google.com/"
       />
-      <img src="https://drive.google.com/uc?export=view&id=1Gt8rtJfmD09aEJBR6D0JBSt_MSnwOw1G" />
+      <div className="workshop-container">
+        <SwiperWorkshop />
+      </div>
       <Footer />
     </div>
   );
