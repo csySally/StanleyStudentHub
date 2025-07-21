@@ -7,6 +7,7 @@ import wbt2 from "../assets/images/wbt2.png";
 import accounting from "../assets/images/accounting.jpg";
 import bs from "../assets/images/bs.png";
 import it from "../assets/images/it.png";
+import { button } from "motion/react-client";
 
 export const heading1 = "Need Help with Placement?";
 
@@ -45,13 +46,17 @@ export const wbtSupport = [
     campus: "(Cookery, Hospitality & PYP) ",
     button: "Book a meeting",
     image: wbt1,
+    link: "https://calendar.app.google/mXSdfVUt84xCfQfc8",
+    language: "English, Nepali",
   },
   {
     title: "Employment Team",
-    name: "Jenisha Huluss",
-    campus: "(Education & Health) ",
+    name: "Gulnaz Batool",
+    campus: "(Community Services, Early Childhood Education & Health) ",
     button: "Book a meeting",
     image: wbt2,
+    link: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3uU5AFK40QWWGEHlPA1zCHRLb8Sx9nkgg-XDLq2ocwtMVfRimmIIXYxu-PHeACmM-LGkRKLNFT?gv=true",
+    language: "English, Urdu, Hindi, Punjabi, Saraiki",
   },
 ];
 

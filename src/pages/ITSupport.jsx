@@ -7,6 +7,7 @@ import backgroundPic from "../assets/images/it-background.jpeg";
 import ArrowHeading from "../components/ArrowHeading";
 import StaffCard from "../components/StaffCard.jsx";
 import QAList from "../components/Q&A/QAList";
+import { motion } from "framer-motion";
 
 import "../styles/itSupport.css";
 
@@ -29,30 +30,44 @@ function ITSupport() {
         welcomeText="IT Support"
         scrollTargetRef={nextSectionRef}
       />
-      <div ref={nextSectionRef}>
+      {/*       <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div ref={nextSectionRef}>
+          <Heading
+            title={heading1}
+            backgroundColor="#00007B"
+            textColor="#fff"
+            toMore={false}
+          />
+        </div>
+        <ArrowHeading arrowHeadings={arrowHeadings[0]} />
+        <div className="care-container">
+          <div className="care-container-p">
+            <p>{ITCont}</p>
+          </div>
+          <div className="care-container-card">
+            <StaffCard staffCard={ITStaff} showAll={false} />
+          </div>
+        </div>
+      </motion.section> */}
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <Heading
-          title={heading1}
-          backgroundColor="#fcd60b"
-          textColor="#fff"
+          title={heading2}
+          backgroundColor="#fff"
+          textColor="#00007B"
           toMore={false}
         />
-      </div>
-      <ArrowHeading arrowHeadings={arrowHeadings[0]} />
-      <div className="care-container">
-        <div className="care-container-p">
-          <p>{ITCont}</p>
-        </div>
-        <div className="care-container-card">
-          <StaffCard staffCard={ITStaff} showAll={false} />
-        </div>
-      </div>
-      <Heading
-        title={heading2}
-        backgroundColor="#fff"
-        textColor="#fcd60b"
-        toMore={false}
-      />
-      <QAList qaList={qaList} />
+        <QAList qaList={qaList} />
+      </motion.section>
       <Footer />
     </div>
   );

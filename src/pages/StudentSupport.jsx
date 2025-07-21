@@ -21,6 +21,7 @@ import {
   qaList,
 } from "../config/studentSupportContentConfig";
 import "../styles/studentSupport.css";
+import { motion } from "framer-motion";
 
 function StudentSupport() {
   const nextSectionRef = useRef(null);
@@ -40,29 +41,57 @@ function StudentSupport() {
           toMore={false}
         />
       </div>
-      <InfoCard cardData={supportCardData} />
-      <img src={ellipse} className="ellipse" />
-      <SecondHeading
-        title={secondHeading1}
-        backgroundColor="#fff"
-        textColor="#fcd60b"
-        toMore={false}
-      />
-      <StaffCard staffCard={studentSupport} showAll={true} />
-      <Heading
-        title={heading2}
-        backgroundColor="#fcd60b"
-        textColor="#fff"
-        toMore={false}
-      />
-      <BigContent bigContent={otherServices} />
-      <Heading
-        title={heading3}
-        backgroundColor="#fff"
-        textColor="#fcd60b"
-        toMore={false}
-      />
-      <QAList qaList={qaList} />
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <InfoCard cardData={supportCardData} />
+        <img src={ellipse} className="ellipse" />
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <SecondHeading
+          title={secondHeading1}
+          backgroundColor="#fff"
+          textColor="#00007B"
+          toMore={false}
+        />
+        <StaffCard staffCard={studentSupport} showAll={true} />
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Heading
+          title={heading2}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+        <BigContent bigContent={otherServices} />
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Heading
+          title={heading3}
+          backgroundColor="#fff"
+          textColor="#00007B"
+          toMore={false}
+        />
+        <QAList qaList={qaList} />
+      </motion.section>
       <Footer />
     </div>
   );

@@ -10,7 +10,9 @@ function EventCard({ cards }) {
             <img src={card.image} alt={card.title} />
           </div>
           <div className="card-item-content">
-            <h5>{card.date}</h5>
+            <div className="card-item-date">
+              <h5>{card.date}</h5> <h5>{card.time}</h5>
+            </div>
             <a href={card.link} target="_blank" rel="noopener noreferrer">
               <h3>{card.title}</h3>
             </a>

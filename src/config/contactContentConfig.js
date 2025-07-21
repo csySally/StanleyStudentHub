@@ -12,6 +12,8 @@ import giulia from "../assets/images/giulia.png";
 import darshwini from "../assets/images/darshwini.jpg";
 import jinal from "../assets/images/jinal.jpg";
 import jayanta from "../assets/images/jayanta.jpg";
+import sujana from "../assets/images/Sujana.jpg";
+import saw from "../assets/images/Saw.jpg";
 
 export const heading1 = "Important Contacts";
 
@@ -118,13 +120,40 @@ export const support = [
     language: "Bengali, English, Japanese, Hindi, Urdu",
   },
   {
+    title: "Student Support Team",
+    name: "Sujana Pokhrel",
+    campus: "(West Perth Campus)",
+    image: sujana,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/RccfZ56XJ61nFBwX7",
+    language: "English, Nepali",
+  },
+  {
+    title: "Student Support Team (Higher Education)",
+    name: "Jinal Patel",
+    campus: "(Adelaide Campus)",
+    image: jinal,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/3bvraWZDRSymHfXt5 ",
+    language: "English, Hindi, Gujarati",
+  },
+  {
     title: "Student Support Team (Higher Education)",
     name: "Giulia Posillipo",
     campus: "(West Perth Campus)",
     image: giulia,
     button: "Book a Meeting",
-    link: "https://calendar.app.google/1U1EhkTpQXN6T45TA",
+    link: "https://calendar.app.google/HpxFdVntEFXVeovz8",
     language: "English, Spanish, and Italian",
+  },
+  {
+    title: "Student Support Team (Higher Education)",
+    name: "Saw Vincent Mya",
+    campus: "(West Perth Campus)",
+    image: saw,
+    button: "Book a Meeting",
+    link: "https://calendar.app.google/6KaWQ4t7vXScGmiH9",
+    language: "English, Burmese",
   },
   {
     title: "Scheduling Team",
@@ -143,15 +172,6 @@ export const support = [
     button: "Book a Meeting",
     link: "https://calendar.app.google/kSGJKivuzsjJ2ESw6",
     language: "Mauritian Creole, French, English",
-  },
-  {
-    title: "Student Support Team (Higher Education)",
-    name: "Jinal Patel",
-    campus: "(Adelaide Campus)",
-    image: jinal,
-    button: "Book a Meeting",
-    link: "https://calendar.app.google/3bvraWZDRSymHfXt5 ",
-    language: "English, Hindi, Gujarati",
   },
 ];
 
@@ -174,31 +194,39 @@ export const studentRe = [
   {
     name: "Jamie Wang",
     content: `Hi! I’m Jamie from China, currently studying the Diploma of Business at Stanley College. I’m passionate about marketing and hope to run my own online business one day. I love meeting people from different cultures and learning new perspectives. As a student representative, I’m always here to support and speak up for fellow students!`,
-    button: "Talk to Me",
+    button: "Email Me",
     image: bs,
-    url: "",
+    email: "12043822@stanleycollege.edu.au",
+    subject: "Student Representative Inquiry",
+    body: "Hi, I would like to ask about...",
   },
   {
     name: "Aaron Patel",
     content: `Hey everyone! I’m Aaron from India. I’m studying Advanced Diploma of Information Technology and have a strong interest in cybersecurity and cloud solutions. Outside of class, I enjoy coding and playing chess. I joined the student rep team because I want to help create a more connected and supportive learning environment for all.`,
-    button: "Talk to Me",
+    button: "Email Me",
     image: accounting,
     reverse: true,
-    url: "",
+    email: "12043822@stanleycollege.edu.au",
+    subject: "Student Representative Inquiry",
+    body: "Hi, I would like to ask about...",
   },
   {
     name: "Sophie Nguyen",
     content: `Hello! I’m Sophie, originally from Vietnam, and I’m pursuing my Certificate IV in Hospitality. I’m passionate about customer service and aspire to work in luxury hotels around the world. I joined the student rep team because I want to help new students feel welcomed and confident in their journey at Stanley.`,
-    button: "Talk to Me",
+    button: "Email Me",
     image: it,
-    url: "",
+    email: "12043822@stanleycollege.edu.au",
+    subject: "Student Representative Inquiry",
+    body: "Hi, I would like to ask about...",
   },
   {
     name: "Jacob Smith",
     content: `G’day! I’m Jacob, born and raised in Perth. I’m studying the Diploma of Leadership and Management because I enjoy working with people and solving problems. I joined the student representative team to be a voice for both domestic and international students, and to contribute to making Stanley College an even better place to learn and grow.`,
-    button: "Talk to Me",
+    button: "Email Me",
     image: it,
-    url: "",
+    email: "12043822@stanleycollege.edu.au",
+    subject: "Student Representative Inquiry",
+    body: "Hi, I would like to ask about...",
     reverse: true,
   },
 ];

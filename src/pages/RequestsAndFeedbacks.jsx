@@ -6,6 +6,7 @@ import Heading from "../components/Heading.jsx";
 import ArrowHeading from "../components/ArrowHeading";
 import Outerlink from "../components/Outerlink";
 import QuickLinks from "../components/QuickLinks";
+import { motion } from "framer-motion";
 
 import {
   heading1,
@@ -31,42 +32,56 @@ function RequestsAndFeedbacks() {
         welcomeText="Requests and Feedbacks"
         scrollTargetRef={nextSectionRef}
       />
-      <div ref={nextSectionRef}>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div ref={nextSectionRef}>
+          <Heading
+            title={heading1}
+            backgroundColor="#00007B"
+            textColor="#fff"
+            toMore={false}
+          />
+        </div>
+        <ArrowHeading arrowHeadings={arrowHeadings[0]} />
+        <div className="feedback-container">
+          <div className="feedback-container-p">
+            {feedbackContent.map((content, index) => (
+              <p key={index}>{content}</p>
+            ))}
+          </div>
+          <div className="feedback-container-card">
+            <div className="feedback-container-card-inner">
+              <Outerlink outerLink={requestOurLink} />
+            </div>
+            <div className="feedback-container-card-p">
+              <h3>{feedbackMoreHeading}</h3>
+              <p>
+                {feedbackMoreContent.map((content, index) => (
+                  <li key={index}>{content}</li>
+                ))}
+              </p>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <Heading
-          title={heading1}
-          backgroundColor="#fcd60b"
-          textColor="#fff"
+          title={heading2}
+          backgroundColor="#fff"
+          textColor="#00007B"
           toMore={false}
         />
-      </div>
-      <ArrowHeading arrowHeadings={arrowHeadings[0]} />
-      <div className="feedback-container">
-        <div className="feedback-container-p">
-          {feedbackContent.map((content, index) => (
-            <p key={index}>{content}</p>
-          ))}
-        </div>
-        <div className="feedback-container-card">
-          <div className="feedback-container-card-inner">
-            <Outerlink outerLink={requestOurLink} />
-          </div>
-          <div className="feedback-container-card-p">
-            <h3>{feedbackMoreHeading}</h3>
-            <p>
-              {feedbackMoreContent.map((content, index) => (
-                <li key={index}>{content}</li>
-              ))}
-            </p>
-          </div>
-        </div>
-      </div>
-      <Heading
-        title={heading2}
-        backgroundColor="#fff"
-        textColor="#fcd60b"
-        toMore={false}
-      />
-      <QuickLinks quickLinks={links} />
+        <QuickLinks quickLinks={links} />
+      </motion.section>
       <Footer />
     </div>
   );

@@ -19,6 +19,7 @@ import {
 import ellipse from "../assets/images/Ellipse.png";
 import "../styles/accessibilitySupport.css";
 import InfoCard from "../components/InfoCard.jsx";
+import { motion } from "framer-motion";
 
 function AccessibilitySupport() {
   const nextSectionRef = useRef(null);
@@ -30,32 +31,46 @@ function AccessibilitySupport() {
         welcomeText="Accessibility Support"
         scrollTargetRef={nextSectionRef}
       />
-      <div ref={nextSectionRef}>
-        <Heading
-          title={heading1}
-          backgroundColor="#fcd60b"
-          textColor="#fff"
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div ref={nextSectionRef}>
+          <Heading
+            title={heading1}
+            backgroundColor="#00007B"
+            textColor="#fff"
+            toMore={false}
+          />
+        </div>
+        <ArrowHeading arrowHeadings={arrowHeadings[0]} />
+        <div className="care-container">
+          <div className="care-container-p">
+            <p>{careCont}</p>
+          </div>
+          <div className="care-container-card">
+            <StaffCard staffCard={careStaff} showAll={false} />
+          </div>
+        </div>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <SecondHeading
+          title={secondH1}
+          backgroundColor="#fff"
+          textColor="#00007B"
           toMore={false}
         />
-      </div>
-      <ArrowHeading arrowHeadings={arrowHeadings[0]} />
-      <div className="care-container">
-        <div className="care-container-p">
-          <p>{careCont}</p>
-        </div>
-        <div className="care-container-card">
-          <StaffCard staffCard={careStaff} showAll={false} />
-        </div>
-      </div>
-      <SecondHeading
-        title={secondH1}
-        backgroundColor="#fff"
-        textColor="#fcd60b"
-        toMore={false}
-      />
-      <div className="external-content">{external}</div>
-      <img src={ellipse} className="ellipse" />
-      <InfoCard cardData={externalCardData} />
+        <div className="external-content">{external}</div>
+        <img src={ellipse} className="ellipse" />
+        <InfoCard cardData={externalCardData} />
+      </motion.section>
       <Footer />
     </div>
   );

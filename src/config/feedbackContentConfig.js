@@ -9,8 +9,8 @@ export const heading2 = "Quick Links";
 export const arrowHeadings = [
   {
     firstImg: bulb,
-    firstCont: "Something not working? ",
-    secondCont: "We’ve got your back!e!",
+    firstCont: "Have feedback to share?",
+    secondCont: "We’d love to hear it!",
   },
 ];
 

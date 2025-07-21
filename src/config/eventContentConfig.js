@@ -6,13 +6,14 @@ import home4 from "../assets/images/home4.jpeg";
 
 export const heading1 = "Events and Activities";
 export const heading2 = "Upcoming Events";
+export const heading3 = "Workshops";
 
-export const calendarTitle = "Calendar of Events in Stanley College";
+export const calendarTitle = "Stanley College Events Calendar";
 
 export const arrowHeadings = [
   {
     firstImg: fire,
-    firstCont: "New tp Australia? ",
+    firstCont: "New to Australia? ",
     secondCont: "Join our social activities!",
   },
 ];
@@ -56,7 +57,7 @@ Visit Stanley College at Booth #𝟰𝟬𝟭 and #𝟱𝟬𝟮!🤩`,
     image: home4,
   },
 ];
-export const events = [
+/* export const events = [
   {
     title: "Morning Jog with Friends",
     start: new Date(2025, 5, 17, 7, 30),
@@ -112,4 +113,4 @@ export const events = [
     location: "Campus",
     link: "https://www.google.com",
   },
-];
+]; */

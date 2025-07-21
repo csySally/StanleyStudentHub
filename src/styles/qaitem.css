@@ -46,13 +46,15 @@
 
 }
 
-.qa-item-content p {
+.qa-item-content p,.qa-item-content>div {
   font-size: 17px;
   font-weight: 400;
   color: #000;
   font-family: "Arial", sans-serif;
   line-height: 1.7;
 }
+
+
 
 .qa-item-content button {
   background-color: #fcd60b;

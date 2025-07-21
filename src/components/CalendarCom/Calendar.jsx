@@ -8,6 +8,7 @@ export default function Calendar({
   days,
   events,
   calendarTitle,
+  selectedDate,
   onDateSelect,
 }) {
   const getEventsForDay = (day) => {
@@ -29,7 +30,10 @@ export default function Calendar({
           </button>
           <h1>{calendarTitle}</h1>
           <div className="my-calendar-datepicker">
-            <DatePicker onDateSelect={onDateSelect} />
+            <DatePicker
+              selectedDate={selectedDate}
+              onDateSelect={onDateSelect}
+            />
           </div>
         </div>
         <div className="my-calendar-grid">
@@ -49,7 +53,6 @@ export default function Calendar({
                 </div>
                 {Array.from({ length: 3 }).map((_, i) => {
                   const event = getEventsForDay(day)[i];
-
                   // if there is an event, render it
                   if (event) {
                     return (
@@ -64,6 +67,9 @@ export default function Calendar({
                             {format(event.start, "HH:mm")}
                           </div>
                           <div className="my-event-title">{event.title}</div>
+                          <div className="my-event-description">
+                            {event.description || "No description available"}
+                          </div>
                           {event.location && (
                             <div className="my-event-location">
                               📍 {event.location}
@@ -73,7 +79,6 @@ export default function Calendar({
                       </Link>
                     );
                   }
-
                   // if no event, render an empty placeholder
                   return (
                     <div key={i} className="my-calendar-event">
