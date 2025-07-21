@@ -25,6 +25,7 @@ import {
   secondHeading3,
   secondHeading4,
 } from "../config/contactContentConfig.js";
+import { motion } from "framer-motion";
 
 function ImportantContacts() {
   const [showEx, setShowEx] = useState(false);
@@ -50,70 +51,113 @@ function ImportantContacts() {
           toMore={false}
         />
       </div>
-      <SecondHeading
-        title={secondHeading1}
-        backgroundColor="#fff"
-        textColor="#00007B"
-        toMore={true}
-        isLink={false}
-        onMoreClick={() => setShowEx(!showEx)}
-      />
-      <StaffCard staffCard={executive} showAll={showEx} />
-      <SecondHeading
-        title={secondHeading2}
-        backgroundColor="#fff"
-        textColor="#00007B"
-        toMore={true}
-        isLink={false}
-        onMoreClick={() => setShowFa(!showFa)}
-      />
-      <StaffCard staffCard={falcuty} showAll={showFa} />
-      <SecondHeading
-        title={secondHeading3}
-        backgroundColor="#fff"
-        textColor="#00007B"
-        toMore={true}
-        isLink={false}
-        onMoreClick={() => setShowSu(!showSu)}
-      />
-      <StaffCard staffCard={support} showAll={showSu} />
-      <SecondHeading
-        title={secondHeading4}
-        backgroundColor="#fff"
-        textColor="#00007B"
-        toMore={false}
-        onMoreClick={() => setShowEm(!showEm)}
-      />
-      <StaffCard staffCard={employment} showAll={showEm} />
-      <Heading
-        title={heading2}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
-      />
-      <BigContent bigContent={studentRe} />
-      <Heading
-        title={heading3}
-        backgroundColor="#fff"
-        textColor="#00007B"
-        toMore={false}
-      />
-      <div className="other-contact">
-        <div>
-          {otherContacts.map((contact, index) => (
-            <p key={index}>
-              <b>{contact.name}:</b> {contact.detail}
-            </p>
-          ))}
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <SecondHeading
+          title={secondHeading1}
+          backgroundColor="#fff"
+          textColor="#00007B"
+          toMore={true}
+          isLink={false}
+          onMoreClick={() => setShowEx(!showEx)}
+        />
+        <StaffCard staffCard={executive} showAll={showEx} />
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <SecondHeading
+          title={secondHeading2}
+          backgroundColor="#fff"
+          textColor="#00007B"
+          toMore={true}
+          isLink={false}
+          onMoreClick={() => setShowFa(!showFa)}
+        />
+        <StaffCard staffCard={falcuty} showAll={showFa} />
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <SecondHeading
+          title={secondHeading3}
+          backgroundColor="#fff"
+          textColor="#00007B"
+          toMore={true}
+          isLink={false}
+          onMoreClick={() => setShowSu(!showSu)}
+        />
+        <StaffCard staffCard={support} showAll={showSu} />
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <SecondHeading
+          title={secondHeading4}
+          backgroundColor="#fff"
+          textColor="#00007B"
+          toMore={false}
+          onMoreClick={() => setShowEm(!showEm)}
+        />
+        <StaffCard staffCard={employment} showAll={showEm} />
+      </motion.section>
+
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Heading
+          title={heading2}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+        <BigContent bigContent={studentRe} />
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Heading
+          title={heading3}
+          backgroundColor="#fff"
+          textColor="#00007B"
+          toMore={false}
+        />
+        <div className="other-contact">
+          <div>
+            {otherContacts.map((contact, index) => (
+              <p key={index}>
+                <b>{contact.name}:</b> {contact.detail}
+              </p>
+            ))}
+          </div>
+          <div>
+            {otherContacts2.map((contact, index) => (
+              <p key={index}>
+                <b>{contact.name}:</b> {contact.detail}
+              </p>
+            ))}
+          </div>
         </div>
-        <div>
-          {otherContacts2.map((contact, index) => (
-            <p key={index}>
-              <b>{contact.name}:</b> {contact.detail}
-            </p>
-          ))}
-        </div>
-      </div>
+      </motion.section>
       <Footer />
     </div>
   );

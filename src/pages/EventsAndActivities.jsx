@@ -20,6 +20,7 @@ import {
   heading3,
 } from "../config/eventContentConfig";
 import "../styles/events&activities.css";
+import { motion } from "framer-motion";
 
 function EventsAndActivities() {
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -45,38 +46,59 @@ function EventsAndActivities() {
         welcomeText="Events and Activities"
         scrollTargetRef={nextSectionRef}
       />
-      <div ref={nextSectionRef}>
-        <Heading
-          title={heading1}
-          backgroundColor="#00007B"
-          textColor="#fff"
-          toMore={false}
-        />
-      </div>
-      <ArrowHeading arrowHeadings={arrowHeadings[0]} />
-      <div className="arrow-content">
-        {arrowContent.map((item, index) => (
-          <div key={index} className="arrow-item">
-            <li>{item}</li>
-          </div>
-        ))}
-      </div>
-      <SwiperCom slides={eventSlides} />
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div ref={nextSectionRef}>
+          <Heading
+            title={heading1}
+            backgroundColor="#00007B"
+            textColor="#fff"
+            toMore={false}
+          />
+        </div>
+        <ArrowHeading arrowHeadings={arrowHeadings[0]} />
+        <div className="arrow-content">
+          {arrowContent.map((item, index) => (
+            <div key={index} className="arrow-item">
+              <li>{item}</li>
+            </div>
+          ))}
+        </div>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <SwiperCom slides={eventSlides} />
+      </motion.section>
       <Heading
         title={heading2}
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={false}
       />
-      <div className="calendar-container">
-        <Calendar
-          days={daysOfWeek}
-          events={events}
-          calendarTitle={calendarTitle}
-          selectedDate={selectedDate}
-          onDateSelect={handleDateSelect}
-        />
-      </div>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="calendar-container">
+          <Calendar
+            days={daysOfWeek}
+            events={events}
+            calendarTitle={calendarTitle}
+            selectedDate={selectedDate}
+            onDateSelect={handleDateSelect}
+          />
+        </div>
+      </motion.section>
       <Heading
         title={heading3}
         backgroundColor="#00007B"
@@ -84,9 +106,16 @@ function EventsAndActivities() {
         toMore={true}
         toLink="https://drive.google.com/"
       />
-      <div className="workshop-container">
-        <SwiperWorkshop />
-      </div>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="workshop-container">
+          <SwiperWorkshop />
+        </div>
+      </motion.section>
       <Footer />
     </div>
   );

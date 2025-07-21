@@ -7,6 +7,7 @@ import wbt2 from "../assets/images/wbt2.png";
 import accounting from "../assets/images/accounting.jpg";
 import bs from "../assets/images/bs.png";
 import it from "../assets/images/it.png";
+import { button } from "motion/react-client";
 
 export const heading1 = "Need Help with Placement?";
 

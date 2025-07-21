@@ -19,6 +19,7 @@ import oval4 from "../assets/images/oval4.png";
 import career from "../assets/images/career.png";
 import useGoogleCalendar from "../hooks/useGoogleCalendar.js";
 import useCarouselData from "../hooks/useCarouselData.js";
+import { motion } from "framer-motion";
 import {
   welcomeText,
   heading1,
@@ -75,102 +76,138 @@ function Home() {
       <div className="slogan" ref={nextSectionRef}>
         <img src={slogan} alt="" />
       </div>
-      <Heading
-        title={heading1}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
-      />
-      <SwiperCom />
-      <Heading
-        title={heading2}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={true}
-        toLink="/events-and-activities"
-        isLink={true}
-      />
-      <div className="event-cards-container">
-        <EventCard cards={uniqueDateEvents} />
-      </div>
-      <Heading
-        title={heading3}
-        backgroundColor="#fff"
-        textColor="#00007B"
-        toMore={false}
-      />
-      <div className="discover-cards-container">
-        <Discover cards={DiscoverCards} />
-      </div>
-      <SecondHeading
-        title={secondHeading1}
-        backgroundColor="#fff"
-        textColor="#00007B"
-        toMore={false}
-      />
-      <InfoCard cardData={homeCardData} />
-      <Heading
-        title={heading4}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
-      />
-      <div className="accessContent">
-        <p>{quickAccess}</p>
-      </div>
-      <div className="home-outerlink-container">
-        <Outerlink outerLink={homeOuterLink} />
-        <img src={oval3} alt="" className="oval3" />
-      </div>
-
-      <SecondHeading
-        title={secondHeading3}
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
-      />
-      <div className="career">
-        <div className="career-img">
-          <img src={career} />
-        </div>
-        <div className="career-content">
-          <p>{careerContent}</p>
-          <Link to="/wbt-support" className="career-link">
-            {">>> More"}
-          </Link>
-        </div>
-      </div>
-      <div className="enjoy">
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <Heading
-          title="Enjoy"
+          title={heading1}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+        <SwiperCom />
+      </motion.section>
+
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Heading
+          title={heading2}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={true}
+          toLink="/events-and-activities"
+          isLink={true}
+        />
+        <div className="event-cards-container">
+          <EventCard cards={uniqueDateEvents} />
+        </div>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Heading
+          title={heading3}
           backgroundColor="#fff"
           textColor="#00007B"
           toMore={false}
         />
-        <p>{enjoyContent}</p>
-        <img src={oval4} alt="" className="oval4" />
-        <img src={oval4} alt="" className="oval5" />
-      </div>
+        <div className="discover-cards-container">
+          <Discover cards={DiscoverCards} />
+        </div>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Heading
+          title={heading4}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+        <div className="accessContent">
+          <p>{quickAccess}</p>
+        </div>
+        <div className="home-outerlink-container">
+          <Outerlink outerLink={homeOuterLink} />
+          <img src={oval3} alt="" className="oval3" />
+        </div>
 
-      <SecondHeading
-        title={secondHeading4}
-        backgroundColor="#fff"
-        textColor="#00007B"
-        toMore={true}
-        toLink="/important-contacts"
-        isLink={true}
-      />
-      <StudentRepre studentRepresentative={studentRepresentative} />
-      <Heading
-        title="FAQs"
-        backgroundColor="#00007B"
-        textColor="#fff"
-        toMore={false}
-      />
-      <div className="faqs">
-        <div className="faqs-content">{faqContent}</div>
-        <QAList qaList={qaList} />
-      </div>
+        <SecondHeading
+          title={secondHeading3}
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+        <div className="career">
+          <div className="career-img">
+            <img src={career} />
+          </div>
+          <div className="career-content">
+            <p>{careerContent}</p>
+            <Link to="/wbt-support" className="career-link">
+              {">>> More"}
+            </Link>
+          </div>
+        </div>
+      </motion.section>
+
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="enjoy">
+          <Heading
+            title="Enjoy"
+            backgroundColor="#fff"
+            textColor="#00007B"
+            toMore={false}
+          />
+          <p>{enjoyContent}</p>
+          <img src={oval4} alt="" className="oval4" />
+          <img src={oval4} alt="" className="oval5" />
+        </div>
+        <SecondHeading
+          title={secondHeading4}
+          backgroundColor="#fff"
+          textColor="#00007B"
+          toMore={true}
+          toLink="/important-contacts"
+          isLink={true}
+        />
+        <StudentRepre studentRepresentative={studentRepresentative} />
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Heading
+          title="FAQs"
+          backgroundColor="#00007B"
+          textColor="#fff"
+          toMore={false}
+        />
+        <div className="faqs">
+          <div className="faqs-content">{faqContent}</div>
+          <QAList qaList={qaList} />
+        </div>
+      </motion.section>
 
       <Footer />
     </div>
