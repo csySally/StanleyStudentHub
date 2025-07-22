@@ -82,7 +82,7 @@ function EventsAndActivities() {
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={true}
-        toLink="https://drive.google.com/"
+        toLink="https://drive.google.com/drive/folders/1eC5PF0SToKiwyz-6C7MS8VaqHUwBkpII"
       />
       <div className="workshop-container">
         <SwiperWorkshop />
