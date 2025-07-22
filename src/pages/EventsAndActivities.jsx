@@ -8,8 +8,8 @@ import SwiperCom from "../components/SwiperCom";
 import SwiperWorkshop from "../components/SwiperWorkshop";
 import { startOfWeek, addDays } from "date-fns";
 import Calendar from "../components/CalendarCom/Calendar.jsx";
-import backgroundPic from "../assets/images/events-background.jpeg";
 import useGoogleCalendar from "../hooks/useGoogleCalendar.js";
+import useWelcomePicture from "../hooks/useWelcomePicture.js";
 import {
   calendarTitle,
   arrowHeadings,
@@ -38,11 +38,13 @@ function EventsAndActivities() {
     setSelectedDate(date);
   };
 
+  const { welcomePicture } = useWelcomePicture();
+
   return (
     <div>
       <Header />
       <Welcome
-        backgroundPic={backgroundPic}
+        backgroundPic={welcomePicture.events}
         welcomeText="Events and Activities"
         scrollTargetRef={nextSectionRef}
       />
@@ -104,7 +106,7 @@ function EventsAndActivities() {
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={true}
-        toLink="https://drive.google.com/"
+        toLink="https://drive.google.com/drive/folders/1eC5PF0SToKiwyz-6C7MS8VaqHUwBkpII"
       />
       <motion.section
         initial={{ opacity: 0, y: 100 }}

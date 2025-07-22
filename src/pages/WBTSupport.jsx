@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import Header from "../components/Header";
 import Welcome from "../components/Welcome";
 import Footer from "../components/Footer";
-import backgroundPic from "../assets/images/WBT-background.jpeg";
 import ellipse from "../assets/images/Ellipse.png";
 import {
   heading1,
@@ -10,7 +9,6 @@ import {
   secondH1,
   wbtSupport,
   heading2,
-  studentStories,
 } from "../config/wbtContentConfig";
 import Heading from "../components/Heading";
 import SecondHeading from "../components/SecondHeading";
@@ -18,6 +16,8 @@ import StaffCard from "../components/StaffCard";
 import InfoCard from "../components/InfoCard";
 import BigContent from "../components/BigContent";
 import { motion } from "framer-motion";
+import useWelcomePicture from "../hooks/useWelcomePicture.js";
+import useStudentStory from "../hooks/useStudentStory.js";
 
 import "../styles/wbtSupport.css";
 
@@ -29,11 +29,15 @@ function WBTSupport() {
   const handleOpen = (type) => setActiveCard(type);
   const handleClose = () => setActiveCard(null);
 
+  const { welcomePicture } = useWelcomePicture();
+
+  const { studentStories } = useStudentStory();
+
   return (
     <div>
       <Header />
       <Welcome
-        backgroundPic={backgroundPic}
+        backgroundPic={welcomePicture.employment}
         welcomeText="Placement & Employment Support"
         scrollTargetRef={nextSectionRef}
       />
