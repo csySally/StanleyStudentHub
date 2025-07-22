@@ -12,13 +12,14 @@ import InfoCard from "../components/InfoCard";
 import Outerlink from "../components/Outerlink";
 import StudentRepre from "../components/StudentRepre";
 import QAList from "../components/Q&A/QAList";
-import backgroundPic from "../assets/images/home-background.jpeg";
 import slogan from "../assets/images/slogan.png";
 import oval3 from "../assets/images/oval3.png";
 import oval4 from "../assets/images/oval4.png";
 import career from "../assets/images/career.png";
 import useGoogleCalendar from "../hooks/useGoogleCalendar.js";
 import useCarouselData from "../hooks/useCarouselData.js";
+import useStudentRe from "../hooks/useStudentRe.js";
+import useWelcomePicture from "../hooks/useWelcomePicture.js";
 import { motion } from "framer-motion";
 import {
   welcomeText,
@@ -36,7 +37,6 @@ import {
   EventCards,
   DiscoverCards,
   homeCardData,
-  studentRepresentative,
   qaList,
   quickAccess,
   careerContent,
@@ -65,11 +65,15 @@ function Home() {
 
   const uniqueDateEvents = getNext3Events(events);
 
+  const { studentRepresentatives } = useStudentRe();
+
+  const { welcomePicture } = useWelcomePicture();
+
   return (
     <div>
       <Header />
       <Welcome
-        backgroundPic={backgroundPic}
+        backgroundPic={welcomePicture.home}
         welcomeText={welcomeText}
         scrollTargetRef={nextSectionRef}
       />
@@ -189,7 +193,7 @@ function Home() {
           toLink="/important-contacts"
           isLink={true}
         />
-        <StudentRepre studentRepresentative={studentRepresentative} />
+        <StudentRepre studentRepresentative={studentRepresentatives} />
       </motion.section>
       <motion.section
         initial={{ opacity: 0, y: 100 }}

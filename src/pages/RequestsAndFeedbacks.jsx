@@ -7,6 +7,7 @@ import ArrowHeading from "../components/ArrowHeading";
 import Outerlink from "../components/Outerlink";
 import QuickLinks from "../components/QuickLinks";
 import { motion } from "framer-motion";
+import useWelcomePicture from "../hooks/useWelcomePicture.js";
 
 import {
   heading1,
@@ -19,16 +20,17 @@ import {
   links,
 } from "../config/feedbackContentConfig";
 
-import backgroundPic from "../assets/images/requests-background.jpeg";
 import "../styles/requests&feedback.css";
 
 function RequestsAndFeedbacks() {
   const nextSectionRef = useRef(null);
+
+  const { welcomePicture } = useWelcomePicture();
   return (
     <div>
       <Header />
       <Welcome
-        backgroundPic={backgroundPic}
+        backgroundPic={welcomePicture.requests}
         welcomeText="Requests and Feedbacks"
         scrollTargetRef={nextSectionRef}
       />

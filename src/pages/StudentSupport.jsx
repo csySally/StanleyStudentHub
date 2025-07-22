@@ -8,7 +8,6 @@ import BigContent from "../components/BigContent";
 import InfoCard from "../components/InfoCard";
 import SecondHeading from "../components/SecondHeading";
 import QAList from "../components/Q&A/QAList";
-import backgroundPic from "../assets/images/support-background.jpeg";
 import ellipse from "../assets/images/Ellipse.png";
 import {
   heading1,
@@ -22,14 +21,17 @@ import {
 } from "../config/studentSupportContentConfig";
 import "../styles/studentSupport.css";
 import { motion } from "framer-motion";
+import useWelcomePicture from "../hooks/useWelcomePicture.js";
 
 function StudentSupport() {
   const nextSectionRef = useRef(null);
+  const { welcomePicture } = useWelcomePicture();
+
   return (
     <div>
       <Header />
       <Welcome
-        backgroundPic={backgroundPic}
+        backgroundPic={welcomePicture.student}
         welcomeText="Student Support"
         scrollTargetRef={nextSectionRef}
       />

@@ -174,7 +174,7 @@ export const homeOuterLink = [
   },
 ];
 
-export const studentRepresentative = [
+/* export const studentRepresentative = [
   {
     image: repre1,
     name: "Amy Smith",
@@ -204,7 +204,7 @@ export const studentRepresentative = [
     description:
       "I'm a student representative for the Diploma of Hospitality program. I'm here to help you with any questions you have about the program. I find the program very interesting and I'm looking forward to the future.",
   },
-];
+]; */
 
 export const qaList = [
   {

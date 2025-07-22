@@ -7,8 +7,9 @@ import SecondHeading from "../components/SecondHeading";
 import StaffCard from "../components/StaffCard.jsx";
 import BigContent from "../components/BigContent";
 import "../styles/importantContact.css";
+import useStudentRe from "../hooks/useStudentReCon.js";
+import useWelcomePicture from "../hooks/useWelcomePicture.js";
 
-import backgroundPic from "../assets/images/contacts-background.jpeg";
 import {
   heading1,
   heading2,
@@ -17,7 +18,6 @@ import {
   falcuty,
   support,
   employment,
-  studentRe,
   otherContacts,
   otherContacts2,
   secondHeading1,
@@ -35,11 +35,15 @@ function ImportantContacts() {
 
   const nextSectionRef = useRef(null);
 
+  const { studentRepresentatives } = useStudentRe();
+
+  const { welcomePicture } = useWelcomePicture();
+
   return (
     <div>
       <Header />
       <Welcome
-        backgroundPic={backgroundPic}
+        backgroundPic={welcomePicture.contacts}
         welcomeText="Important Contacts"
         scrollTargetRef={nextSectionRef}
       />
@@ -127,7 +131,7 @@ function ImportantContacts() {
           textColor="#fff"
           toMore={false}
         />
-        <BigContent bigContent={studentRe} />
+        <BigContent bigContent={studentRepresentatives} />
       </motion.section>
       <motion.section
         initial={{ opacity: 0, y: 100 }}

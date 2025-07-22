@@ -6,7 +6,6 @@ import ArrowHeading from "../components/ArrowHeading";
 import Heading from "../components/Heading.jsx";
 import StaffCard from "../components/StaffCard.jsx";
 import SecondHeading from "../components/SecondHeading";
-import backgroundPic from "../assets/images/accessibility-background.jpeg";
 import {
   arrowHeadings,
   heading1,
@@ -20,14 +19,17 @@ import ellipse from "../assets/images/Ellipse.png";
 import "../styles/accessibilitySupport.css";
 import InfoCard from "../components/InfoCard.jsx";
 import { motion } from "framer-motion";
+import useWelcomePicture from "../hooks/useWelcomePicture.js";
 
 function AccessibilitySupport() {
   const nextSectionRef = useRef(null);
+  const { welcomePicture } = useWelcomePicture();
+
   return (
     <div>
       <Header />
       <Welcome
-        backgroundPic={backgroundPic}
+        backgroundPic={welcomePicture.accessibility}
         welcomeText="Accessibility Support"
         scrollTargetRef={nextSectionRef}
       />

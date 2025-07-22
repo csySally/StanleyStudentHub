@@ -60,7 +60,7 @@ export const wbtSupport = [
   },
 ];
 
-export const studentStories = [
+/* export const studentStories = [
   {
     name: "I am so lucky that I got help from Stanley College with my career.",
     content: `My name is  Abcd Efgh. I am a student from Stanley College with a Bachelor of Nursing degree. I had some problems finding a job but I got help from many teachers and workshop.My name is  Abcd Efgh. I am a student from Stanley College with a Bachelor of Nursing degree. `,
@@ -78,3 +78,4 @@ export const studentStories = [
     image: it,
   },
 ];
+ */
