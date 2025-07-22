@@ -104,7 +104,7 @@ function EventsAndActivities() {
         backgroundColor="#00007B"
         textColor="#fff"
         toMore={true}
-        toLink="https://drive.google.com/"
+        toLink="https://drive.google.com/drive/folders/1eC5PF0SToKiwyz-6C7MS8VaqHUwBkpII"
       />
       <motion.section
         initial={{ opacity: 0, y: 100 }}
