@@ -16,11 +16,13 @@ import backgroundPic from "../assets/images/home-background.jpeg";
 import oval3 from "../assets/images/oval3.png";
 import oval4 from "../assets/images/oval4.png";
 import career from "../assets/images/career.png";
+import halfSYellow from "../assets/icons/halfSYellow.png";
 import useGoogleCalendar from "../hooks/useGoogleCalendar.js";
 import useCarouselData from "../hooks/useCarouselData.js";
 import { motion } from "framer-motion";
 import {
-  welcomeText,
+  welcomeText1,
+  welcomeText2,
   heading1,
   heading2,
   heading3,
@@ -69,31 +71,34 @@ function Home() {
       <Header />
       <Welcome
         backgroundPic={backgroundPic}
-        welcomeText={welcomeText}
+        welcomeText1={welcomeText1}
+        welcomeText2={welcomeText2}
         scrollTargetRef={nextSectionRef}
       />
-      <div className="slogan" ref={nextSectionRef}>
+      {/*       <div className="slogan" ref={nextSectionRef}>
         <span>Y </span>our&nbsp; <span> O</span>ne-<span> S</span>top&nbsp;
         <span>R</span>
         esource for &nbsp; <span>S</span>upport and &nbsp; <span>C</span>
         ampus&nbsp;
         <span>L</span>
         ife
+      </div> */}
+      <div ref={nextSectionRef}>
+        <motion.section
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <Heading
+            title={heading1}
+            backgroundColor="#fcd60b"
+            textColor="#006662"
+            toMore={false}
+          />
+          <SwiperCom />
+        </motion.section>
       </div>
-      <motion.section
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <Heading
-          title={heading1}
-          backgroundColor="#00007B"
-          textColor="#fff"
-          toMore={false}
-        />
-        <SwiperCom />
-      </motion.section>
 
       <motion.section
         initial={{ opacity: 0, y: 100 }}
@@ -103,8 +108,8 @@ function Home() {
       >
         <Heading
           title={heading2}
-          backgroundColor="#00007B"
-          textColor="#fff"
+          backgroundColor="#fcd60b"
+          textColor="#006662"
           toMore={true}
           toLink="/events-and-activities"
           isLink={true}
@@ -113,34 +118,35 @@ function Home() {
           <EventCard cards={uniqueDateEvents} />
         </div>
       </motion.section>
+      <Heading
+        title={heading3}
+        backgroundColor="#fff"
+        textColor="#006662"
+        toMore={false}
+      />
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <Heading
-          title={heading3}
-          backgroundColor="#fff"
-          textColor="#00007B"
-          toMore={false}
-        />
         <div className="discover-cards-container">
           <Discover cards={DiscoverCards} />
+          <img src={halfSYellow} className="discover-halfS"></img>
         </div>
       </motion.section>
+      <Heading
+        title={heading4}
+        backgroundColor="#fcd60b"
+        textColor="#006662"
+        toMore={false}
+      />
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <Heading
-          title={heading4}
-          backgroundColor="#00007B"
-          textColor="#fff"
-          toMore={false}
-        />
         <div className="accessContent">
           <p>{quickAccess}</p>
         </div>
@@ -151,8 +157,8 @@ function Home() {
 
         <SecondHeading
           title={secondHeading3}
-          backgroundColor="#00007B"
-          textColor="#fff"
+          backgroundColor="#fffffe"
+          textColor="#006662"
           toMore={false}
         />
         <div className="career">

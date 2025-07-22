@@ -19,7 +19,8 @@ import repre2 from "../assets/images/repre2.png";
 import repre3 from "../assets/images/repre3.png";
 import repre4 from "../assets/images/repre4.png";
 
-export const welcomeText = "Welcome to the Student Hub";
+export const welcomeText1 = "Welcome to the";
+export const welcomeText2 = "Student Hub";
 
 export const heading1 = "What's Happening";
 
