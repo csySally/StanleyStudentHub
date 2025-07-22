@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import StudentSupport from "./pages/StudentSupport";
 import WBTSupport from "./pages/WBTSupport";
 import AccessibilitySupport from "./pages/AccessibilitySupport";
-import ITSupport from "./pages/ITSupport";
 import ImportantContacts from "./pages/ImportantContacts";
 import RequestsAndFeedbacks from "./pages/RequestsAndFeedbacks";
 import EventsAndActivities from "./pages/EventsAndActivities";
@@ -63,7 +62,6 @@ function App() {
             path="/accessibility-support"
             element={<AccessibilitySupport />}
           />
-          <Route path="/it-support" element={<ITSupport />} />
           <Route
             path="/events-and-activities"
             element={<EventsAndActivities />}
