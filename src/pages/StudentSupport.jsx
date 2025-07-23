@@ -32,7 +32,8 @@ function StudentSupport() {
       <Header />
       <Welcome
         backgroundPic={welcomePicture.student}
-        welcomeText="Student Support"
+        welcomeText1="Student"
+        welcomeText2="Support"
         scrollTargetRef={nextSectionRef}
       />
       <div ref={nextSectionRef}>

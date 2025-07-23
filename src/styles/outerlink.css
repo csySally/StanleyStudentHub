@@ -9,18 +9,19 @@
 }
 
 .outerlink-item {
-    width: 23%;
+    width: 40%;
     height: 180px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 2px solid #fcd60b;
-    background-color: #fff;
+    background-color: #fffffe;
+        border: #fcd60b 2px solid;
+
 }
 
 .outerlink-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px #00666339;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .outerlink-item-content {

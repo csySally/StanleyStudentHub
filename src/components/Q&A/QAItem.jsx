@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/qaitem.css";
-import plus from "../../assets/icons/plus.png";
-import minus from "../../assets/icons/minus.png";
+import plus from "../../assets/icons/plusgreen.png";
+import minus from "../../assets/icons/minusgreen.png";
 
 function QAItem({ qa }) {
   const [isOpen, setIsOpen] = useState(false);

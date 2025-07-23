@@ -1,7 +1,7 @@
 .event-cards-container {
   width: 100%;
   height: 300px;
-  background-color: #fcd60b;
+  background-color: #006662;
   display: flex;
   justify-content: center;
 }
@@ -12,16 +12,21 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 0 8% 2% 8%;
-    position: relative;
+    background-color: #fffffe;
 
+  }
+
+  .big-discover{
+    position: relative;
+    background-color: #fffffe;
   }
 .discover-halfS{
   position: absolute;
-  height: 78%;
+  height: 90%;
   right: 0;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
-  z-index: -1;
+  z-index: 0;
 }
 .home-outerlink-container {
   width: 100%;
@@ -32,7 +37,7 @@
   align-items: center;
   z-index: 2;
   position: relative;
-  background-color: #fcd60b;
+  background-color: #fffffe;
 }
 
 .slogan{
@@ -89,12 +94,13 @@
 
 .career{
   width: auto;
-  height: 270px;
-  padding: 0 8%;
+  height: 180px;
+  padding: 0 15% 2% 15%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #fffffe;
+
 }
 
 .career-img{
@@ -121,14 +127,17 @@
   font-size: 18px;
   font-weight: 600;
 }
-
+.career-link:hover{
+  color: #fcd60b;
+  text-decoration: underline;
+}
 .enjoy{
   position: relative;
   width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: #c9d7ee;
+  background-color: #006662;
 
 }
 
@@ -136,7 +145,7 @@
   width: auto;
   padding: 2% 20%;
   font-size: 20px ;
-  color: #006662;
+  color: #fffffe;
   font-family: "SofiaPro", sans-serif;
 
 }
@@ -161,9 +170,15 @@
   rotate:calc(180deg);
 }
 
+.student-card-container{
+  height: auto;
+  padding-bottom: 20px;
+  background-color: #006662;
+}
+
 .faqs{
   width: auto;
-  background-color: #c9d7ee;
+  background-color: #fffffe;
 }
 
 .faqs-content{

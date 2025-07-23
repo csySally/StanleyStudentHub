@@ -38,7 +38,8 @@ function WBTSupport() {
       <Header />
       <Welcome
         backgroundPic={welcomePicture.employment}
-        welcomeText="Placement & Employment Support"
+        welcomeText1="Placement and"
+        welcomeText2="Employment Support"
         scrollTargetRef={nextSectionRef}
       />
       <div ref={nextSectionRef}>

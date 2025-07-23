@@ -31,7 +31,8 @@ function RequestsAndFeedbacks() {
       <Header />
       <Welcome
         backgroundPic={welcomePicture.requests}
-        welcomeText="Requests and Feedbacks"
+        welcomeText1="Requests and"
+        welcomeText2="Feedbacks"
         scrollTargetRef={nextSectionRef}
       />
       <motion.section

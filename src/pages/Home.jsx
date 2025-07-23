@@ -76,7 +76,8 @@ function Home() {
       <Header />
       <Welcome
         backgroundPic={welcomePicture.home}
-        welcomeText={welcomeText}
+        welcomeText1={welcomeText1}
+        welcomeText2={welcomeText2}
         scrollTargetRef={nextSectionRef}
       />
       {/*       <div className="slogan" ref={nextSectionRef}>
@@ -96,8 +97,8 @@ function Home() {
         >
           <Heading
             title={heading1}
-            backgroundColor="#fcd60b"
-            textColor="#006662"
+            backgroundColor="#006662"
+            textColor="#fffffe"
             toMore={false}
           />
           <SwiperCom />
@@ -112,8 +113,8 @@ function Home() {
       >
         <Heading
           title={heading2}
-          backgroundColor="#fcd60b"
-          textColor="#006662"
+          backgroundColor="#006662"
+          textColor="#fffffe"
           toMore={true}
           toLink="/events-and-activities"
           isLink={true}
@@ -124,59 +125,67 @@ function Home() {
       </motion.section>
       <Heading
         title={heading3}
-        backgroundColor="#fff"
+        backgroundColor="#fffffe"
         textColor="#006662"
         toMore={false}
       />
-      <motion.section
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
+
+      <div className="big-discover">
+        <img src={halfSYellow} className="discover-halfS"></img>
         <div className="discover-cards-container">
-          <Discover cards={DiscoverCards} />
-          <img src={halfSYellow} className="discover-halfS"></img>
+          <motion.section
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <Discover cards={DiscoverCards} />
+          </motion.section>
         </div>
-      </motion.section>
-      <Heading
+
+        {/*       <Heading
         title={heading4}
-        backgroundColor="#fcd60b"
+        backgroundColor="#c9d7ee"
         textColor="#006662"
         toMore={false}
       />
-      <motion.section
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="accessContent">
-          <p>{quickAccess}</p>
-        </div>
-        <div className="home-outerlink-container">
+      <div className="accessContent">
+        <p>{quickAccess}</p>
+      </div>
+      <div className="home-outerlink-container">
+        <motion.section
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <Outerlink outerLink={homeOuterLink} />
-          <img src={oval3} alt="" className="oval3" />
-        </div>
-
-        <SecondHeading
-          title={secondHeading3}
-          backgroundColor="#fffffe"
-          textColor="#006662"
-          toMore={false}
-        />
-        <div className="career">
-          <div className="career-img">
-            <img src={career} />
+        </motion.section>
+      </div> */}
+        <motion.section
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <SecondHeading
+            title={secondHeading3}
+            textColor="#006662"
+            toMore={false}
+          />
+          <div className="career">
+            {/*             <div className="career-img">
+              <img src={career} />
+            </div> */}
+            <div className="career-content">
+              <p>{careerContent}</p>
+              <Link to="/wbt-support" className="career-link">
+                {">>> More"}
+              </Link>
+            </div>
           </div>
-          <div className="career-content">
-            <p>{careerContent}</p>
-            <Link to="/wbt-support" className="career-link">
-              {">>> More"}
-            </Link>
-          </div>
-        </div>
-      </motion.section>
+        </motion.section>
+      </div>
 
       <motion.section
         initial={{ opacity: 0, y: 100 }}
@@ -184,26 +193,28 @@ function Home() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="enjoy">
+        {/*         <div className="enjoy">
           <Heading
             title="Enjoy"
-            backgroundColor="#fff"
-            textColor="#00007B"
+            backgroundColor="#006662"
+            textColor="#fffffe"
             toMore={false}
           />
           <p>{enjoyContent}</p>
           <img src={oval4} alt="" className="oval4" />
           <img src={oval4} alt="" className="oval5" />
+        </div> */}
+        <div className="student-card-container">
+          <SecondHeading
+            title={secondHeading4}
+            backgroundColor="#006662"
+            textColor="#fffffe"
+            toMore={true}
+            toLink="/important-contacts"
+            isLink={true}
+          />
+          <StudentRepre studentRepresentative={studentRepresentatives} />
         </div>
-        <SecondHeading
-          title={secondHeading4}
-          backgroundColor="#fff"
-          textColor="#00007B"
-          toMore={true}
-          toLink="/important-contacts"
-          isLink={true}
-        />
-        <StudentRepre studentRepresentative={studentRepresentatives} />
       </motion.section>
       <motion.section
         initial={{ opacity: 0, y: 100 }}
@@ -213,8 +224,8 @@ function Home() {
       >
         <Heading
           title="FAQs"
-          backgroundColor="#00007B"
-          textColor="#fff"
+          backgroundColor="#fffffe"
+          textColor="#006662"
           toMore={false}
         />
         <div className="faqs">

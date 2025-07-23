@@ -45,7 +45,8 @@ function EventsAndActivities() {
       <Header />
       <Welcome
         backgroundPic={welcomePicture.events}
-        welcomeText="Events and Activities"
+        welcomeText1="Events and"
+        welcomeText2="Activities"
         scrollTargetRef={nextSectionRef}
       />
       <motion.section

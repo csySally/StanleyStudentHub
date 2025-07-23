@@ -30,7 +30,8 @@ function AccessibilitySupport() {
       <Header />
       <Welcome
         backgroundPic={welcomePicture.accessibility}
-        welcomeText="Accessibility Support"
+        welcomeText1="Accessibility"
+        welcomeText2="Support"
         scrollTargetRef={nextSectionRef}
       />
       <motion.section

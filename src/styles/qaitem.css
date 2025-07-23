@@ -3,9 +3,10 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #fffffe;
   margin-bottom: 5px;
   padding: 20px 0;
+  border: 2px solid #006662;
 }
 
 .qa-item-header {
@@ -57,7 +58,7 @@
 
 
 .qa-item-content button {
-  background-color: #fcd60b;
+  background-color: #006662;
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -69,7 +70,12 @@
   font-weight: 600;
   font-family: "Arial", sans-serif;
 }
-
+.qa-item-content button:hover {
+  background-color: #fcd60b;
+  color: #006662;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 .qa-item-images-container{
   width: autos;
   height: auto;
