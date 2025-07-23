@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 30px 10%;
-    background-color: #fcd60b;
     gap: 60px;
   }
   
@@ -31,7 +30,7 @@
 
 .bigContent-item-content{
     width: auto;
-    color: #fff;
+    color: #006662;
 }
 
 .bigContent-item-vector{
@@ -47,7 +46,8 @@
 }
 
 .bigContent-item-content-h2{
-    font-family: "Acme", sans-serif;
+    font-family: "SofiaPro", sans-serif;
+    font-weight: 600;
     font-size: 28px;
 }
 
@@ -67,14 +67,18 @@
 
 .bigContent-item-content>button{
     border: none;
-    background-color: #EABE4C;
-    font-family: "Acme", sans-serif;
+    background-color: #006662;
+    font-family: "SofiaPro", sans-serif;
+    font-weight: 600;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
+    color: #fffffe;
 }
 
 .bigContent-item-content>button:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease;
+    background-color: #fcd60b;
+    color: #006662;
 }

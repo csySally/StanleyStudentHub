@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 8% 3% 8%;
+    padding: 1% 4% 3% 4%;
     gap: 40px;
 }
 
@@ -14,9 +14,8 @@
     height: 230px;
     display: flex;
     border: 1px #f2f2f2 solid;
-    
     align-items: center;
-    background-color: #fff;
+    background-color: #fffffe;
 }
 .staffCard-item-img{
     width: 40%;
@@ -43,7 +42,7 @@
 
 .staffCard-item-content>h3{
     margin: 0;
-    font-family: "Acme", sans-serif;
+    font-family:"SofiaPro", sans-serif;
     font-size: 20px;
     text-align: center;
     line-height: 1.4;
@@ -51,14 +50,14 @@
 
 .staffCard-item-content>h4{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "SofiaPro", sans-serif;
     font-size: 18px;
     margin-top: 13px;
 }
 
 .staffCard-item-content>h5{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "CenturyGothic", sans-serif;
     font-size: 15px;
     font-weight: 400;
     margin-top: 10px;
@@ -68,7 +67,7 @@
 .staffCard-item-content>h6{
     width: 80%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "CenturyGothic", sans-serif;
     font-size: 12px;
     font-weight: 400;
     margin-top: 10px;
@@ -78,14 +77,15 @@
 
 .staffCard-item-content>button{
     border: none;
-    background-color: #fcd60b;
-    color: #fff;
-    height: 30px;
+    background-color: #006662;
+    color: #fffffe;
+    line-height: 1.9rem;
     padding: 0 20px;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-top: 16px;
+    font-family: "SofiaPro", sans-serif;
+    font-weight: 600;
 }
 
 .staffCard-container.hide {
@@ -95,8 +95,8 @@
 }
 
 .staffCard-item-content>button:hover {
-    background-color: #EABE4C;
-    color: #00007B;
+    background-color: #fcd60b;
+    color: #006662;
     transition: all 0.3s ease-in-out;
     transform: scale(1.05);
 }

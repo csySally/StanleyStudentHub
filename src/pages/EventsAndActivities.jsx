@@ -58,8 +58,8 @@ function EventsAndActivities() {
         <div ref={nextSectionRef}>
           <Heading
             title={heading1}
-            backgroundColor="#00007B"
-            textColor="#fff"
+            backgroundColor="#006662"
+            textColor="#fffffe"
             toMore={false}
           />
         </div>
@@ -83,7 +83,7 @@ function EventsAndActivities() {
       <Heading
         title={heading2}
         backgroundColor="#fcd60b"
-        textColor="#fff"
+        textColor="#fffffe"
         toMore={false}
       />
       <motion.section
@@ -104,8 +104,8 @@ function EventsAndActivities() {
       </motion.section>
       <Heading
         title={heading3}
-        backgroundColor="#00007B"
-        textColor="#fff"
+        backgroundColor="#006662"
+        textColor="#fffffe"
         toMore={true}
         toLink="https://drive.google.com/drive/folders/1eC5PF0SToKiwyz-6C7MS8VaqHUwBkpII"
       />

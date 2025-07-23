@@ -46,7 +46,7 @@ function WBTSupport() {
         <Heading
           title={heading1}
           backgroundColor="#fcd60b"
-          textColor="#fff"
+          textColor="#fffffe"
           toMore={false}
         />
       </div>
@@ -110,8 +110,8 @@ function WBTSupport() {
               </h2>
               <SecondHeading
                 title="What is WBT?"
-                backgroundColor="#fff"
-                textColor="#00007B"
+                backgroundColor="#fffffe"
+                textColor="#006662"
                 toMore={false}
               />
               <div className="what-is-wbt">
@@ -142,8 +142,8 @@ function WBTSupport() {
               </div>
               <SecondHeading
                 title="WBT Requirements by Course"
-                backgroundColor="#fff"
-                textColor="#00007B"
+                backgroundColor="#fffffe"
+                textColor="#006662"
                 toMore={false}
               />
               <div className="wbt-requirements">
@@ -224,8 +224,8 @@ function WBTSupport() {
               </div>
               <SecondHeading
                 title={secondH1}
-                backgroundColor="#fff"
-                textColor="#00007B"
+                backgroundColor="#fffffe"
+                textColor="#006662"
                 toMore={false}
               />
               <div className="wbt-support-staff">
@@ -253,8 +253,8 @@ function WBTSupport() {
               </h2>
               <SecondHeading
                 title="What is Fieldwork Placement / WIL?"
-                backgroundColor="#fff"
-                textColor="#00007B"
+                backgroundColor="#fffffe"
+                textColor="#006662"
                 toMore={false}
               />
               <div className="what-is-he">
@@ -278,8 +278,8 @@ function WBTSupport() {
               </div>
               <SecondHeading
                 title="Placement Requirements by Course"
-                backgroundColor="#fff"
-                textColor="#00007B"
+                backgroundColor="#fffffe"
+                textColor="#006662"
                 toMore={false}
               />
               <div className="wbt-requirements">
@@ -339,8 +339,8 @@ function WBTSupport() {
       >
         <Heading
           title={heading2}
-          backgroundColor="#00007B"
-          textColor="#fff"
+          backgroundColor="#006662"
+          textColor="#fffffe"
           toMore={false}
         />
         <BigContent bigContent={studentStories} />

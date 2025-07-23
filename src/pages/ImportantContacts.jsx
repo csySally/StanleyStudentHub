@@ -51,7 +51,7 @@ function ImportantContacts() {
         <Heading
           title={heading1}
           backgroundColor="#fcd60b"
-          textColor="#fff"
+          textColor="#fffffe"
           toMore={false}
         />
       </div>
@@ -63,8 +63,8 @@ function ImportantContacts() {
       >
         <SecondHeading
           title={secondHeading1}
-          backgroundColor="#fff"
-          textColor="#00007B"
+          backgroundColor="#fffffe"
+          textColor="#006662"
           toMore={true}
           isLink={false}
           onMoreClick={() => setShowEx(!showEx)}
@@ -79,8 +79,8 @@ function ImportantContacts() {
       >
         <SecondHeading
           title={secondHeading2}
-          backgroundColor="#fff"
-          textColor="#00007B"
+          backgroundColor="#fffffe"
+          textColor="#006662"
           toMore={true}
           isLink={false}
           onMoreClick={() => setShowFa(!showFa)}
@@ -95,8 +95,8 @@ function ImportantContacts() {
       >
         <SecondHeading
           title={secondHeading3}
-          backgroundColor="#fff"
-          textColor="#00007B"
+          backgroundColor="#fffffe"
+          textColor="#006662"
           toMore={true}
           isLink={false}
           onMoreClick={() => setShowSu(!showSu)}
@@ -111,8 +111,8 @@ function ImportantContacts() {
       >
         <SecondHeading
           title={secondHeading4}
-          backgroundColor="#fff"
-          textColor="#00007B"
+          backgroundColor="#fffffe"
+          textColor="#006662"
           toMore={false}
           onMoreClick={() => setShowEm(!showEm)}
         />
@@ -127,8 +127,8 @@ function ImportantContacts() {
       >
         <Heading
           title={heading2}
-          backgroundColor="#00007B"
-          textColor="#fff"
+          backgroundColor="#006662"
+          textColor="#fffffe"
           toMore={false}
         />
         <BigContent bigContent={studentRepresentatives} />
@@ -141,8 +141,8 @@ function ImportantContacts() {
       >
         <Heading
           title={heading3}
-          backgroundColor="#fff"
-          textColor="#00007B"
+          backgroundColor="#fffffe"
+          textColor="#006662"
           toMore={false}
         />
         <div className="other-contact">

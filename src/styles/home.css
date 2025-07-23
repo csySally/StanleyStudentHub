@@ -22,8 +22,8 @@
   }
 .discover-halfS{
   position: absolute;
-  height: 90%;
-  right: 0;
+  height: 85%;
+  left: 94%;
   top: 45%;
   transform: translateY(-50%);
   z-index: 0;

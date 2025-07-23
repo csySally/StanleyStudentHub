@@ -60,7 +60,7 @@
 
 .qa-item-content button {
   background-color: #006662;
-  color: #fff;
+  color: #fffffe;
   border: none;
   padding: 12px 20px;
   cursor: pointer;
@@ -69,7 +69,7 @@
   height: auto;
   font-size: 16px;
   font-weight: 600;
-    font-family: "CenturyGothic", sans-serif;
+    font-family: "SofiaPro", sans-serif;
 }
 .qa-item-content button:hover {
   background-color: #fcd60b;

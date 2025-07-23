@@ -7,8 +7,9 @@ import StaffCard from "../components/StaffCard";
 import BigContent from "../components/BigContent";
 import InfoCard from "../components/InfoCard";
 import SecondHeading from "../components/SecondHeading";
+import halfSYellow from "../assets/icons/halfSYellow.png";
 import QAList from "../components/Q&A/QAList";
-import ellipse from "../assets/images/Ellipse.png";
+import ellipse from "../assets/images/Ellips.png";
 import {
   heading1,
   heading2,
@@ -61,40 +62,46 @@ function StudentSupport() {
       >
         <SecondHeading
           title={secondHeading1}
-          backgroundColor="#fff"
-          textColor="#00007B"
+          backgroundColor="#fffffe"
+          textColor="#006662"
           toMore={false}
         />
-        <StaffCard staffCard={studentSupport} showAll={true} />
+        <div className="staffCard-container">
+          <StaffCard staffCard={studentSupport} showAll={true} />
+          <img src={halfSYellow} className="staffCard-halfS" />
+        </div>
       </motion.section>
+      <Heading
+        title={heading2}
+        backgroundColor="#006662"
+        textColor="#fffffe"
+        toMore={false}
+      />
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <Heading
-          title={heading2}
-          backgroundColor="#00007B"
-          textColor="#fff"
-          toMore={false}
-        />
         <BigContent bigContent={otherServices} />
       </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <Heading
-          title={heading3}
-          backgroundColor="#fff"
-          textColor="#00007B"
-          toMore={false}
-        />
-        <QAList qaList={qaList} />
-      </motion.section>
+      <Heading
+        title={heading3}
+        backgroundColor="#006662"
+        textColor="#fffffe"
+        toMore={false}
+      />
+      <div className="qaList-container">
+        <motion.section
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <QAList qaList={qaList} />
+        </motion.section>
+      </div>
+
       <Footer />
     </div>
   );

@@ -43,8 +43,8 @@ function AccessibilitySupport() {
         <div ref={nextSectionRef}>
           <Heading
             title={heading1}
-            backgroundColor="#00007B"
-            textColor="#fff"
+            backgroundColor="#006662"
+            textColor="#fffffe"
             toMore={false}
           />
         </div>
@@ -66,8 +66,8 @@ function AccessibilitySupport() {
       >
         <SecondHeading
           title={secondH1}
-          backgroundColor="#fff"
-          textColor="#00007B"
+          backgroundColor="#fffffe"
+          textColor="#006662"
           toMore={false}
         />
         <div className="external-content">{external}</div>

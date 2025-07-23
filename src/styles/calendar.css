@@ -19,7 +19,7 @@
 
 }
 .go-today-button {
-  background-color: #00007B;
+  background-color: #006662;
   color: white;
   border: none;
   padding: 8px 25px;
@@ -76,7 +76,7 @@
     flex-direction: column;
     height: 100px;
     margin: 10px 0;
-    color: #00007B;
+    color: #006662;
 
 }
 
@@ -103,7 +103,7 @@
 }
 
 .my-calendar-event.has-event:hover {
-  background-color: #00007B;
+  background-color: #006662;
   color: white;
 
   cursor: pointer;
@@ -118,7 +118,7 @@
 .my-event-time {
     height: 20px;
     font-size: 18px;
-    color: #00007B;
+    color: #006662;
     margin-bottom: 10px;
     font-family:  "Acme", sans-serif;
 

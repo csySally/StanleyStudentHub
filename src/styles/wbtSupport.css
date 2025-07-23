@@ -22,7 +22,7 @@
     align-items: center;
     border-radius: 10px;
     padding: 20px 30px;
-    border: 2px solid #00007B;
+    border: 2px solid #006662;
 }
 
 .wbt-card:hover, .he-card:hover{
@@ -53,7 +53,7 @@
     height: 50px;
     border-radius: 5px;
     border: none;
-    background-color: #00007B;
+    background-color: #006662;
     color: white;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -62,7 +62,7 @@
 
 .wbt-card button:hover, .he-card button:hover{
     background-color: #EABE4C;
-    color: #00007B;
+    color: #006662;
     transition: background-color 0.3s ease;
 }
 .vet-card-content, .he-card-content{
@@ -70,7 +70,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    border: 2px solid #00007B;
+    border: 2px solid #006662;
     margin: 40px 8% 40px 8%;
     border-radius: 10px;
     position: relative;
@@ -82,7 +82,7 @@
     position: absolute;
     top: 50px;
     right: 10%;
-    color:#00007B;
+    color:#006662;
     font-weight: 800;
     background-color: transparent;
     border: none;
@@ -124,7 +124,7 @@
     font-size: 18px;
     padding: 10px 0;
     line-height: 30px;
-    border-bottom: 2px solid #00007B;
+    border-bottom: 2px solid #006662;
 }
 
 .wbt-requirements tbody tr td{
@@ -141,7 +141,7 @@
     height: 30px;
     border-radius: 5px;
     border: none;
-    background-color: #00007B;
+    background-color: #006662;
     color: white;
     font-family: "Inter", sans-serif;
     font-size: 15px;
@@ -152,6 +152,6 @@
 
 .wbt-more:hover, .he-more:hover{
     background-color: #EABE4C;
-    color: #00007B;
+    color: #006662;
     transition: background-color 0.3s ease;
 }
