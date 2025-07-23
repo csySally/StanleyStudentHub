@@ -32,12 +32,12 @@
 h4 {
   font-size: 22px;
   font-weight: 600;
-  font-family: "Arial", sans-serif;
+    font-family: "SofiaPro", sans-serif;
 }
 
 p {
   font-size: 15px;
-  font-family: "Arial", sans-serif;
+    font-family: "CenturyGothic", sans-serif;
   line-height: 1.5;
 }
 
@@ -45,7 +45,7 @@ p {
     text-decoration: none;
     color: #006662;
     font-size: 15px;
-    font-family: "Arial", sans-serif;
+    font-family: "CenturyGothic", sans-serif;
     margin-bottom: 10px;
     display: block;
     margin-left: 10px;

@@ -39,8 +39,8 @@ function StudentSupport() {
       <div ref={nextSectionRef}>
         <Heading
           title={heading1}
-          backgroundColor="#fcd60b"
-          textColor="#fff"
+          backgroundColor="#006662"
+          textColor="#fffffe"
           toMore={false}
         />
       </div>

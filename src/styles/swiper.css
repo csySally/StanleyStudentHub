@@ -60,6 +60,7 @@
     font-size: 34px;
     margin: 60px 0 40px 0;
     line-height: 1.2;
+    font-family: "SofiaPro", sans-serif;
   }
   
   .mask-content p {
@@ -69,6 +70,7 @@
     margin: 0 20px;
     text-align: left;
     white-space: pre-line;
+    font-family: "CenturyGothic", sans-serif;
   }
   
   .swiper-button-next,
