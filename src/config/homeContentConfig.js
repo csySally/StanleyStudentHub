@@ -18,6 +18,9 @@ import repre1 from "../assets/images/repre1.png";
 import repre2 from "../assets/images/repre2.png";
 import repre3 from "../assets/images/repre3.png";
 import repre4 from "../assets/images/repre4.png";
+import portal1 from "../assets/images/portal1.png";
+import portal2 from "../assets/images/portal2.png";
+import canvas from "../assets/images/canvas.png";
 
 export const welcomeText = "Welcome to the Student Hub";
 
@@ -61,8 +64,8 @@ export const DiscoverCards = [
     image: discover2,
   },
   {
-    title: "IT Support",
-    url: "/it-support",
+    title: "Accessibility Support",
+    url: "/accessibility-support",
     image: discover3,
   },
   {
@@ -208,14 +211,35 @@ export const homeOuterLink = [
 
 export const qaList = [
   {
+    question: "How to login into student email?",
+    answer:
+      "The details of your student email are provided in your Orientation Invitation Email when you commenced your studies.",
+  },
+  {
+    question: "How to login into the student portal?",
+    answer:
+      "Login into your student portal using your student number and password. You can login using your student ID and password that you have created. If you do not have login details, then you can sign up using your student email. A signup confirmation will be sent in your student email with a temporary password will be sent to your email which you can change later.",
+    button: "Student Portal",
+    link: "https://perth.equatorit.net/StudentPortal/#public/login/SIC",
+    image: [portal1, portal2],
+  },
+  {
+    question: "How to login into Canvas?",
+    answer: `Canvas login details are provided in student email once you have commenced your studies. If you forgot password for the Canvas, you could email to lms.helpdesk@stanleycollege.edu.au or studentservices@stanleycollege.edu.au for the password reset.
+      
+      All the portal links are available on the Stanley College website. Click on the Student and Staff login and it will take you to the access links page.`,
+    image: [canvas],
+  },
+  {
+    question: "Having trouble logging into student email?",
+    answer: `● Are you using the correct email format? Email format is yourstudentnumber@stanleycollege.edu.au (VET) yourstudentnumber@sche.edu.au
+  ● Are you entering the correct password or forgotten password? Try to reset your password using reset password link.
+  ● Still having trouble logging in the student email, then you can contact via email to studentservices@stanleycollege.edu.au or visit any campus of Student services.`,
+  },
+  {
     question: "How do I find my classes and my timetable?",
     answer:
       "You can access classes and timetable details in your student portal. All your schedule classes are available on the portal.",
-  },
-  {
-    question: "How do I check my attendance?",
-    answer:
-      "You can check your attendance in the Student Portal, you can also see a detailed list of your absences by logging in to your student portal.",
   },
   {
     question: "How can I obtain Student card?",
@@ -235,6 +259,14 @@ export const qaList = [
     question: "How can I confirm if my fees are paid?",
     answer:
       "Once you have made the payment you can send the proof of payment, quote your Student ID as the payment reference and forward a copy of your payment receipt to finance@stanleycollege.edu.au. We will send you the confirmation with the receipt of your payment as a confirmation in your email.",
+  },
+  {
+    question: "Can I apply for a payment plan?",
+    answer: `Yes, if you're experiencing financial hardship, you may be eligible for a payment plan through our Hardship Payment Scheme. This option is available to continuing international onshore students on a student visa who are temporarily unable to pay their tuition fees due to unexpected and extenuating circumstances beyond their control. These circumstances must directly impact your ability to pay by the due date. 
+      
+      For further details including; eligibility, terms and conditions and requirements, please check the link below.`,
+    button: "Learn More",
+    link: "https://info.stanleycollege.edu.au/hubfs/Marketing-Publications/HE-Compliance-Docs/Financial-Hardship-Payment-Scheme-Guidelines.pdf",
   },
   {
     question: "How can I apply to change my current course or program?",

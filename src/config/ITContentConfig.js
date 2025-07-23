@@ -59,28 +59,4 @@ export const qaList = [
 ● Are you entering the correct password or forgotten password? Try to reset your password using reset password link.
 ● Still having trouble logging in the student email, then you can contact via email to studentservices@stanleycollege.edu.au or visit any campus of Student services.`,
   },
-  {
-    question: "What do I do if I am sick?",
-    answer:
-      "If you are sick, please stay home and rest. If you are feeling unwell, please contact your teacher or the school nurse.",
-  },
-  {
-    question: "How do I request timetable changes?",
-    answer:
-      "If you need to request a timetable change, please contact your teacher or the school office.",
-    button: "View More",
-    link: "https://www.google.com",
-  },
-  {
-    question: "Can I change my course?",
-    answer:
-      "Yes, you can change your course. Please contact the school office to request a course change. And some of the courses are available on the school website.",
-  },
-  {
-    question: "What if I forget to pay my fees?",
-    answer:
-      "If you forget to pay your fees, please contact the school office to pay your fees. And some of the fees are due on the first day of the term. Policy and procedure is available on the school website.",
-    button: "Go to Dashboard",
-    link: "https://www.google.com",
-  },
 ];
