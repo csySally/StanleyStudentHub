@@ -5,6 +5,7 @@
     color: #fff;
     padding: 0 8% 2% 8%;
     position: relative;
+    overflow: hidden;
 }
 
 .feedback-container-p{
