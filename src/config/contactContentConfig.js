@@ -14,6 +14,8 @@ import jinal from "../assets/images/jinal.jpg";
 import jayanta from "../assets/images/jayanta.jpg";
 import sujana from "../assets/images/Sujana.jpg";
 import saw from "../assets/images/Saw.jpg";
+import wbt1 from "../assets/images/wbt1.png";
+import wbt2 from "../assets/images/wbt2.png";
 
 export const heading1 = "Important Contacts";
 
@@ -177,16 +179,22 @@ export const support = [
 
 export const employment = [
   {
-    title: "Student Support Team",
-    name: "Nga (Elisa) Tong",
-    campus: "(Perth City Campus)",
-    image: ss1,
+    title: "Employment Team",
+    name: "Karan Thapa",
+    campus: "(Cookery, Hospitality & PYP) ",
+    button: "Book a meeting",
+    image: wbt1,
+    link: "https://calendar.app.google/mXSdfVUt84xCfQfc8",
+    language: "English, Nepali",
   },
   {
-    title: "Student Support Team",
-    name: "Jenisha Huluss",
-    campus: "(West Perth Campus)",
-    image: ss2,
+    title: "Employment Team",
+    name: "Gulnaz Batool",
+    campus: "(Community Services, Early Childhood Education & Health) ",
+    button: "Book a meeting",
+    image: wbt2,
+    link: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3uU5AFK40QWWGEHlPA1zCHRLb8Sx9nkgg-XDLq2ocwtMVfRimmIIXYxu-PHeACmM-LGkRKLNFT?gv=true",
+    language: "English, Urdu, Hindi, Punjabi, Saraiki",
   },
 ];
 

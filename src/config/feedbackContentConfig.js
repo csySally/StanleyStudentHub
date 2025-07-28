@@ -39,23 +39,15 @@ export const feedbackMoreContent = [
 
 export const links = [
   {
+    name: "Canvas Login",
+    link: "https://stanleycollege.instructure.com/login/canvas",
+  },
+  {
+    name: "Student Portal Login",
+    link: "https://perth.equatorit.net/StudentPortal/#public/login/SIC",
+  },
+  {
     name: "Financial Hardship Payment Scheme Application Form",
     link: "https://highereducation.formstack.com/workflows/fhps_application",
-  },
-  {
-    name: "Apply for leave of absence",
-    link: "https://www.google.com",
-  },
-  {
-    name: "Provide general feedback",
-    link: "https://www.google.com",
-  },
-  {
-    name: "Make a formal complaint",
-    link: "https://www.google.com",
-  },
-  {
-    name: "Request a meeting with student services",
-    link: "https://www.google.com",
   },
 ];
