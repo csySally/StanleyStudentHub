@@ -25,11 +25,6 @@ export default function Menu({ showMenu }) {
           </Link>
         </li>
         <li>
-          <Link to="/it-support" className="menu-item">
-            IT Support
-          </Link>
-        </li>
-        <li>
           <Link to="/events-and-activities" className="menu-item">
             Events & Activities
           </Link>

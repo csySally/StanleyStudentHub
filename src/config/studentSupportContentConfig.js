@@ -156,6 +156,11 @@ If you need assistance at any stage, please contact Stanley College Student Serv
       "You can change your class schedules by sending the email to studentservices@stanleycollege.edu.au. Please note that, the change of schedules for your desired times are based on availability of classes.",
   },
   {
+    question: "How do I check my attendance?",
+    answer:
+      "You can check your attendance in the Student Portal, you can also see a detailed list of your absences by logging in to your student portal.",
+  },
+  {
     question: "My attendance is wrong, or I was marked absent for no reason.",
     answer:
       "This information is entered by your Trainer. You can contact the trainer directly to update this information. Or you can email Student Services (studentservices@stanleycollege.edu.au) and we will contact your trainer.",
@@ -170,14 +175,7 @@ If you need assistance at any stage, please contact Stanley College Student Serv
     answer:
       "You can check your scheduled holidays in your student portal by referring to the “results” tab.",
   },
-  {
-    question: "Can I apply for a payment plan?",
-    answer: `Yes, if you're experiencing financial hardship, you may be eligible for a payment plan through our Hardship Payment Scheme. This option is available to continuing international onshore students on a student visa who are temporarily unable to pay their tuition fees due to unexpected and extenuating circumstances beyond their control. These circumstances must directly impact your ability to pay by the due date. 
-    
-    For further details including; eligibility, terms and conditions and requirements, please check the link below.`,
-    button: "Learn More",
-    link: "https://info.stanleycollege.edu.au/hubfs/Marketing-Publications/HE-Compliance-Docs/Financial-Hardship-Payment-Scheme-Guidelines.pdf",
-  },
+
   {
     question: "How can I update my contact details?",
     answer:
