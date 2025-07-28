@@ -39,7 +39,7 @@ export const feedbackMoreContent = [
 
 export const links = [
   {
-    name: "FInancial Hardship Payment Scheme Application Form",
+    name: "Financial Hardship Payment Scheme Application Form",
     link: "https://highereducation.formstack.com/workflows/fhps_application",
   },
   {
