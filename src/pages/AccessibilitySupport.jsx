@@ -15,7 +15,7 @@ import {
   external,
   externalCardData,
 } from "../config/accessibilityContentConfig.js";
-import ellipse from "../assets/images/Ellipse.png";
+import ellipse from "../assets/images/Ellips.png";
 import "../styles/accessibilitySupport.css";
 import InfoCard from "../components/InfoCard.jsx";
 import { motion } from "framer-motion";
@@ -34,30 +34,32 @@ function AccessibilitySupport() {
         welcomeText2="Support"
         scrollTargetRef={nextSectionRef}
       />
-      <motion.section
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div ref={nextSectionRef}>
-          <Heading
-            title={heading1}
-            backgroundColor="#006662"
-            textColor="#fffffe"
-            toMore={false}
-          />
-        </div>
-        <ArrowHeading arrowHeadings={arrowHeadings[0]} />
-        <div className="care-container">
-          <div className="care-container-p">
+      <div ref={nextSectionRef}>
+        <Heading
+          title={heading1}
+          backgroundColor="#006662"
+          textColor="#fffffe"
+          toMore={false}
+        />
+      </div>
+      <ArrowHeading arrowHeadings={arrowHeadings[0]} />
+
+      <div className="care-container">
+        <div className="care-container-p">
+          <motion.section
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <p>{careCont}</p>
-          </div>
-          <div className="care-container-card">
-            <StaffCard staffCard={careStaff} showAll={false} />
-          </div>
+          </motion.section>
         </div>
-      </motion.section>
+        <div className="care-container-card">
+          <StaffCard staffCard={careStaff} showAll={false} />
+        </div>
+      </div>
+
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -82,8 +82,8 @@ function EventsAndActivities() {
       </motion.section>
       <Heading
         title={heading2}
-        backgroundColor="#fcd60b"
-        textColor="#fffffe"
+        backgroundColor="#fffffe"
+        textColor="#006662"
         toMore={false}
       />
       <motion.section
@@ -109,16 +109,9 @@ function EventsAndActivities() {
         toMore={true}
         toLink="https://drive.google.com/drive/folders/1eC5PF0SToKiwyz-6C7MS8VaqHUwBkpII"
       />
-      <motion.section
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div className="workshop-container">
-          <SwiperWorkshop />
-        </div>
-      </motion.section>
+      <div className="workshop-container">
+        <SwiperWorkshop />
+      </div>
       <Footer />
     </div>
   );

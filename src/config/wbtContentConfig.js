@@ -1,7 +1,7 @@
-import job from "../assets/icons/Job.svg";
-import platfrom from "../assets/icons/Virtual Machine.svg";
-import resume from "../assets/icons/Resume.svg";
-import equality from "../assets/icons/Equality.svg";
+import job from "../assets/icons/Job.png";
+import platfrom from "../assets/icons/Virtual Machine.png";
+import resume from "../assets/icons/Resume.png";
+import equality from "../assets/icons/Equality.png";
 import wbt1 from "../assets/images/wbt1.png";
 import wbt2 from "../assets/images/wbt2.png";
 import accounting from "../assets/images/accounting.jpg";

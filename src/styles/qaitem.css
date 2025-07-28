@@ -20,7 +20,7 @@
 .qa-item-header h3 {
   font-size: 21px;
   font-weight: 600;
-  color: #000;
+  color: #1c2b39;
     font-family: "SofiaPro", sans-serif;
 }
 
@@ -51,7 +51,7 @@
 .qa-item-content p,.qa-item-content>div {
   font-size: 16px;
   font-weight: 400;
-  color: #000;
+  color: #1c2b39;
     font-family: "CenturyGothic", sans-serif;
   line-height: 1.7;
 }

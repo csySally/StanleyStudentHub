@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Header from "../components/Header";
 import Welcome from "../components/Welcome";
 import Footer from "../components/Footer";
-import ellipse from "../assets/images/Ellipse.png";
+import ellipse from "../assets/images/Ellips.png";
 import {
   heading1,
   wbtCardData,
@@ -45,7 +45,7 @@ function WBTSupport() {
       <div ref={nextSectionRef}>
         <Heading
           title={heading1}
-          backgroundColor="#fcd60b"
+          backgroundColor="#006662"
           textColor="#fffffe"
           toMore={false}
         />
@@ -330,19 +330,18 @@ function WBTSupport() {
           )}
         </div>
       </motion.section>
-
+      <Heading
+        title={heading2}
+        backgroundColor="#006662"
+        textColor="#fffffe"
+        toMore={false}
+      />
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <Heading
-          title={heading2}
-          backgroundColor="#006662"
-          textColor="#fffffe"
-          toMore={false}
-        />
         <BigContent bigContent={studentStories} />
       </motion.section>
       <Footer />

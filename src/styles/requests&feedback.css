@@ -1,10 +1,11 @@
 .feedback-container{
-    height: 600px;
+    height: 520px;
     display: flex;
-    background-color: #fcd60b;
+    background-color: #006662;
     color: #fffffe;
-    padding: 0 8% 2% 8%;
+    padding: 0 8% 1% 8%;
     position: relative;
+    overflow: hidden;
 }
 
 .feedback-container-p{
@@ -15,10 +16,10 @@
     align-items: center;
 }
 
-.feedback-container-p>p{
+.feedback-container-p p{
     font-size: 17px;
     line-height: 1.9rem;
-    font-family: "Inter", sans-serif;
+  font-family: "CenturyGothic", sans-serif;
 }
 
 .feedback-container-card{
@@ -31,12 +32,11 @@
 }
 
 .feedback-container-card-inner{
-    width: 100%;
-    color: #000;
+    width: 70%;
+    color: #1c2b39;
     position: absolute;
-    top: 10%;
-    right: -36%;
-    width: 130% ;
+    top: 5%;
+    left: 38%;
 }
 .feedback-container-card-p{
     width: 100%;
@@ -46,18 +46,18 @@
     margin-top: 30vh;
     font-size: 17px;
     line-height: 1.9rem;
-    font-family: "Inter", sans-serif;
+  font-family: "CenturyGothic", sans-serif;
 }
 
-.feedback-container-card-p>p{
+.feedback-container-card-p p{
     font-size: 17px;
-    line-height: 1.9rem;
-    font-family: "Inter", sans-serif;
+  font-family: "CenturyGothic", sans-serif;
+      line-height: 1.9rem;
+
 }
 
-.feedback-container-card-p>h3{
+.feedback-container-card-p h3{
     font-size: 17px;
-    line-height: 1.9rem;
-    font-family: "Inter", sans-serif;
+    font-family: "CenturyGothic", sans-serif;
     margin: 0;
 }

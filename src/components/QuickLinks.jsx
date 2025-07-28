@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../styles/quickLinks.css";
-import outerLink from "../assets/icons/External Link.svg";
+import outerLink from "../assets/icons/External.png";
 
 export default function QuickLinks({ quickLinks }) {
   return (

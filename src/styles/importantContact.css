@@ -9,5 +9,19 @@
 
 .other-contact p{
     font-size: 18px;
-    color: #fcd60b;
+    color: #006662;
+}
+
+.important-contact-container{
+   position: relative;
+   overflow: hidden; 
+}
+
+.staffCard-halfS{
+  position: absolute;
+  height: 60%;
+  top: 50%;
+  left: 94%;
+  transform: translateY(-50%);
+  z-index: 0;
 }

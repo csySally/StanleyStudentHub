@@ -12,11 +12,11 @@
 .react-datepicker__input-container {
     height: 100%;
     width: 100%;
-    border: 1px solid #d3d3d3;
+    border: 1px solid #c9d7ee;
 }
 
 .date-picker-button{
-    font-family: "Acme", sans-serif;
+    font-family: "SofiaPro", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,6 +26,6 @@
     padding: 0 10px;
     background-color: #fffffe;
     width: auto;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 20px;
 }

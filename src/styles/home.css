@@ -19,6 +19,7 @@
   .big-discover{
     position: relative;
     background-color: #fffffe;
+    overflow: hidden; 
   }
 .discover-halfS{
   position: absolute;
@@ -27,6 +28,8 @@
   top: 45%;
   transform: translateY(-50%);
   z-index: 0;
+
+
 }
 .home-outerlink-container {
   width: 100%;

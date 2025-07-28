@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/outerlink.css";
-import External from "../assets/icons/External Link.svg";
+import External from "../assets/icons/External.png";
 
 function Outerlink({ outerLink }) {
   return (

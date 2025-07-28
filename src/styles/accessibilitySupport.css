@@ -1,9 +1,9 @@
 .care-container{
     height: 250px;
     display: flex;
-    background-color: #fcd60b;
+    background-color: #006662;
     color: #fffffe;
-    padding: 0 8% 2% 8%;
+    padding: 1% 8% 3% 8%;
     position: relative;
 }
 
@@ -12,28 +12,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  font-family: "CenturyGothic", sans-serif;
+
 }
 
-.care-container-p>p{
+.care-container-p p{
     font-size: 17px;
     line-height: 1.9rem;
 }
 
 .care-container-card{
-    color: #000;
+    color: #1c2b39;
     position: absolute;
-    top: 10%;
+    top: 5%;
     right: -35%;
     width: 120% 
 }
 
 .external-content{
     height: 80px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fcd60b;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #006662;
+    font-family: "CenturyGothic", sans-serif;
     padding: 0 10%;
-    font-size: 20px;
+    font-weight: 600;
+
 }

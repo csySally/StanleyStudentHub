@@ -69,9 +69,9 @@
   font-weight: 700;
   color: #006662;
   margin:0;
-  padding: 10px 0;
   font-family: "CenturyGothic", sans-serif;
   font-family: 700;
+  margin-bottom: 8px;
 }
 
 .cards-container h3{
@@ -93,7 +93,7 @@
   font-size: 16px;
   font-weight: 400;
   margin:0;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 30px;
   font-family: "CenturyGothic", sans-serif;
   font-weight: 500;

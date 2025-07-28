@@ -11,8 +11,9 @@
 
 .arrowheading-container>p{
     color: #fffffe;
-    font-family: "Acme", sans-serif;
+    font-family: "SofiaPro", sans-serif;
     font-size: 26px;
     letter-spacing: 0.6px;
     margin: 0 3%;
+    font-weight: 700;
 }

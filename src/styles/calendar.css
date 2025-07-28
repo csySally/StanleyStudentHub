@@ -20,17 +20,23 @@
 }
 .go-today-button {
   background-color: #006662;
-  color: white;
+  color: #fffffe;
   border: none;
-  padding: 8px 25px;
-  font-family: "Acme", sans-serif;
+  padding: 10px 25px;
+  font-family: "SofiaPro", sans-serif;
   border-radius: 4px;
   cursor: pointer;
   font-size: 18px;
   cursor: pointer;
   z-index: 1;
+  font-weight: 600;
 }
 
+.go-today-button:hover{
+  background-color: #fcd60b;
+  color: #006662;
+  transition: background-color 0.3s ease;
+}
 
 .my-calendar-header>h1{
   position: absolute;
@@ -40,7 +46,8 @@
   font-weight: 600;
   color: #1f2937;
   margin: 0;
-  font-family: "Acme", sans-serif;
+  font-family: "SofiaPro", sans-serif;
+  font-weight: 700;
 }
 
 
@@ -56,71 +63,76 @@
   min-width: 0; 
   box-sizing: border-box;
    background-color: #f2f2f2; 
-   border: 1px solid #d3d3d3;
+   border: 1px solid #c9d7ee;
    min-height: 160px;
    display: flex;
    flex-direction: column;
    border-right: none;
 }
 .my-calendar-day:nth-child(5) {
-  border-right: 1px solid #d3d3d3;
+  border-right: 1px solid #c9d7ee;
 }
 
 .my-calendar-day.today {
 
-  background-color: #00007b27;
+  background-color: #c9d7ee;
 }
 
 .my-calendar-date {
     display: flex;
     flex-direction: column;
-    height: 100px;
     margin: 10px 0;
     color: #006662;
+    height: 110px;
 
 }
 
 .my-day-name{
-    font-family:  "Acme", sans-serif;
+    font-family:  "SofiaPro", sans-serif;
+    font-weight: 600;
     font-size: 22px;
+    line-height: 1.8;
     display: block;
     margin-left: 20px;
 }
 
 .my-day-number{
-    font-family:  "Acme", sans-serif;
+    font-family:  "SofiaPro", sans-serif;
     font-size: 42px;
     text-align: center;
+    font-weight: 700;
 
 }
 
 .my-calendar-event {
   display: block;
-  min-height: 220px; 
-  background-color: white;
+  min-height: 240px; 
+  background-color: #fffffe;
   padding: 7px 13px;
-  border-top: 1px solid #d3d3d3;
+  border-top: 1px solid #c9d7ee;
 }
 
 .my-calendar-event.has-event:hover {
   background-color: #006662;
-  color: white;
+  color: #fffffe;
 
   cursor: pointer;
 }
 
 .my-calendar-event.has-event:hover .my-event-time {
-  color: white;
+  color: #fffffe;
 }
-.my-calendar-event.has-event:hover .my-event-description {
-  color: white;
+.my-calendar-event.has-event:hover .my-event-description  {
+  color: #fffffe;
 }
+
 .my-event-time {
-    height: 20px;
+    height: 25px;
     font-size: 18px;
     color: #006662;
     margin-bottom: 10px;
-    font-family:  "Acme", sans-serif;
+    font-family:  "CenturyGothic", sans-serif;
+    font-weight: 600;
 
 }
 
@@ -128,7 +140,8 @@
     height: 55px;
     font-weight: 500;
     margin-bottom: 2px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "SofiaPro", sans-serif;
+    font-weight: 600;
     font-size: 18px;
     letter-spacing: -0.5px;
     line-height: 1.3;
@@ -141,22 +154,25 @@
 }
 
 .my-event-description{
-  height: 100px;
+  height: 110px;
   font-size: 15px;
-  color: #4b5563; 
+  color: #1c2b39; 
   margin-bottom: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "CenturyGothic", sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 5; 
   -webkit-box-orient: vertical;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .my-event-location {
-  color: #6b7280;
-  font-size: 13px;
+  font-family: "CenturyGothic", sans-serif;
+  font-weight: 400;
+  color: #1c2b39;
+  font-size: 12px;
+  line-height: 30px;
 }
 
 .my-calendar-event-link {

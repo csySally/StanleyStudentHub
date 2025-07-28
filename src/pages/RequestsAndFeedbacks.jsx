@@ -35,54 +35,68 @@ function RequestsAndFeedbacks() {
         welcomeText2="Feedbacks"
         scrollTargetRef={nextSectionRef}
       />
-      <motion.section
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <div ref={nextSectionRef}>
-          <Heading
-            title={heading1}
-            backgroundColor="#006662"
-            textColor="#fffffe"
-            toMore={false}
-          />
-        </div>
-        <ArrowHeading arrowHeadings={arrowHeadings[0]} />
-        <div className="feedback-container">
-          <div className="feedback-container-p">
+      <div ref={nextSectionRef}>
+        <Heading
+          title={heading1}
+          backgroundColor="#006662"
+          textColor="#fffffe"
+          toMore={false}
+        />
+      </div>
+      <ArrowHeading arrowHeadings={arrowHeadings[0]} />
+
+      <div className="feedback-container">
+        <div className="feedback-container-p">
+          <motion.section
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            {" "}
             {feedbackContent.map((content, index) => (
               <p key={index}>{content}</p>
             ))}
-          </div>
-          <div className="feedback-container-card">
-            <div className="feedback-container-card-inner">
+          </motion.section>
+        </div>
+        <div className="feedback-container-card">
+          <div className="feedback-container-card-inner">
+            <motion.section
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               <Outerlink outerLink={requestOurLink} />
-            </div>
-            <div className="feedback-container-card-p">
+            </motion.section>
+          </div>
+          <div className="feedback-container-card-p">
+            <motion.section
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               <h3>{feedbackMoreHeading}</h3>
-              <p>
-                {feedbackMoreContent.map((content, index) => (
-                  <li key={index}>{content}</li>
-                ))}
-              </p>
-            </div>
+              {feedbackMoreContent.map((content, index) => (
+                <p key={index}>{content}</p>
+              ))}
+            </motion.section>
           </div>
         </div>
-      </motion.section>
+      </div>
+      <Heading
+        title={heading2}
+        backgroundColor="#fffffe"
+        textColor="#006662"
+        toMore={false}
+      />
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <Heading
-          title={heading2}
-          backgroundColor="#fffffe"
-          textColor="#006662"
-          toMore={false}
-        />
         <QuickLinks quickLinks={links} />
       </motion.section>
       <Footer />
