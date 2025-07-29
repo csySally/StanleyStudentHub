@@ -1,8 +1,27 @@
-# Stanley College - Student Hub
+# Stanley College Student Hub
+
+The Stanley College Student Hub is a web-based platform designed to centralize student support resources and event information.
+This project was developed as part of an internship to modernize the existing Student Hub by _Shengya Chen_ (chenshengya1225@gmail.com) from May 2025 to July 2025.
+
+## Features
+
+- Modern UI built with React and Vite
+- Events & Activities dynamically fetched from Google Calendar API
+- Google Sheets integration for easy content updates
+
+## Tech Stack
+
+_Frontend_: React (Vite), CSS
+_Hosting_: GitHub Pages (for preview)
+_External Integrations_:
+
+- Google Calendar API (events)
+- Google Sheets + Apps Script (dynamic content)
+- Google Drive (document storage)
 
 ## Preview Link
 
-This preview version of the Stanley College Student Hub website is currently hosted under my personal domain:
+This preview version of the Stanley College Student Hub website is currently hosted under Shengya's personal domain:
 
 👉 https://chenshengya.com/studenthub/
 
@@ -20,9 +39,7 @@ This is not a bug in the project itself. It’s a known limitation of how GitHub
    👉 https://chenshengya.com/studenthub/
 2. Navigate to the desired page from menu.
 
-## 🖥️ How to Open This React Webpage on Your Computer (Windows)
-
-## This is a web application built using React. You can view and interact with it on your local browser by following a few simple steps
+## Setup and Local Development
 
 ### Step 1: Install Node.js
 
@@ -48,34 +65,19 @@ This is not a bug in the project itself. It’s a known limitation of how GitHub
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
-## Google Calendar Integration Setup
+## Known Issues
 
-### Get Calendar ID
+- No mobile responsiveness (desktop-only design)
+- Image links from social media may expire (use stable hosting)
+- Slower load times due to live Google Sheets fetch
 
-1. Create a dedicated Google Calendar
+## Future Development
 
-- Go to Google Calendar
-- On the left panel, click the "+" next to “Other calendars” → Create new calendar
-- Name it something like Stanley Events Calendar
-- Save it
-- Create events under this calendar
-
-2. Make the calendar public
-
-- Go to the calendar’s Settings
-- Under “Access permissions for events” → Check Make available to public
-- Copy the Calendar ID under “Integrate calendar”
-- Format looks like: c_xxxxxxxxxxxxxxxxxxxxxxxxxxx@group.calendar.google.com
-
-### Why this is not set up using a Stanley College staff account
-
-Due to admin-level restrictions on our Stanley Google Workspace:
-• Calendar access and sharing options are limited;
-• Staff-created calendars cannot be made publicly visible to everyone (outside the organization).
-
-To allow public access (so the events can be seen by external visitors without logging in), I used a personal Google account to create and share the calendar.
-
-Once Stanley’s admin permissions are updated, this integration can be migrated to an official calendar account.
+- Implement responsive design for mobile and tablets
+- Integrate meeting room booking (requires admin API access)
+- Add Freshdesk support system (via clean embedded widget or hyperlink)
+- Improve content management (consider lightweight backend or CMS)
+- Continue developing the new yellow/green UI on the _visualization-improvements_ branch
