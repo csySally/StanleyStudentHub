@@ -1,7 +1,7 @@
 # Stanley College Student Hub
 
 The Stanley College Student Hub is a web-based platform designed to centralize student support resources and event information.
-This project was developed as part of an internship to modernize the existing Student Hub by _Shengya Chen_ (chenshengya1225@gmail.com) from May 2025 to July 2025.
+This project was developed as part of an internship to modernize the existing Student Hub by **Shengya Chen** (chenshengya1225@gmail.com) from May 2025 to July 2025.
 
 ## Features
 
@@ -33,7 +33,7 @@ Because GitHub Pages is a static file server and does not support client-side ro
 
 This is not a bug in the project itself. It’s a known limitation of how GitHub Pages handles routing for single-page applications (SPA).
 
-**If you encounter a 404 after refreshing a subpage, simply: **
+**If you encounter a 404 after refreshing a subpage, simply**:
 
 1. Go back to the main homepage:
    👉 https://chenshengya.com/studenthub/
@@ -80,4 +80,4 @@ npm run dev
 - Integrate meeting room booking (requires admin API access)
 - Add Freshdesk support system (via clean embedded widget or hyperlink)
 - Improve content management (consider lightweight backend or CMS)
-- Continue developing the new yellow/green UI on the _visualization-improvements_ branch
+- Continue developing the new yellow/green UI on the **visualization-improvements** branch
