@@ -11,9 +11,11 @@ This project was developed as part of an internship to modernize the existing St
 
 ## Tech Stack
 
-_Frontend_: React (Vite), CSS
-_Hosting_: GitHub Pages (for preview)
-_External Integrations_:
+Frontend: React (Vite), CSS
+
+Hosting: GitHub Pages (for preview)
+
+External Integrations:
 
 - Google Calendar API (events)
 - Google Sheets + Apps Script (dynamic content)
