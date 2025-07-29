@@ -241,34 +241,34 @@ export const studentRe = [
 
 export const otherContacts = [
   {
-    name: "Student Services: ",
+    name: "Student Services",
     detail: "studentservices@stanleycollege.edu.au | +61863719999 ",
   },
   {
-    name: "Academic Support:",
+    name: "Academic Support",
     detail: "academicsupport@stanleycollege.edu.au",
   },
   {
-    name: "Work-Based Training Support:",
+    name: "Work-Based Training Support",
     detail: "wbt@stanleycollege.edu.au",
   },
   {
-    name: "Health Support:",
+    name: "Health Support",
     detail: "healthsupport@stanleycollege.edu.au",
   },
   {
-    name: "IT Support: ",
+    name: "IT Support",
     detail: "itsupport@stanleycollege.edu.au",
   },
 ];
 
 export const otherContacts2 = [
   {
-    name: "Local Police:",
+    name: "Local Police",
     detail: "131 444",
   },
   {
-    name: "Medical Emergency:",
+    name: "Medical Emergency",
     detail: "000",
   },
 ];

@@ -48,7 +48,7 @@
 
 .student-repre-item h4 {
     margin:0; 
-    padding: 0 2px 10px 2px;
+    padding: 0 5px 10px 5px;
     font-family: "SofiaPro", sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -59,8 +59,15 @@
 
 .student-repre-item p {
   margin: 0;
-  padding: 0 20px;
+    height: 130px;
+
   font-family: "CenturyGothic", sans-serif;
   padding:5px 25px;
   color: #1c2b39;
+      overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; 
+  -webkit-box-orient: vertical;
+  line-height: 22px;
 }
