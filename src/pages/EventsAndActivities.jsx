@@ -38,7 +38,20 @@ function EventsAndActivities() {
     setSelectedDate(date);
   };
 
-  const { welcomePicture } = useWelcomePicture();
+  const { welcomePicture, loading } = useWelcomePicture();
+
+  if (loading) {
+    return (
+      <div>
+        <Header />
+        <div
+          style={{
+            background: "#f0f0f0",
+          }}
+        ></div>
+      </div>
+    );
+  }
 
   return (
     <div>

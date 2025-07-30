@@ -29,9 +29,22 @@ function WBTSupport() {
   const handleOpen = (type) => setActiveCard(type);
   const handleClose = () => setActiveCard(null);
 
-  const { welcomePicture } = useWelcomePicture();
-
   const { studentStories } = useStudentStory();
+
+  const { welcomePicture, loading } = useWelcomePicture();
+
+  if (loading) {
+    return (
+      <div>
+        <Header />
+        <div
+          style={{
+            background: "#f0f0f0",
+          }}
+        ></div>
+      </div>
+    );
+  }
 
   return (
     <div>
