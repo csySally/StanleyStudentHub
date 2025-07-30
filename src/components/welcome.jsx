@@ -2,8 +2,14 @@ import React, { useState, useEffect } from "react";
 import "../styles/welcome.css";
 import Show from "../assets/images/show.png";
 import defaultWelcomeBg from "../assets/images/default-welcome.png";
+import learnWhite from "../assets/images/learnWhite.png";
 
-function Welcome({ backgroundPic, welcomeText, scrollTargetRef }) {
+function Welcome({
+  backgroundPic,
+  welcomeText1,
+  welcomeText2,
+  scrollTargetRef,
+}) {
   const [currentBgPic, setCurrentBgPic] = useState(defaultWelcomeBg);
   const [imageLoaded, setImageLoaded] = useState(false);
 
