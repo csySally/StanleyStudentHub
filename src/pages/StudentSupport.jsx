@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Header from "../components/Header";
-import Welcome from "../components/Welcome";
+import Welcome from "../components/welcome";
 import Heading from "../components/Heading";
 import Footer from "../components/Footer";
 import StaffCard from "../components/StaffCard";

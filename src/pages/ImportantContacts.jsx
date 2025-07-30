@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Header from "../components/Header";
-import Welcome from "../components/Welcome.jsx";
+import Welcome from "../components/welcome.jsx";
 import Footer from "../components/Footer";
 import Heading from "../components/Heading";
 import SecondHeading from "../components/SecondHeading";
@@ -69,6 +69,8 @@ function ImportantContacts() {
           title={secondHeading1}
           backgroundColor="#fffffe"
           textColor="#006662"
+          backgroundColor="#fffffe"
+          textColor="#006662"
           toMore={true}
           isLink={false}
           onMoreClick={() => setShowEx(!showEx)}
@@ -83,6 +85,8 @@ function ImportantContacts() {
       >
         <SecondHeading
           title={secondHeading2}
+          backgroundColor="#fffffe"
+          textColor="#006662"
           backgroundColor="#fffffe"
           textColor="#006662"
           toMore={true}

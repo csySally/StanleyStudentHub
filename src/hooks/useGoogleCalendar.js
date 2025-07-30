@@ -1,16 +1,28 @@
 import { useEffect, useState } from "react";
+import defaultEventImage from "../assets/images/default-poster.png";
 
 export default function useGoogleCalendar() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://script.google.com/macros/s/AKfycbyOxrUFoqpOwHpsThdHYLeqTC_FYbAJ1DiR-HKxlrJAlOfOBlasmOIwJdSX9QMm6hUF/exec?sheet=calendar"
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        const formatted = data
-          .map((item) => {
+    const fetchEvents = async () => {
+      try {
+        const res = await fetch(
+          "https://script.google.com/macros/s/AKfycbyOxrUFoqpOwHpsThdHYLeqTC_FYbAJ1DiR-HKxlrJAlOfOBlasmOIwJdSX9QMm6hUF/exec?sheet=calendar"
+        );
+        const data = await res.json();
+
+        const checkImage = (url) =>
+          new Promise((resolve) => {
+            if (!url) return resolve(defaultEventImage);
+            const img = new Image();
+            img.src = url;
+            img.onload = () => resolve(url);
+            img.onerror = () => resolve(defaultEventImage);
+          });
+
+        const formatted = await Promise.all(
+          data.map(async (item) => {
             const iso = item.start?.endsWith("Z")
               ? item.start
               : item.start + "Z";
@@ -22,7 +34,7 @@ export default function useGoogleCalendar() {
               description: item.description,
               location: item.location,
               link: item.link,
-              image: item.image,
+              image: await checkImage(item.image),
               date: startDate.toLocaleDateString("en-AU", {
                 year: "numeric",
                 month: "2-digit",
@@ -36,17 +48,16 @@ export default function useGoogleCalendar() {
               start: startDate,
             };
           })
-          .filter(Boolean)
-          .sort((a, b) => a.start - b.start);
+        );
 
-        setEvents(formatted);
-      })
-      .catch((error) => {
+        setEvents(formatted.filter(Boolean).sort((a, b) => a.start - b.start));
+      } catch (error) {
         console.error("Error fetching calendar data:", error);
-      });
+      }
+    };
+
+    fetchEvents();
   }, []);
 
-  return {
-    events,
-  };
+  return { events };
 }

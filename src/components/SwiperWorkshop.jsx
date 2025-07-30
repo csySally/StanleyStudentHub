@@ -6,7 +6,6 @@ import playIcon from "../assets/icons/play.svg";
 import defaultBackgroundImage from "../assets/images/default_recording.png";
 import useWorkshop from "../hooks/useWorkshop";
 
-// import required modules
 import { Pagination } from "swiper/modules";
 
 export default function SwiperWorkshop() {

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
-import Welcome from "../components/Welcome";
+import Welcome from "../components/welcome";
 import Footer from "../components/Footer";
 import SwiperCom from "../components/SwiperCom";
 import Heading from "../components/Heading";
@@ -69,7 +69,20 @@ function Home() {
 
   const { studentRepresentatives } = useStudentRe();
 
-  const { welcomePicture } = useWelcomePicture();
+  const { welcomePicture, loading } = useWelcomePicture();
+
+  if (loading) {
+    return (
+      <div>
+        <Header />
+        <div
+          style={{
+            background: "#f0f0f0",
+          }}
+        ></div>
+      </div>
+    );
+  }
 
   return (
     <div>
