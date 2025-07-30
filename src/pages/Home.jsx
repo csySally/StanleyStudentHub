@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
-import Welcome from "../components/Welcome";
+import Welcome from "../components/welcome";
 import Footer from "../components/Footer";
 import SwiperCom from "../components/SwiperCom";
 import Heading from "../components/Heading";

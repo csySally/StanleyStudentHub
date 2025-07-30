@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Header from "../components/Header";
-import Welcome from "../components/Welcome";
+import Welcome from "../components/welcome";
 import Footer from "../components/Footer";
 import ellipse from "../assets/images/Ellipse.png";
 import {
